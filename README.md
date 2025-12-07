@@ -1,0 +1,1 @@
+This is my Personal Website! I plan to strengthen my web development skills while also compiling my past project and stuff I've worked on as a full archive of my work in computer science.

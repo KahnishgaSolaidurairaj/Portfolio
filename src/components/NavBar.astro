@@ -1,0 +1,53 @@
+<div class="nav">
+  <div class = "brand">
+    Kahnishga
+  </div>
+
+  <div class = "links">
+    <a href = "/">Home</a>
+    <a href = "/projects">Projects</a>
+    <a href = "/resume">Resume</a>
+    <a href = "/contact">Contact</a>
+  </div>
+</div>
+
+<style>
+.nav {
+  background-color: #dbe0ffff; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Right Side Icon and Name */
+.brand {
+  font-weight: 600;
+  font-family: "Verdana";
+  
+  background-image: linear-gradient(to right, #fc20beff, #00DFD8);
+  background-clip: text;
+  color: transparent; 
+  
+  justify-content: flex-start;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+}
+
+.links a {
+  font-weight: 300;
+  font-family: "Verdana";
+  color: #323e83ff;
+  justify-content: flex-end;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: #c04a8aff;
+}
+
+</style>
