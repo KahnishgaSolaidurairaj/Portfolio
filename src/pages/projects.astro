@@ -1,12 +1,41 @@
 ---
-import NavBar from "../components/NavBar.astro"
+import NavBar from "../components/navbar.astro"
 import Layout from "@/layouts/Layout.astro";
+import Footer from "../components/footer.astro";
+import { projects } from "../data/projectInfo";
+import ProjectCard from "../components/ProjectCard.astro";
 ---
 
-
 <Layout title = 'Projects'>
-<NavBar />
+	<NavBar />
 	<div class= "container">
-		<h1> Projects . . . </h1>
+		<h1> Projects </h1>
+		<a> A collection of my personal and academic projects showcasing my skills and interests ✨ </a>
 	</div>
+
+	<div class="projects-container">
+  		<div class="projects-grid">
+    		{projects.map(project => ( <ProjectCard project={project} />))}
+  		</div>
+	</div>
+
+	<Footer/>
 </Layout>
+
+
+<style>
+.projects-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem 1rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-right: 1rem;
+}
+</style>
