@@ -8,6 +8,7 @@ body {
     background-attachment: fixed;
 }
 
+/* Page Headers */
 h1 {
     display: flex;
 	justify-content: center;
@@ -15,3 +16,13 @@ h1 {
     font-family: "Verdana";
 }
 
+/* Page description */
+h3 {
+    display: flex;
+	justify-content: center;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    font-weight: 300;
+    font-family: "Verdana";
+    color: #411eb4c9;
+}

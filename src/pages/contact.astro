@@ -6,8 +6,131 @@ import Footer from "../components/footer.astro";
 
 <Layout title = 'Contact'>
 	<NavBar />
-	<div class= "container">
-		<h1> Links to connect . . . </h1>
+	<div class = "container">
+		<h1 class="override-color">♡ Get in Touch</h1>
+		<h3> Have a question or want to work together? Feel free to reach out! 💌</h3>
+
+		<div class="contact-card">
+			<div class="first-contact-item">
+    			<div class="icon email">
+      				<img src="/images/email-icon.png"/>
+    			</div>
+    			<div class="info">
+      				<h4>Email</h4>
+      				<a href="mailto:krishnakani19@gmail.com">krishnakani19@gmail.com</a>
+    			</div>
+  			</div>
+
+			<div class="contact-item">
+    			<div class="icon github">
+      				<img src="/images/github-icon.png"/>
+    			</div>
+    			<div class="info">
+      				<h4>GitHub</h4>
+      				<a href="https://github.com/KahnishgaSolaidurairaj"> github.com/KahnishgaSolaidurairaj</a>
+    			</div>
+  			</div>
+
+  			<div class="contact-item">
+    			<div class="icon linkedin">
+      				<img src="/images/linkedin-icon.png"/>
+    			</div>
+    			<div class="info">
+      				<h4>LinkedIn</h4>
+      				<a href="https://www.linkedin.com/in/kahnishga-solaidurairaj">linkedin.com/in/kahnishga-solaidurairaj</a>
+    			</div>
+  			</div>
+
+  			<div class="contact-item">
+    			<div class="icon location">
+      				<img src="/images/location-icon.png"/>
+    			</div>
+    			<div class="info">
+      				<h4>Location</h4>
+      				<a>Chicago, Illinois</a>
+    			</div>
+  			</div>
+		</div>
 	</div>
 	<Footer/>
 </Layout>
+
+<style>
+
+.override-color {
+  background: linear-gradient(90deg, #ff002bff, #2b00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+.contact-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.first-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon img {
+  width: 60%;
+}
+
+.icon.email {
+  background: linear-gradient( #e66465, #9198e5);
+  /* background: #d9c9ff; */
+}
+
+.icon.github {
+  background: linear-gradient( #79a4d1ff, #f69d3c); 
+  /* background: #b6f0e6; */
+}
+
+.icon.linkedin {
+  background: linear-gradient( #79d19cff, #3c80f6ff); 
+  /* background: #c2e7ff; */
+}
+
+.icon.location {
+  background: linear-gradient( #d5dd7fff, #f06beaff); 
+  /* background: #ffd5c8; */
+}
+
+.info h4 {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.info a {
+  color: #5654d4ff;
+  text-decoration: none;
+}
+
+</style>
