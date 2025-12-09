@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 
 export default defineConfig({
   site: 'https://KahnishgaSolaidurairaj.github.io',
+  base: '/Portfolio',
 
   // Add Vite alias support (REQUIRED for GitHub build to work)
   vite: {
