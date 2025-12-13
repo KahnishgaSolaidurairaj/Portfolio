@@ -4,14 +4,176 @@ import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 import Footer from "../components/footer.astro";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import style from "../style/global.css";
 ---
 
 <Layout title = 'Home'>
 <NavBar />
 	<div class= "container">
-		<h1> Home page . . </h1>
+
+		<div class = "Front" >
+			<div class = "left">
+				<p> ⟡ Hello, I'm </p>
+				<p1>Kahnishga Solaidurairaj </p1>
+				<p>A Computer Science Student passionate about learning new skills and creating ✨</p>
+        <a href = "/Portfolio/projects" class = "link">
+				  <button class="primary-btn">View Projects →</button>
+        </a>
+      </div>
+			<div class = "right">
+				<img src="/Portfolio/public/images/square.png"/>
+			</div>
+		</div>
+
+		<div class = "WhatIOffer">
+			<h1>What I Offer</h1>
+			<h3>Explore my work, read my thoughts, and learn more about my journey in Computer Science</h3>
+			<div class = "Card">
+        <a href ="/Portfolio/projects" class = "link">
+				  <div class="CardItem">
+    				<h3>Projects</h3>
+    				<p>Explore my web, mobile, and software projects.</p>
+  				</div>
+        </a>
+        <a href = "/Portfolio/blog" class = "link">
+  				<div class="CardItem">
+    				<h3>Blog</h3>
+    				<p>Read my thoughts on CS, tech, and programming.</p>
+  				</div>
+        </a>
+        <a href = "/Portfolio/resume" class = "link">
+  				<div class="CardItem">
+    				<h3>Experience</h3>
+    				<p>View my education, skills, and work history.</p>
+  				</div>
+        </a>
+        <a href = "/Portfolio/contact" class = "link">
+  				<div class="CardItem">
+    				<h3>Contact</h3>
+   					 <p>Reach out for opportunities or collaborations.</p>
+  				</div>
+        </a>
+			</div>
+		</div>
+
+		<div class = "AboutMe">
+			<h1>About Me</h1>
+			<div class = "AboutCard">
+				<p>Hello, my name is Kahnishga Solaidurairaj, and I am a third-year Computer Science undergraduate at University of Illinois at 
+				Chicago. From a young age, I have been drawn to creativity, whether through art, design, or problem-solving, which led me to programming. 
+				I love building, experimenting, and pushing my limits through code, always looking for new challenges to expand my skills. 
+				This passion has fueled my involvement in hackathons and coding competitions, where I collaborated with like-minded peers to develop innovative solutions under pressure. </p>
+				
+				<p>Beyond academics, I enjoy tackling real-world problems through software development, and I am always eager to learn new skills. 
+				My technical expertise includes C, C++, C#, Javascript, Python, Java, HTML, CSS, and web development. </p>
+				
+				<p>Looking ahead, I aspire to work with a Chicago-based tech company where I can apply my problem-solving abilities, 
+				contribute fresh ideas, and collaborate on impactful projects. I thrive in fast-paced environments where innovation 
+				meets practical application, and I am excited to continue growing as a software developer.</p>
+			</div>
+		</div>
+    
 	</div>
 	<Footer/>
 </Layout>
+
+<style>
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.Front {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 4rem 0;
+}
+
+.left p1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #2b59ff;
+}
+
+.left p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #6141ffff;
+}
+
+.right img {
+  display: flex;
+  width: 420px;
+  height: auto;
+  border-radius: 25px;
+  box-shadow: 0px 1px 45px rgba(31, 65, 255, 1);
+}
+
+button, .primary-btn {
+  padding: 0.8rem 1.8rem;
+  background: linear-gradient(135deg, #8330ffff, #3374ffff, #55e3ffff);
+  border-radius: 999px;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+button:hover, .primary-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 67, 167, 0.36);
+}
+
+.WhatIOffer {
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.Card {
+  display: grid;
+  align: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.CardItem {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 45px rgba(255, 67, 167, 0.16);
+  transition: 0.25s ease;
+}
+
+.CardItem:hover {
+  transform: translateY(-6px);
+}
+
+.AboutCard {
+  margin: 2rem auto;
+  max-width: 700px;
+  background: rgba(255,255,255,0.9);
+  padding: 2.5rem;
+  border-radius: 30px;
+  box-shadow: 0px 0px 45px rgba(20, 63, 255, 0.13);
+
+  line-height: 1.65;
+  font-size: 1.12rem;
+  color: #444;
+
+  text-align: left;
+  white-space: normal;
+
+  display: block;  
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+</style>
