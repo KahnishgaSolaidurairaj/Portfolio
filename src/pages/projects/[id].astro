@@ -1,0 +1,197 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import NavBar from "@/components/NavBar.astro";
+import Footer from "@/components/footer.astro";
+import { projects, getProjectById } from "@/data/projectInfo";
+import style from "../style/global.css";
+
+/* REQUIRED for static builds */
+export function getStaticPaths() {
+  return projects.map(project => ({
+    params: { id: project.id }
+  }));
+}
+
+const { id } = Astro.params;
+const project = getProjectById(id);
+
+if (!project) {
+  throw new Error(`Project not found: ${id}`);
+}
+---
+
+<Layout>
+  <NavBar />
+  <section class="project-wrapper">
+    <a href="/Portfolio/projects" class="back-btn">← Back to Projects</a>
+
+    <h1>{project.title}</h1>
+    <p class="subtitle">{project.description}</p>
+
+    <div class="tags">
+      {project.tags.map(tag => <span class="tag">{tag}</span>)}
+    </div>
+
+    <div class="buttons">
+      {project.github && <a href={project.github} target="_blank">Code</a>}
+      {project.demo && <a href={project.demo} target="_blank">Demo</a>}
+      {project.report && <a href={project.report} target="_blank">Report</a>}
+    </div>
+
+  <div class="project-image carousel">
+    {project.images.map(img => (<img src={img} />))}
+  </div>
+
+  <div class="card">
+    <h2>About This Project</h2>
+    <p>{project.fullDescription}</p>
+  </div>
+
+  <div class="card">
+    <h2>Key Features</h2>
+    <ul> {project.features.map(f => <li>{f}</li>)} </ul>
+  </div>
+
+  <div class="card">
+    <h2>Technologies Used</h2>
+    <ul> {project.technologies.map(t => <li>{t}</li>)} </ul>
+  </div>
+
+  {(project.challenges || project.learnings) && (
+    <div class="card">
+      <h2>Challenges & Learnings</h2>
+
+      {project.challenges && (
+        <>
+          <strong>Challenges:</strong>
+          <p>{project.challenges}</p>
+        </>
+      )}
+      {project.learnings && (
+        <>
+          <strong>What I Learned:</strong>
+          <p>{project.learnings}</p>
+        </>
+      )}
+    </div>
+  )}
+  </section>
+  <Footer />
+</Layout>
+
+
+<style>
+.project-wrapper {
+  max-width: 1200px;
+  margin: 3rem auto 5rem;
+  padding: 0 1.5rem;
+}
+
+.back-btn {
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  color: #6b6ee8;
+  border: 1.5px solid rgba(160, 165, 255, 0.5);
+  background: rgba(245, 240, 255, 0.7);
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.back-btn:hover {
+  background: rgba(235, 225, 255, 0.95);
+}
+
+.subtitle {
+  max-width: 720px;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #6141ffff;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.2rem 0 1.8rem;
+}
+
+.tag {
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-weight: 500;
+  background: rgba(70, 200, 200, 0.25);
+  color: #145c5c;
+}
+
+.project-image {
+  width: auto 550px;
+  height: auto 550px ;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 0.5rem;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel img {
+  flex-shrink: 0;
+  width: 100%;
+  border-radius: 12px;
+  scroll-snap-align: center;
+  object-fit: cover;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.buttons a {
+  padding: 0.65rem 1.6rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border: 1.8px solid rgba(60, 80, 255, 0.6);
+  background: rgba(245, 245, 255, 1);
+  color: #4c55c4;
+  transition: 0.2s ease;
+}
+
+.buttons a:hover {
+  transform: translateY(-2px);
+  background: #3e51ff66;
+}
+
+.card {
+  margin-top: 2.5rem;
+  padding: 2.2rem 2.5rem;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.95); /* cream white */
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #2b2f6b;
+}
+
+.card p, .card li {
+  color: #4f56a8;
+  line-height: 1.75;
+}
+</style>

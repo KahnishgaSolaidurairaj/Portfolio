@@ -8,6 +8,7 @@ export interface Project {
   tags: string[];
   github: string | null;
   demo: string | null;
+  report: string | null; 
   features: string[];
   technologies: string[];
   challenges?: string;
@@ -21,13 +22,14 @@ export const projects: Project[] = [
     fullDescription: "3 differnt themes, cards and many buttons with differnt win and lose screens.",
     date: "Sept-Dec 2025", 
     images: [
-      "/Portfolio/public/images/projects/square.png",
-      "/Portfolio/public/images/projects/square.png",
-      "/Portfolio/public/images/projects/square.png"
+      "/Portfolio/images/projects/square.png",
+      "/Portfolio/images/projects/square.png",
+      "/Portfolio/images/projects/square.png"
     ],
     tags: ["Java", "JavaScript", "CSS"],
     github: null,
     demo: "blah",
+    report: null,
     features: [
       "Client and server UI", "Multiple client capacity"
     ],technologies: [
@@ -43,13 +45,14 @@ export const projects: Project[] = [
     fullDescription: "A fun typing speed test which utilizes timers, string comparison, and user input. Easy visualization with a progress bar and highlights on mistyped words. Currated statistics with each play. Customizable aspects with a light, dark and pastel mode.",
     date: "Jan 2025?",
     images: [
-      "/Portfolio/public/images/projects/square.png",
-      "/Portfolio/public/images/projects/square.png",
-      "/Portfolio/public/images/projects/square.png"
+      "/Portfolio/images/projects/square.png",
+      "/Portfolio/images/projects/square.png",
+      "/Portfolio/images/projects/square.png"
     ],
     tags: ["JavaScript", "CSS", "HTML"],
     github: "https://github.com/KahnishgaSolaidurairaj/Typing-Showdown",
     demo: "blah",
+    report: null,
     features: [
       "Blah 1",
       "Blah 2",
