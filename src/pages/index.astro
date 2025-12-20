@@ -57,22 +57,32 @@ import style from "../style/global.css";
 		</div>
 
 		<div class = "AboutMe">
-			<h1>About Me</h1>
-			<div class = "AboutCard">
-				<p>Hello, my name is Kahnishga Solaidurairaj, and I am a third-year Computer Science undergraduate at University of Illinois at 
-				Chicago. From a young age, I have been drawn to creativity, whether through art, design, or problem-solving, which led me to programming. 
-				I love building, experimenting, and pushing my limits through code, always looking for new challenges to expand my skills. 
-				This passion has fueled my involvement in hackathons and coding competitions, where I collaborated with like-minded peers to develop innovative solutions under pressure. </p>
-				
-				<p>Beyond academics, I enjoy tackling real-world problems through software development, and I am always eager to learn new skills. 
-				My technical expertise includes C, C++, C#, Javascript, Python, Java, HTML, CSS, and web development. </p>
-				
-				<p>Looking ahead, I aspire to work with a Chicago-based tech company where I can apply my problem-solving abilities, 
-				contribute fresh ideas, and collaborate on impactful projects. I thrive in fast-paced environments where innovation 
-				meets practical application, and I am excited to continue growing as a software developer.</p>
-			</div>
-		</div>
-    
+			<h1> Get To Know Me</h1>
+			<div class = "left-right">
+        <img src = "/Portfolio/images/about-1.png" />
+				<p> I’m a third-year Computer Science undergraduate at the University of Illinois at Chicago, with a minor in Mathematics and am a member of the Honors College. I live in the city and commute to campus, when the weather’s nice I like to bike, but I usually walk. At UIC, I enjoy being involved in WiCS, WiCys, WiEP, and participating in Commuter and Off-campus life events.</p>
+      </div>
+
+      <div class = "left-right">
+        <img src="/Portfolio/images/about-2.png" />
+        <p> From a young age, I have been drawn to creativity, whether through art, design, or problem-solving, which led me to programming. I love building, experimenting, and pushing my limits, and am always looking for new challenges to expand my skills. </p>
+      </div>
+
+      <div class = "left-right"> 
+        <img src="/Portfolio/images/about-2.png" />
+        <p> My hobbies outside of CS include crocheting. I normally like to crochet smaller things like cute animals or objects. I also create tapestries, sweaters, and crochet flowers. </p>
+      </div>
+
+      <div class = "left-right">
+        <img src="/Portfolio/images/about-2.png" />
+        <p> In my family, I’m the youngest, with an older sister I love to annoy and gossip with. She’s my go-to for advice, random information, and show recommendations. We love to work out together, mostly because it gives us more time to talk.</p>
+      </div>
+      
+      <div class = "left-right">
+        <img src="/Portfolio/images/about-2.png" />
+        <p> Lastly, I like to take pictures and capture my feelings and current intrests through scrapbooking, bullet journalling and just creating yearly albums. </p>
+		  </div>
+    </div>
 	</div>
 	<Footer/>
 </Layout>
@@ -154,26 +164,55 @@ button:hover, .primary-btn:hover {
   transform: translateY(-6px);
 }
 
-.AboutCard {
-  margin: 2rem auto;
-  max-width: 700px;
-  background: rgba(255,255,255,0.9);
-  padding: 2.5rem;
-  border-radius: 30px;
-  box-shadow: 0px 0px 45px rgba(20, 63, 255, 0.13);
-
-  line-height: 1.65;
-  font-size: 1.12rem;
-  color: #444;
-
-  text-align: left;
-  white-space: normal;
-
-  display: block;  
-}
-
 .link {
   text-decoration: none;
   color: inherit;
+}
+
+// background: rgba(255,255,255,0.9);
+.AboutMe {
+  padding: 5rem 0;
+}
+
+.left-right {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.left-right img {
+  flex: 1;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: 0px 10px 40px rgba(31, 65, 255, 0.25);
+}
+
+.left-right p {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2.5rem;
+  border-radius: 30px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0px 0px 45px rgba(255, 67, 167, 0.18);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #3a2c7a;
+}
+
+@media (max-width: 900px) {
+  .left-right {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-right p {
+    order: 1;
+  }
+
+  .left-right img {
+    order: 2;
+  }
 }
 </style>
