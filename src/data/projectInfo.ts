@@ -32,7 +32,7 @@ export const projects: Project[] = [
       "Responsive UI from desktop to mobile viewing", 
       ""
     ], technologies: [
-      "", 
+      "IDE: VSCode", 
       ""
     ], 
     challenges: "", 
@@ -54,8 +54,8 @@ export const projects: Project[] = [
       "", 
       ""
     ], technologies: [
+      "IDE: VSCode", 
       "Git", 
-      "VsCode", 
       "Jupiter Notebooks"
     ], 
     challenges: "", 
@@ -69,7 +69,7 @@ export const projects: Project[] = [
     images: [
       ""
     ], 
-    tags: [""], 
+    tags: ["MongoDb", "Express", "Node.js", "Astro", "JavaScript", "HTML", "TailwindCSS", "Git Version Control"], 
     github: "https://github.com/wics-uic/Sweet-T", 
     demo: null, 
     report: null, 
@@ -77,7 +77,7 @@ export const projects: Project[] = [
       "", 
       ""
     ], technologies: [
-      "", 
+      "IDE: VSCode", 
       ""
     ], 
     challenges: "", 
@@ -99,6 +99,7 @@ export const projects: Project[] = [
       "", 
       ""
     ], technologies: [
+      "IDE: Arduino IDE",
       "Arduino Uno R3", 
       "DC Motor and wheels", 
       "Inferred sensor", 
@@ -132,7 +133,7 @@ export const projects: Project[] = [
       "Server dashboard showing connected clients, bets, wins/losses, and game activity", 
       "Theme options including classic mode, pastel, and a christmas special"
     ],technologies: [
-      "IntelliJ",
+      "IDE: IntelliJ",
       "Java - core language for game logic, networking, and threading", 
       "Java Sockets - client/server communication",
       "JavaFX - GUI development for both client and server",
@@ -166,7 +167,7 @@ export const projects: Project[] = [
       "Multiple themes - ", 
       "JUnit-tested game logic"
     ], technologies: [
-      "IntelliJ",
+      "IDE: IntelliJ",
       "Java", 
       "JavaFX", 
       "Maven", 
@@ -196,7 +197,7 @@ export const projects: Project[] = [
       "Fully implemented iterator design pattern", 
       "Comprehensive JUnit test coverage"
     ], technologies: [
-      "IntelliJ",
+      "IDE: IntelliJ",
       "Java", 
       "Maven", 
       "JUnit 5"
@@ -225,7 +226,7 @@ export const projects: Project[] = [
       "Statisics after each run", 
       "Multiple UI themes --> light, dark, and pastel"
     ],technologies: [
-      "VSCode",
+      "IDE: VSCode",
       "HTML - structure and layout",
       "CSS - styling and themes", 
       "JavaScript - timers, string comparison, user unput handling, and statistics logic"
@@ -241,7 +242,7 @@ export const projects: Project[] = [
     images: [
       ""
     ], 
-    tags: ["OpenAI", "CSS", "HTML", "JavaScript", "Node.js"], 
+    tags: ["OpenAI", "CSS", "HTML", "JavaScript", "Node.js", "Git"], 
     github: "https://github.com/HariniSolai/SustainTheWay", 
     demo: "https://youtu.be/YYrFuMtBCTU?si=qqj_Rj2B1r0Y0pCV", 
     report: "https://drive.google.com/file/d/13ZzAhy6_gJnPe05Nz5hylThokgOe2Ci1/view?usp=drive_link", 
@@ -249,8 +250,8 @@ export const projects: Project[] = [
       "", 
       ""
     ], technologies: [
-      "", 
-      ""
+      "IDE: VSCode", 
+      "Git Version Control"
     ], 
     challenges: "", 
     learnings: ""
@@ -263,7 +264,7 @@ export const projects: Project[] = [
     images: [
       ""
     ], 
-    tags: ["SharePoint"], 
+    tags: ["SharePoint", "Microsoft Automate"], 
     github: null, 
     demo: "https://youtu.be/uaeWwkiH64c?si=VZ17FtztFrCyECy0", 
     report: "https://drive.google.com/drive/folders/1NncOcYTZLBPtf83NMk69hRYiECiYA1-8", 
@@ -271,8 +272,8 @@ export const projects: Project[] = [
       "", 
       ""
     ], technologies: [
-      "", 
-      ""
+      "SharePoint", 
+      "Microsoft Automate"
     ], 
     challenges: "A huge challenge for all of us was unfamiliarity with the softwares. Like mentioned above, before this Codeathon, none of us had used SharePoint, created flows or even knew what a flow was. We had to overcome a huge learning curve in order to get anything working. If we had more time, we would have liked to polish the website's user interface. ", 
     learnings: ""
@@ -293,7 +294,7 @@ export const projects: Project[] = [
       "", 
       ""
     ], technologies: [
-      "", 
+      "IDE: VSCode", 
       ""
     ], 
     challenges: "", 
@@ -315,7 +316,7 @@ export const projects: Project[] = [
       "", 
       ""
     ], technologies: [
-      "", 
+      "IDE: VSCode", 
       ""
     ], 
     challenges: "", 
@@ -337,7 +338,7 @@ export const projects: Project[] = [
       "", 
       ""
     ], technologies: [
-      "", 
+      "IDE: VSCode", 
       ""
     ], 
     challenges: "", 
@@ -359,7 +360,7 @@ export const projects: Project[] = [
       "", 
       ""
     ], technologies: [
-      "", 
+      "IDE: VSCode", 
       ""
     ], 
     challenges: "", 
@@ -381,7 +382,7 @@ export const projects: Project[] = [
       "", 
       ""
     ], technologies: [
-      "", 
+      "IDE: VSCode", 
       ""
     ], 
     challenges: "", 
@@ -403,7 +404,7 @@ export const projects: Project[] = [
       "", 
       ""
     ], technologies: [
-      "", 
+      "IDE: VSCode", 
       ""
     ], 
     challenges: "", 
@@ -425,7 +426,7 @@ export const projects: Project[] = [
       "", 
       ""
     ], technologies: [
-      "", 
+      "IDE: zyBooks", 
       ""
     ], 
     challenges: "", 
@@ -447,7 +448,7 @@ export const projects: Project[] = [
       "", 
       ""
     ], technologies: [
-      "", 
+      "IDE: zyBooks", 
       ""
     ], 
     challenges: "", 
@@ -469,7 +470,7 @@ export const projects: Project[] = [
       "", 
       ""
     ], technologies: [
-      "", 
+      "IDE: zyBooks", 
       ""
     ], 
     challenges: "", 
@@ -491,7 +492,7 @@ export const projects: Project[] = [
       "", 
       ""
     ], technologies: [
-      "", 
+      "IDE: zyBooks", 
       ""
     ], 
     challenges: "", 
@@ -513,7 +514,7 @@ export const projects: Project[] = [
       "", 
       ""
     ], technologies: [
-      "", 
+      "IDE: zyBooks", 
       ""
     ], 
     challenges: "", 
@@ -535,7 +536,7 @@ export const projects: Project[] = [
       "", 
       ""
     ], technologies: [
-      "", 
+      "IDE: zyBooks", 
       ""
     ], 
     challenges: "This was my first time using GDB so it took a while for me to figure out", 
@@ -557,7 +558,7 @@ export const projects: Project[] = [
       "", 
       ""
     ], technologies: [
-      "", 
+      "IDE: zyBooks", 
       ""
     ], 
     challenges: "", 
@@ -579,7 +580,7 @@ export const projects: Project[] = [
       "", 
       ""
     ], technologies: [
-      "", 
+      "IDE: IntelliJ, PyCharm", 
       ""
     ], 
     challenges: "", 
@@ -601,7 +602,7 @@ export const projects: Project[] = [
       "", 
       ""
     ], technologies: [
-      "Replit", 
+      "IDE: Replit", 
       "HTML", 
       "CSS", 
       "JavaScript"

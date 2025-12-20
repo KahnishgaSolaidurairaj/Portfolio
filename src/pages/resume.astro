@@ -7,7 +7,308 @@ import Footer from "../components/footer.astro";
 <Layout title = 'Resume'>
 	<NavBar />
 	<div class= "container">
-		<h1> resume components . . . </h1>
+		<h1> ☆ Resume </h1>
+		<h3> My professional experience and qualifications</h3>
+		<p class = "button"> <img src = "/Portfolio/images/downloads.png" /> Download PDF </p>
+
+		<div class = "section-header">
+			<div class="icon work">
+      			<img src="/Portfolio/images/laptop.png"/>
+    		</div>  
+			<h2> Experience </h2>
+		</div>
+		<div class = "card">
+			<p class = "title"> Web Developer</p>
+			<div class = "left-right">
+				<p class = "employer"> Women in Computer Science @ UIC </p>
+				<p class = "date"> Fall 2025 </p>
+			</div>
+			<ul> 
+				<li> Built a full-stack e-commerce website for SweetT Bakery with customizable product ordering, checkout flow, and live order tracking for customers </li> 
+				<li> Implemented a Node.js + Express REST API with MongoDB to manage products, customers, and orders, including order status pipeline </li>
+				<li> Developed an admin portal with authentication/authorization, enabling staff to log in, view incoming orders, update order status, and manage products </li>
+				<li> Designed a custom order builder (size, flavors, fillings, decorations) using Astro + Tailwind </li>
+				<li> Collaborated with a team of 15 students using Git Version Control (branches, pull requests, code reviews) </li>
+			</ul>
+		</div> 
+		<div class = "card">
+			<p class = "title"> Research Assistant - Detecting Emotions in Large Language Models </p>
+			<div class = "left-right"> 
+				<p class = "employer"> University of Illinois at Chicago </p>
+				<p class = "date"> June 2025 - August 2025 </p>
+			</div>
+			<ul> 
+				<li> Read academic papers related to LLM exhibition of emotions, and interacted with existing LLM’s to determine whether they behave in a way that exhibits emotions </li> 
+				<li> Determined whether the emotions are correlated with some hardware or software signatures </li>
+				<li> Utilized Python and Ollama to recreate data from research papers to test its validity </li>
+			</ul>
+		</div> 
+		<div class="card">
+    		<p class = "title">Teaching Assistant - Mathematical Foundations of Computing</p>
+			<div class = "left-right">
+				<p class = "employer"> University of Illinois at Chicago </p>
+				<p class = "date"> Jan 2025 - May 2025 </p>
+			</div>
+			<ul> 
+				<li> Host weekly, in-person office hours to assist students understanding of logic, quantifiers, sets and proofs </li>
+				<li> Co-lead lab sessions of 25+ students, answering questions about discrete mathematics and propositional logic </li>
+				<li> Grade students labs and update grades on BlackBoard (university-wide learning management system) </li>
+				<li> Monitor Piazza discussion platform for questions about the course and its material </li>
+			</ul>
+  		</div>
+
+		<div class = "section-header">  
+      		<div class="icon education">
+      			<img src="/Portfolio/images/education.png"/>
+    		</div> 
+			<h2> Education </h2>
+		</div>
+		 <div class="card">
+    		<p class = "title"> Bachelor of Science in Computer Science and minor in Mathematics</p>
+			<p2> University of Illinois at Chicago | 2024 - 2027 </p2>
+			<div class = "tags"> 
+				<p> GPA: 4.0/4.0</p>
+			</div>
+			<p class = "title"> Relevant Coursework: </p>
+			<div class = "tags2"> 
+				<p> Data Structures & Algorithms </p>
+				<p> Web Development</p>
+				<p> Machine Organization </p>
+				<p> Program Design</p>
+				<p> Languages and Automata </p>
+				<p> Software Design</p>
+				<p> Computer Design </p>
+			</div>
+  		</div>
+
+		<div class = "section-header">  
+      		<div class="icon skills">
+      			<img src="/Portfolio/images/code.png"/>
+    		</div> 
+			<h2> Skills </h2>
+		</div>
+		<div class="card">
+    		<p> Programming languages </p>
+			<div class = "tags"> 
+				<p> C </p>
+				<p> C++ </p>
+				<p> C# </p>
+				<p> JavaScript </p>
+				<p> Python </p>
+				<p> Java </p>
+				<p> HTML </p>
+				<p> CSS </p>
+			</div>
+		
+			<p> Frameworks & Libraries </p>
+			<div class = "tags2"> 
+				<p> Node.js </p>
+				<p> Astro </p>
+				<p> Express </p>
+				<p> React </p>
+			</div>
+
+			<p> Tools & Technologies </p>
+			<div class = "tags3"> 
+				<p> Git </p>
+				<p> MongoDB </p>
+				<p> AWS </p>
+			</div>
+
+			<p> Concepts </p>
+			<div class = "tags4"> 
+				<p> API </p>
+				<p> Data Structures </p>
+				<p> Algorithms </p>
+			</div>
+  		</div>
+		
+		<div class = "section-header">
+      		<div class="icon special">
+      			<img src="/Portfolio/images/award-ribbon.png"/>
+    		</div> 
+			<h2> Certifications and Awards </h2>
+		</div>
+		<div class="card">
+			<div class = "lightBox"> <p> Apple Certification: App Development with Swift – Associate (Dec 2025)</p> </div>
+			<div class = "lightBox"> <p> Academic Achievement: University of Illinois Chicago's College of Engineering Dean's List</p>
+				<ul> <li> Fall 2024, Spring 2025, Fall 2025 </li></ul> </div>
+			<div class = "lightBox"> <p> Award: Fitch Group 2024 Codeathon Runner Up</p> </div>
+  		</div>
 	</div>
 	<Footer/>
 </Layout>
+
+<style>
+.container{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.button {
+  display: inline-flex;
+  padding: 0.8rem 1.8rem;
+  background: linear-gradient(135deg, #8330ffa8, #3374ffba, #55e3ffa4);
+  border-radius: 999px;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.button img {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+.card {
+  margin-top: 1rem;
+  padding: 2.2rem 2.5rem;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.card .title {
+	margin-top: 0rem;
+	margin-bottom: 0.4rem;
+	font-weight: bold;
+}
+
+.card .employer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(135deg, #e66465, #a78bfa);
+}
+
+.card .date {
+  color: #7d52ffff;
+}
+
+.tags, .tags2, .tags3, .tags4 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+}
+
+.tags p {
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background: linear-gradient(135deg, #e66465, #a78bfa);
+  color: white;
+}
+
+.tags2 p {
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background: linear-gradient(135deg, #93c5fd, #c4b5fd);
+  color: white;
+}
+
+.tags3 p {
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background: linear-gradient(135deg, #a7f3d0, #c4b5fd);
+  color: white;
+}
+
+.tags4 p {
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background: linear-gradient(135deg, #fbbf24, #f9a8d4);
+  color: white;
+}
+
+.left-right {
+  display:flex; 
+  align-items: center;
+  gap: 1rem; 
+  margin-top: 0rem;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0 1.5rem;
+}
+
+.section-header h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.section-header .icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-header .icon img {
+  width: 75%;
+}
+
+.section-header .icon.work {
+  background: linear-gradient( #e66465, #a78bfa);
+}
+
+.section-header .icon.education {
+	background: linear-gradient(135deg, #93c5fd, #c4b5fd);
+}
+.section-header .icon.skills{
+	background: linear-gradient(135deg, #a7f3d0, #c4b5fd);
+}
+
+.section-header .icon.special {
+	background: linear-gradient(135deg, #fbbf24, #f9a8d4);
+}
+
+.card .lightBox {
+  padding: 0.45rem 0.9rem 0.45rem;
+  border-radius: 999px;
+  background: #f9a8d48e;
+  margin: 1rem;
+}
+
+.card .lightBox:hover{
+	transform: translateY(-3px);
+}
+
+ul {
+  margin-top: 0.4rem; 
+  margin-bottom: 0rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+</style>
