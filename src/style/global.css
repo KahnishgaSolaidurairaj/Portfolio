@@ -1,10 +1,10 @@
 body {
     margin: 0;
     padding: 0; 
-    background: radial-gradient(circle at 20% 20%, #fde2e4 0%, transparent 60%),
-                radial-gradient(circle at 80% 30%, #e2f0ff 0%, transparent 60%),
-                radial-gradient(circle at 30% 80%, #e7e6ff 0%, transparent 60%),
-                radial-gradient(circle at 70% 70%, #e2ffe9 0%, transparent 60%),
+    background: radial-gradient(circle at 20% 20%, #fde2e4 0%, transparent 40%),
+                radial-gradient(circle at 80% 30%, #e2f0ff 0%, transparent 40%),
+                radial-gradient(circle at 30% 80%, #e7e6ff 0%, transparent 40%),
+                radial-gradient(circle at 70% 70%, #e2ffe9 0%, transparent 40%),
                 #f8f4ff;
     background-size: cover;
     background-attachment: fixed;

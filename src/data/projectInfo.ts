@@ -40,7 +40,7 @@ export const projects: Project[] = [
   },
   { id: "fitch2025", 
     title: "Driving Sustainability using AI", 
-    description: "Developed machine learning models that estimate Scope 1 and Scope 2 greenhouse gas emissions for non-reporting companies using data from Sustainable Fitch.", 
+    description: "Developed machine learning models that estimate Scope 1 and Scope 2 greenhouse gas emissions for non-reporting companies using data from Sustainable Fitch", 
     fullDescription: " checkout our devpost submission --> https://devpost.com/software/team-3-ku6tey", 
     date: "November 2025", 
     images: [
@@ -63,7 +63,7 @@ export const projects: Project[] = [
   }, 
   { id: "sweetT", 
     title: "Sweet-T", 
-    description: "Web development team with WiCS@UIC", 
+    description: "A full-stack e-commerce website for SweetT Bakery with customizable product ordering, checkout flow, and live order tracking for customers", 
     fullDescription: "", 
     date: "Sept-Dec 2025", 
     images: [
@@ -74,13 +74,16 @@ export const projects: Project[] = [
     demo: null, 
     report: null, 
     features: [
-      "", 
-      ""
+      "Implemented a Node.js + Express REST API with MongoDB to manage products, customers, and orders, including order status pipeline", 
+      "Developed an admin portal with authentication/authorization, enabling staff to log in, view incoming orders, update order status, and manage products", 
+      "Designed a custom order builder (size, flavors, fillings, decorations) using Astro + Tailwind", 
+      "Collaborated with a team of 15 students using Git Version Control (branches, pull requests, code reviews)"
     ], technologies: [
       "IDE: VSCode", 
+      "Git Version Control/Github - to collaborate with WiCS team members", 
       ""
     ], 
-    challenges: "", 
+    challenges: "This was my first time working with Astro and thus there was a learning curve. ", 
     learnings: ""
   },
   { id: "rescueRover", 

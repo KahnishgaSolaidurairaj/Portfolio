@@ -21,7 +21,7 @@ import style from "../style/global.css";
         </a>
       </div>
 			<div class = "right">
-				<img src="/Portfolio/images/square.png"/>
+				<img src="/Portfolio/images/compCoding.png"/>
 			</div>
 		</div>
 
@@ -59,28 +59,35 @@ import style from "../style/global.css";
 		<div class = "AboutMe">
 			<h1> Get To Know Me</h1>
 			<div class = "left-right">
-        <img src = "/Portfolio/images/about-1.png" />
+        <img src = "/Portfolio/images/uic.png" />
 				<p> I’m a third-year Computer Science undergraduate at the University of Illinois at Chicago, with a minor in Mathematics and am a member of the Honors College. I live in the city and commute to campus, when the weather’s nice I like to bike, but I usually walk. At UIC, I enjoy being involved in WiCS, WiCys, WiEP, and participating in Commuter and Off-campus life events.</p>
       </div>
 
       <div class = "left-right">
-        <img src="/Portfolio/images/about-2.png" />
         <p> From a young age, I have been drawn to creativity, whether through art, design, or problem-solving, which led me to programming. I love building, experimenting, and pushing my limits, and am always looking for new challenges to expand my skills. </p>
-      </div>
-
-      <div class = "left-right"> 
-        <img src="/Portfolio/images/about-2.png" />
-        <p> My hobbies outside of CS include crocheting. I normally like to crochet smaller things like cute animals or objects. I also create tapestries, sweaters, and crochet flowers. </p>
+        <img src="/Portfolio/images/little.png" />
       </div>
 
       <div class = "left-right">
-        <img src="/Portfolio/images/about-2.png" />
+        <div class="image carousel">
+          <img src = "/Portfolio/images/crochet1.png" />
+          <img src = "/Portfolio/images/crochet2.png" />
+          <img src = "/Portfolio/images/books.png" />
+        </div> 
+        <p> My hobbies outside of CS include crocheting. I normally like to crochet smaller things like cute animals or objects. I also create tapestries, sweaters, and crochet flowers. I also like to read alot, my favorite genre is science-fiction, suspense, and thriller. I also read comics specifically webtoons.</p>
+      </div>
+
+      <div class = "left-right">
         <p> In my family, I’m the youngest, with an older sister I love to annoy and gossip with. She’s my go-to for advice, random information, and show recommendations. We love to work out together, mostly because it gives us more time to talk.</p>
+        <div class="image carousel">
+          <img src = "/Portfolio/images/sis1.png" />
+          <img src = "/Portfolio/images/sis2.png" />
+        </div> 
       </div>
       
       <div class = "left-right">
-        <img src="/Portfolio/images/about-2.png" />
-        <p> Lastly, I like to take pictures and capture my feelings and current intrests through scrapbooking, bullet journalling and just creating yearly albums. </p>
+        <img src="/Portfolio/images/takingPics.png" />
+        <p> Lastly, I love to take pictures and capture my feelings + current intrests through scrapbooking, bullet journalling and just creating yearly albums. </p>
 		  </div>
     </div>
 	</div>
@@ -116,8 +123,8 @@ import style from "../style/global.css";
 
 .right img {
   display: flex;
-  width: 420px;
-  height: auto;
+  width: auto;
+  height: 420px;
   border-radius: 25px;
   box-shadow: 0px 1px 45px rgba(31, 65, 255, 1);
 }
@@ -211,8 +218,48 @@ button:hover, .primary-btn:hover {
     order: 1;
   }
 
-  .left-right img {
+  .left-right image, left-right img {
     order: 2;
   }
+
+  .Front {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Front right {
+    width: auto;
+    height: auto;
+  }
+}
+
+.image {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 0.5rem;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel img {
+  flex-shrink: 0;
+  width: 300px%;
+  border-radius: 12px;
+  scroll-snap-align: center;
+  object-fit: cover;
 }
 </style>
