@@ -20,7 +20,7 @@ if (!project) {
 }
 ---
 
-<Layout>
+<Layout title = {project.title}>
   <NavBar />
   <section class="project-wrapper">
     <a href="/Portfolio/projects" class="back-btn">← Back to Projects</a>
@@ -75,6 +75,9 @@ if (!project) {
       )}
     </div>
   )}
+  <div class="card">
+    <h2>This project was created in {project.date}</h2> 
+  </div>
   </section>
   <Footer />
 </Layout>
@@ -102,10 +105,14 @@ if (!project) {
 }
 
 .subtitle {
-  max-width: 720px;
+  max-width: auto;
   font-size: 1.2rem;
   line-height: 1.7;
   color: #6141ffff;
+  display: flex;
+  justify-content: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .tags {

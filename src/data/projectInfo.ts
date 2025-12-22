@@ -22,9 +22,9 @@ export const projects: Project[] = [
     fullDescription: "", 
     date: "Winter 2025", 
     images: [
-      ""
+      "/Portfolio/images/projects/square.png"
     ], 
-    tags: ["Astro", "HTML", "CSS"], 
+    tags: ["Astro", "TypeScript", "HTML", "CSS", "JavaScript"], 
     github: "https://github.com/KahnishgaSolaidurairaj/Portfolio", 
     demo: null, 
     report: null, 
@@ -33,41 +33,55 @@ export const projects: Project[] = [
       ""
     ], technologies: [
       "IDE: VSCode", 
-      ""
+      "Astro",
+      "JavaScript, HTML, CSS"
     ], 
     challenges: "", 
     learnings: ""
   },
   { id: "fitch2025", 
     title: "Driving Sustainability using AI", 
-    description: "Developed machine learning models that estimate Scope 1 and Scope 2 greenhouse gas emissions for non-reporting companies using data from Sustainable Fitch", 
-    fullDescription: " checkout our devpost submission --> https://devpost.com/software/team-3-ku6tey", 
+    description: "Developed machine learning models that estimate Scope 1 and Scope 2 greenhouse gas emissions for non-reporting companies using ESG-related financial and operational data provided by Sustainable Fitch", 
+    fullDescription: "This project was developed as part of the Sustainable Fitch Codeathon to address ESG data gaps caused by incomplete emissions reporting. Our team built data-driven pipelines that clean, analyze, and model company-level features such as revenue, region, industry, and ESG indicators to predict Scope 1 and Scope 2 emissions. The project includes extensive exploratory data analysis, feature engineering, and regression modeling, supported by visualizations such as histograms, scatter plots, and correlation heatmaps. Full details and methodology are available on our Devpost submission: https://devpost.com/software/team-3-ku6tey. Lastly this project was created in colaboration with Harini Solaidurairaj, Shreya Patel, and Krisha Patel.", 
     date: "November 2025", 
     images: [
-      ""
+      "/Portfolio/images/projects/fitch2025/sustainableFitch1.png", 
+      "/Portfolio/images/projects/fitch2025/sustainableFitch2.png", 
+      "/Portfolio/images/projects/fitch2025/sustainableFitch3.png", 
+      "/Portfolio/images/projects/fitch2025/sustainableFitch4.png", 
+      "/Portfolio/images/projects/fitch2025/sustainableFitch5.png", 
+      "/Portfolio/images/projects/fitch2025/sustainableFitch6.png"
     ], 
-    tags: [""], 
+    tags: ["Machine Learning", "Data Science", "Sustainability", "ESG", "Regression Models", "Codeathon"], 
     github: "https://github.com/HariniSolai/fitch-codeathon2025Team3", 
     demo: "https://youtu.be/86zQFLk3P3Y?si=5KesWubooC2hPSKT", 
     report: null, 
     features: [
-      "", 
-      ""
+      "Scope 1 and Scope 2 emissions prediction for non-reporting companies", 
+      "Random Forest regression pipelines for emissions estimation", 
+      "Log-transformed and engineered financial features to handle skewed data",
+      "Exploratory data analysis with histograms, scatter plots, and correlation heatmaps",
+      "End-to-end data cleaning, feature selection, and model evaluation workflow"
     ], technologies: [
       "IDE: VSCode", 
-      "Git", 
-      "Jupiter Notebooks"
+      "Python",
+      "Jupyter Notebooks",
+      "scikit-learn",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Git"
     ], 
-    challenges: "", 
-    learnings: ""
+    challenges: "One of the main challenges was handling heavily skewed revenue distributions and missing data across multiple features, which required careful preprocessing and feature engineering. We also experimented with more complex models such as XGBoost, but encountered stability and tuning challenges within the project timeline. Selecting the most informative variables and aligning model predictions with real-world emissions trends required extensive debugging and iteration.", 
+    learnings: "This project strengthened our understanding of real-world data challenges in ESG analytics, particularly the importance of feature engineering and data visualization when working with noisy, incomplete datasets. We gained hands-on experience building and evaluating regression pipelines, interpreting model outputs, and connecting technical performance to business and sustainability impact."
   }, 
   { id: "sweetT", 
     title: "Sweet-T", 
     description: "A full-stack e-commerce website for SweetT Bakery with customizable product ordering, checkout flow, and live order tracking for customers", 
     fullDescription: "", 
-    date: "Sept-Dec 2025", 
+    date: "September - December 2025", 
     images: [
-      ""
+      "/Portfolio/images/projects/square.png"
     ], 
     tags: ["MongoDb", "Express", "Node.js", "Astro", "JavaScript", "HTML", "TailwindCSS", "Git Version Control"], 
     github: "https://github.com/wics-uic/Sweet-T", 
@@ -88,29 +102,38 @@ export const projects: Project[] = [
   },
   { id: "rescueRover", 
     title: "Rescue Rover", 
-    description: "Search and rescue on patrol", 
-    fullDescription: "Built alongside Alexa Jimenez-Munoz, Darshan Zaware, and Michaela Harizanova", 
-    date: "Oct-Dec 2025", 
+    description: "An autonomous Arduino-based rover designed to simulate search-and-rescue operations through obstacle avoidance, boundary detection, and color-based target identification", 
+    fullDescription: "The Rescue Rover is an autonomous search-and-rescue simulation developed for my CS 362 (Computer Design) course at UIC. The rover patrols a predefined area, avoids obstacles, detects boundary limits, and identifies target objects using infrared, ultrasonic, and RGB sensors. When a goal object of a specified color is detected, the rover halts, activates visual and audio alerts, and resumes patrol once the object is removed. The system is powered by four Arduino Uno boards communicating via I2C, separating sensing, control logic, motion, and output responsibilities to improve reliability and modularity. Built alongside Alexa Jimenez-Munoz, Darshan Zaware, and Mihaela Harizanova.", 
+    date: "October - December 2025", 
     images: [
-      ""
+      "/Portfolio/images/projects/rescueRover/rover1.png",
+      "/Portfolio/images/projects/rescueRover/rover2.png",
+      "/Portfolio/images/projects/rescueRover/rover3.png"
     ], 
-    tags: ["Arduino", "C"], 
-    github: "", 
-    demo: null, 
-    report: null, 
+    tags: ["Arduino", "Robotics", "Autonomous Systems", "I2C Communication", "Hardware-Software Integration", "Embedded Systems"], 
+    github: "https://github.com/KahnishgaSolaidurairaj/Rescue-Rover", 
+    demo: "https://youtu.be/FQ8M7CXJ4NI", 
+    report: "https://drive.google.com/file/d/1bd8bFb-hFHKfF51Ub0sd9Ql9N-ADaz1b/view?usp=sharing", 
     features: [
-      "", 
-      ""
+      "Autonomous navigation with obstacle avoidance and boundary detection",
+      "Color-based goal object identification using an RGB sensor",
+      "Multi-Arduino architecture with I2C master-slave communication",
+      "Real-time feedback via LEDs, LCD display, and buzzer alerts",
+      "Fully autonomous operation controlled by a single on/off input"
     ], technologies: [
       "IDE: Arduino IDE",
       "Arduino Uno R3", 
-      "DC Motor and wheels", 
-      "Inferred sensor", 
-      "RGB sensor", 
-      "Ultrasonic sensor"
+      "C / C++ (Embedded)",
+      "I2C Communication (Wire.h)",
+      "Ultrasonic Sensor",
+      "RGB Color Sensor (TCS3200)",
+      "Infrared Sensor",
+      "DC Motors & L293D Motor Drivers",
+      "LCD Display",
+      "LEDs & Piezo Buzzer"
     ], 
-    challenges: "Building the rover and transporting it", 
-    learnings: ""
+    challenges: "One of the biggest challenges was coordinating communication between four Arduino boards using I2C while maintaining reliable timing and state synchronization. Sensor placement and calibration required extensive testing, particularly aligning the ultrasonic and RGB sensors so that object detection and color recognition did not interfere with each other. Power inefficiency was another challenge, as the rover required multiple 9V batteries and frequent replacements during testing. Debugging motor behavior, turn logic, and I2C data transmission also required multiple design iterations. Another issue faced was transporting the rover safely since it was big and I was tasked with taking it home and bringing it back to campus for team meeting. Thus there were a lot of pieces we decided to hot-glue onto the rovers build near the end.", 
+    learnings: "This project provided hands-on experience with embedded systems design, multi-microcontroller communication, and real-world hardware debugging. We learned how to architect modular systems by separating sensing, decision-making, and actuation across multiple controllers, and gained a deeper understanding of sensor calibration, power management, and timing constraints in autonomous robotics."
   },
   { id: "poker",
     title: "3 Card Poker",
@@ -185,7 +208,7 @@ export const projects: Project[] = [
     fullDescription: "This project involved building a reusable data structure library in Java by implementing a generic Queue and HashMap from scratch, without using Java’s built-in collection classes. The Queue was implemented as a singly linked list following FIFO behavior, while the HashMap used an array of queues to handle collisions through chaining. The library was designed to be generic, allowing it to store different data types, and implemented the iterator design pattern to support forward and reverse traversal. Extensive JUnit tests were written to validate correctness, edge cases, and iterator behavior, ensuring the library could be reliably used by other programs.", 
     date: "--- 2025", 
     images: [
-      ""
+      "/Portfolio/images/projects/square.png"
     ], 
     tags: ["Java", "Maven", "JUnit 5"], 
     github: null, 
@@ -240,46 +263,67 @@ export const projects: Project[] = [
   { id: "sparkhacks2024", 
     title: "Sustain the Way", 
     description: "Our goal is to reduce food waste and support communities by connecting them with food pantries. Our platform bridges the gap between farmers and pantries ensuring better allocation of resources.", 
-    fullDescription: "Created alongside Harini Solaidurairaj, Zona Noman, Asha Makwana, and Nguyet Pham. Check out our devpost submission --> https://devpost.com/software/sustaintheway", 
-    date: "Feb 2025", 
+    fullDescription: "Our mission for Sustain the Way is to prevent food waste and food insecurity. This project was inspired by the ongoing issue of food waste and hunger. Food hunger is a problem as almost 47 million Americans face hunger, 1 in 5 are children. People struggle to find meals throught the world and farmers often discard surplus food due to distribution challenges. By creating a platform that connects farmers with food pantries in need we can reduce the waste. Our aim is to create a sustainable and food-secure future for all. This projected was created alongside Harini Solaidurairaj, Zona Noman, Asha Makwana, and Nguyet Pham. Check out our devpost submission --> https://devpost.com/software/sustaintheway", 
+    date: "February 2025", 
     images: [
-      ""
+      "/Portfolio/images/projects/sustainTheWay/sustainTheWay1.png", 
+      "/Portfolio/images/projects/sustainTheWay/sustainTheWay2.png", 
+      "/Portfolio/images/projects/sustainTheWay/sustainTheWay3.png", 
+      "/Portfolio/images/projects/sustainTheWay/sustainTheWay4.png", 
+      "/Portfolio/images/projects/sustainTheWay/sustainTheWay5.png", 
+      "/Portfolio/images/projects/sustainTheWay/sustainTheWay6.png"
     ], 
-    tags: ["OpenAI", "CSS", "HTML", "JavaScript", "Node.js", "Git"], 
+    tags: ["OpenAI", "CSS", "HTML", "JavaScript", "Node.js", "Git", "Python"], 
     github: "https://github.com/HariniSolai/SustainTheWay", 
     demo: "https://youtu.be/YYrFuMtBCTU?si=qqj_Rj2B1r0Y0pCV", 
-    report: "https://drive.google.com/file/d/13ZzAhy6_gJnPe05Nz5hylThokgOe2Ci1/view?usp=drive_link", 
+    report: "https://drive.google.com/file/d/1F_0qHVYASFzxZsEKkzUvYjBtT7a6o7S_/view?usp=sharing", 
     features: [
-      "", 
-      ""
+      "Find Pantries - Connects users to local food pantires to prevent food waste and food insercurity", 
+      "Learn - Join the mission! Read about STW's goals for the future!", 
+      "AI Powered Search - Ask any question in our search function to get solutions to your problems and answers to your questions!"
     ], technologies: [
       "IDE: VSCode", 
-      "Git Version Control"
+      "Git Version Control", 
+      "openai API", 
+      "JavaScript, HTML, CSS", 
+      "Node.js", 
+      "Python"
     ], 
-    challenges: "", 
-    learnings: ""
+    challenges: "Setting up the Python 3 environment was initially challenging, but after a few searches we figured out the correct terminal commands needed to configure it properly. Once that was resolved, we used VS Code’s Live Server to continue development, which worked really well for instantly seeing changes as we coded. The biggest challenge by far was using Git and GitHub for version control. With a five person team working on different computers, certain packages were being overwritten, causing issues on some machines but not others. This made the problem difficult to identify at first. Afterward, we became much more careful about which files we pushed to GitHub and how we managed changes.", 
+    learnings: "This project was created for SparkHacks 2024, a campus wide event run by WiCS at UIC. It was my first time collaborating with a five others under a strict 24-hour time constraint. Even though the experience was short, I learned a lot about troubleshooting, debugging, and working efficiently under pressure. I also gained experience using online resources for HTML page layouts and learning specific CSS lines to customize the site to match our theme."
   }, 
-  {id: "Fitch2024", 
+  {id: "fitch2024", 
     title: "UCAN Fleet Management Portal", 
     description: "A simple, intuitive way to submit and organize Vehicle Requests and Returns. Allows for seamless communication between Staff and Managers. Contributes to an organized space, and easy record keeping.", 
     fullDescription: "We were inspired by Break Through Tech Chicago's message of innovation and pioneering in the tech field. Before the Codeathon, none of us knew how to use any of the tools or softwares, but we took it as a challenge to learn and deliver a useful product to UCAN. Our website allows UCAN staff to access Vehicle management forms in an easy-to-access and intuitive website. When a staff member submits a Vehicle Request Form, an automated flow sends notifications and approval requests to their manager for seamless communication. Managers can find links to the requests in the emails sent through automation and can easily approve or reject requests without having to write out a full email. Information about the request, like status or if a vehicle has been allocated is also updated as approvals are given in the original form. Thus, all the information is linked together and managers do not need to go digging into paperwork for more information on the details of a request. We used Microsoft Automate to create workflows and automate email responses and next steps. SharePoint was used to organize and save request form information, vehicle return form submissions and vehicle status information. This application was created for the Chicago Fitch 2024 codeathon alongside Harini Solaidurairaj, Ariel Wong, Asha Makwana, Carissa Lau, and Rida Siddiqui. Check out our devpost submission --> https://devpost.com/software/ucan-fleet-portal-group-3", 
     date: "Dec 2024", 
     images: [
-      ""
+      "/Portfolio/images/projects/fitch2024/ucan1.png", 
+      "/Portfolio/images/projects/fitch2024/ucan2.png",
+      "/Portfolio/images/projects/fitch2024/ucan3.png", 
+      "/Portfolio/images/projects/fitch2024/ucan4.png", 
+      "/Portfolio/images/projects/fitch2024/ucan5.png", 
+      "/Portfolio/images/projects/fitch2024/ucan6.png", 
+      "/Portfolio/images/projects/fitch2024/ucan7.png"
     ], 
-    tags: ["SharePoint", "Microsoft Automate"], 
+    tags: ["SharePoint", "Microsoft Power Automate", "Workflow Automation", "Codeathon"], 
     github: null, 
     demo: "https://youtu.be/uaeWwkiH64c?si=VZ17FtztFrCyECy0", 
-    report: "https://drive.google.com/drive/folders/1NncOcYTZLBPtf83NMk69hRYiECiYA1-8", 
+    report: "https://drive.google.com/drive/folders/1kf_TxkOja62NWQ-zXNKy0nRTMBARU8Th?usp=share_link", 
     features: [
-      "", 
-      ""
+      "Digital vehicle request and return forms built with SharePoint",
+      "Automated multi-step approval workflows using Microsoft Power Automate",
+      "Email-based approval and rejection with comments for clear communication",
+      "Real-time request status and vehicle availability tracking",
+      "Linked calendar view to visualize vehicle usage schedules"
     ], technologies: [
       "SharePoint", 
-      "Microsoft Automate"
+      "Microsoft Power Automate",
+      "Microsoft Forms", 
+      "Outlook Email Integration"
     ], 
-    challenges: "A huge challenge for all of us was unfamiliarity with the softwares. Like mentioned above, before this Codeathon, none of us had used SharePoint, created flows or even knew what a flow was. We had to overcome a huge learning curve in order to get anything working. If we had more time, we would have liked to polish the website's user interface. ", 
-    learnings: ""
+    challenges: "A huge challenge for all of us was unfamiliarity with the softwares. Before this Codeathon, none of us had used SharePoint, created flows or even knew what a flow was. We had to overcome a huge learning curve in order to get anything working. If we had more time, we would have liked to polish the website's user interface. ", 
+    learnings: "This project taught us how to quickly learn and apply low-code tools to build real-world business solutions under tight time constraints. We gained hands-on experience designing automated workflows, managing structured data in SharePoint, and thinking critically about user roles, approval logic, and process efficiency. Most importantly, we learned how technology can be leveraged to streamline operations and create meaningful impact for UCAN Chicago a non-profit organization."
   }, 
   { id: "ciphers", 
     title: "Ciphers", 
@@ -287,7 +331,7 @@ export const projects: Project[] = [
     fullDescription: "", 
     date: "--- 2025", 
     images: [
-      ""
+      "/Portfolio/images/projects/square.png"
     ], 
     tags: [""], 
     github: null, 
@@ -309,7 +353,7 @@ export const projects: Project[] = [
     fullDescription: "", 
     date: "--- 2025", 
     images: [
-      ""
+      "/Portfolio/images/projects/square.png"
     ], 
     tags: [""], 
     github: null, 
@@ -331,7 +375,7 @@ export const projects: Project[] = [
     fullDescription: "", 
     date: "--- 2025", 
     images: [
-      ""
+      "/Portfolio/images/projects/square.png"
     ], 
     tags: [""], 
     github: null, 
@@ -353,7 +397,7 @@ export const projects: Project[] = [
     fullDescription: "", 
     date: "--- 2025", 
     images: [
-      ""
+      "/Portfolio/images/projects/square.png"
     ], 
     tags: [""], 
     github: null, 
@@ -375,7 +419,7 @@ export const projects: Project[] = [
     fullDescription: "", 
     date: "--- 2025", 
     images: [
-      ""
+      "/Portfolio/images/projects/square.png"
     ], 
     tags: [""], 
     github: null, 
@@ -397,7 +441,7 @@ export const projects: Project[] = [
     fullDescription: "", 
     date: "--- 2025", 
     images: [
-      ""
+      "/Portfolio/images/projects/square.png"
     ], 
     tags: [""], 
     github: null, 
@@ -419,7 +463,7 @@ export const projects: Project[] = [
     fullDescription: "", 
     date: "--- 2024", 
     images: [
-      ""
+      "/Portfolio/images/projects/square.png"
     ], 
     tags: ["C"], 
     github: null, 
@@ -441,7 +485,7 @@ export const projects: Project[] = [
     fullDescription: "", 
     date: "--- 2024", 
     images: [
-      ""
+      "/Portfolio/images/projects/square.png"
     ], 
     tags: ["C"], 
     github: null, 
@@ -463,7 +507,7 @@ export const projects: Project[] = [
     fullDescription: "", 
     date: "--- 2024", 
     images: [
-      ""
+      "/Portfolio/images/projects/square.png"
     ], 
     tags: ["C"], 
     github: null, 
@@ -485,7 +529,7 @@ export const projects: Project[] = [
     fullDescription: "", 
     date: "--- 2024", 
     images: [
-      ""
+      "/Portfolio/images/projects/square.png"
     ], 
     tags: ["C"], 
     github: null, 
@@ -507,7 +551,7 @@ export const projects: Project[] = [
     fullDescription: "", 
     date: "--- 2024", 
     images: [
-      ""
+      "/Portfolio/images/projects/square.png"
     ], 
     tags: ["C"], 
     github: null, 
@@ -526,10 +570,10 @@ export const projects: Project[] = [
   { id: "pointerMaze", 
     title: "GDB Maze", 
     description: "CS 211 proj 6", 
-    fullDescription: "The goal is to pass through a maze of pointer using (N, W, S, E) using constructors and decunstructers in C++, the focus is also on GDB. We used the memory adress of the pointers to hand trace a map and to be able to take note of the walls and also on which positions are the Potion, wand and speelbook as those are the three items we are searching for. we have excaped the maze if the path we go in goes through collects all three items. And if we change the key which is currentely set as 'ksola6' the whole maze can be changed. Note if we reset the virtual enviornment the memory adress may change but the maze has the same shape. (I have copies of my GDB logs in google drive)", 
+    fullDescription: "The goal is to pass through a maze of pointer using (N, W, S, E) using constructors and decunstructers in C++, the focus is also on GDB. We used the memory adress of the pointers to hand trace a map and to be able to take note of the walls and also on which positions are the Potion, wand and speelbook as those are the three items we are searching for. we have excaped the maze if the path we go in goes through collects all three items. And if we change the key which is currentely set as 'ksola6' the whole maze can be changed. Note if we reset the virtual environment the memory adress may change but the maze has the same shape. (I have copies of my GDB logs in google drive)", 
     date: "--- 2024", 
     images: [
-      ""
+      "/Portfolio/images/projects/square.png"
     ], 
     tags: ["GDB", "C++"], 
     github: null, 
@@ -551,7 +595,7 @@ export const projects: Project[] = [
     fullDescription: "One player game where the goal is to get the Hero to the exit while monsters and walls block the path. This is an interactive game where the user used keys on the computer board to move around. This project relied heavily on try catch statements to make sure no illegal moves were made and redirect the Hero and monsters from errors and collisions like going of the board. Its also what allowed the Hero to either win or lose.", 
     date: "--- 2024", 
     images: [
-      ""
+      "/Portfolio/images/projects/square.png"
     ], 
     tags: ["C++"], 
     github: null, 
@@ -573,7 +617,7 @@ export const projects: Project[] = [
     fullDescription: "", 
     date: "--- 2022", 
     images: [
-      ""
+      "/Portfolio/images/projects/square.png"
     ], 
     tags: [""], 
     github: null, 
@@ -591,27 +635,33 @@ export const projects: Project[] = [
   },
   { id: "greenEnv", 
     title: "Save the Environment", 
-    description: "", 
-    fullDescription: " This project was created in collaboration with Harini Solaidurairaj.", 
+    description: "An informational website created to raise awareness about environmental protection and encourage people to take action to care for the Earth", 
+    fullDescription: "This project was created in collaboration with Harini Solaidurairaj as part of the 2020 Developer Program Cohort Final Project Showcase (https://stemleague.github.io/login/final-showcase.html). We were inspired by our passion to help the world and prevent further environmental damage. Our goal was to spread awareness about the importance of protecting the Earth and encourage people to make more environmentally conscious choices for the sake of future generations.", 
     date: "Summer 2020", 
     images: [
-      ""
+      "/Portfolio/images/projects/saveEnv/env1.png",
+      "/Portfolio/images/projects/saveEnv/env2.png",
+      "/Portfolio/images/projects/saveEnv/env3.png",
+      "/Portfolio/images/projects/saveEnv/env4.png",
+      "/Portfolio/images/projects/saveEnv/env5.png",
+      "/Portfolio/images/projects/saveEnv/env6.png"
     ], 
-    tags: ["HTML", "CSS", "JavaScript", "Replit"], 
-    github: "//replit.com/@Harini05/final-project-for-real", 
-    demo: "RecordDemo", 
-    report: null, 
+    tags: ["HTML", "CSS", "JavaScript", "Replit", "Web Development"], 
+    github: "https://replit.com/@Harini05/final-project-for-real", 
+    demo: "https://youtu.be/zMxfrsZWKQM", 
+    report: null,
     features: [
-      "", 
-      ""
+      "Educational content focused on environmental awareness",
+      "Simple and clean webpage layout using HTML and CSS",
+      "Interactive elements implemented with basic JavaScript"
     ], technologies: [
       "IDE: Replit", 
       "HTML", 
       "CSS", 
       "JavaScript"
     ], 
-    challenges: "", 
-    learnings: ""
+    challenges: "As one of our first web development projects, understanding how to structure a website and connect HTML, CSS, and JavaScript together was challenging. We also had to learn how to design pages that were both informative and visually engaging while working within our beginner-level skill set.", 
+    learnings: "Through this project, we learned the fundamentals of web development, including structuring content with HTML, styling with CSS, and adding basic interactivity using JavaScript. More importantly, we learned how technology can be used as a tool to spread awareness and create positive social impact."
   }
 ];
 

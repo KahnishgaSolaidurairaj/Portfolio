@@ -7,9 +7,15 @@ import Footer from "../components/footer.astro";
 <Layout title = 'Resume'>
 	<NavBar />
 	<div class= "container">
-		<h1> ☆ Resume </h1>
-		<h3> My professional experience and qualifications</h3>
-		<p class = "button"> <img src = "/Portfolio/images/downloads.png" /> Download PDF </p>
+		<div class = "resume-header">
+			<div class = "left" > 
+				<h1> ☆ Resume </h1>
+				<h3> My professional experience and qualifications</h3>
+			</div>
+			<div class = "right">
+				<p class = "button"> <img src = "/Portfolio/images/downloads.png" /> Download PDF </p>
+			</div>
+		</div>
 
 		<div class = "section-header">
 			<div class="icon work">
@@ -311,4 +317,42 @@ ul {
 li {
   margin-bottom: 0.4rem;
 }
+
+.resume-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0rem;
+}
+
+.resume-header h1, .resume-header h3 {
+  margin: 0;
+}
+
+.resume-header h3 {
+  margin-top: 0.4rem;
+}
+
+.resume-header .left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.resume-header .right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .resume-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .resume-header .right {
+    justify-content: flex-start;
+  }
+}
+
 </style>
