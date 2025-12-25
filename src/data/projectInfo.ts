@@ -18,9 +18,9 @@ export interface Project {
 export const projects: Project[] = [
   { id: "csPortfolio", 
     title: "CS Portfolio", 
-    description: " Personal Website page (challenges and learnings) (demo and repository)", 
-    fullDescription: "", 
-    date: "Winter 2025", 
+    description: "Personal portfolio website showcasing projects, experience, and skills.", 
+    fullDescription: "This project is a personal computer science portfolio website designed to showcase my projects, technical skills, and academic experience. Built with Astro, the site focuses on clean design, responsive layouts, and easy navigation. It serves as a central place to present my work, link to GitHub repositories, and highlight challenges and learnings from my projects preferably before I forget about them ;)", 
+    date: "December 2025", 
     images: [
       "/Portfolio/images/projects/square.png"
     ], 
@@ -30,14 +30,17 @@ export const projects: Project[] = [
     report: null, 
     features: [
       "Responsive UI from desktop to mobile viewing", 
-      ""
+      "Project cards with individual detail pages for each project",
+      "Dedicated sections for About Me, Projects, and Resume", 
+      "Resume page with structured formatting for readability",
+      "Links to GitHub repositories and live demos for projects"
     ], technologies: [
       "IDE: VSCode", 
       "Astro",
       "JavaScript, HTML, CSS"
     ], 
-    challenges: "", 
-    learnings: ""
+    challenges: "One of the main challenges was structuring the site using Astro components while keeping the layout responsive across different screen sizes. Managing styling consistency and learning how Astro handles routing and props also required some trial and error. Additionally, refining the UI to look polished without overcomplicating the design took multiple iterations.", 
+    learnings: "Through this project, I gained hands-on experience with Astro and component-based web development. I improved my understanding of responsive design, CSS layout techniques, and organizing a larger front-end project. This project also helped me better appreciate the importance of clean UI design, maintainable code, and clear project documentation."
   },
   { id: "fitch2025", 
     title: "Driving Sustainability using AI", 
@@ -78,7 +81,7 @@ export const projects: Project[] = [
   { id: "sweetT", 
     title: "Sweet-T", 
     description: "A full-stack e-commerce website for SweetT Bakery with customizable product ordering, checkout flow, and live order tracking for customers", 
-    fullDescription: "", 
+    fullDescription: "Sweet-T is a full-stack e-commerce platform developed for SweetT Bakery to streamline custom dessert ordering and order management. Customers can build personalized orders by selecting sizes, flavors, fillings, and decorations, while bakery staff can manage products and track orders through a secure admin portal. The project was developed collaboratively as part of a WiCS @ UIC Dev Project Fall 2025, emphasizing scalable architecture, clear API design, and real-world workflow simulation.", 
     date: "September - December 2025", 
     images: [
       "/Portfolio/images/projects/square.png"
@@ -88,17 +91,22 @@ export const projects: Project[] = [
     demo: null, 
     report: null, 
     features: [
-      "Implemented a Node.js + Express REST API with MongoDB to manage products, customers, and orders, including order status pipeline", 
-      "Developed an admin portal with authentication/authorization, enabling staff to log in, view incoming orders, update order status, and manage products", 
-      "Designed a custom order builder (size, flavors, fillings, decorations) using Astro + Tailwind", 
-      "Collaborated with a team of 15 students using Git Version Control (branches, pull requests, code reviews)"
+      "Implemented a Node.js + Express REST API with MongoDB to manage products, customers, and orders, including a multi-stage order status pipeline", 
+      "Designed and built a custom product order builder allowing users to select size, flavors, fillings, and decorations",
+      "Developed a secure admin portal with authentication and authorization for managing products and updating order statuses",
+      "Created responsive front-end pages using Astro and TailwindCSS for consistent styling across devices",
+      "Enabled live order tracking so customers can monitor the progress of their orders",
+      "Collaborated with a team of 15 students using Git version control, pull requests, and code reviews"
     ], technologies: [
       "IDE: VSCode", 
-      "Git Version Control/Github - to collaborate with WiCS team members", 
-      ""
+      "Node.js & Express",
+      "MongoDB",
+      "Astro",
+      "TailwindCSS",
+      "Git Version Control & Github for team collaboration"
     ], 
-    challenges: "This was my first time working with Astro and thus there was a learning curve. ", 
-    learnings: ""
+    challenges: "This was my first time working with Astro, which introduced a learning curve in understanding its component structure, routing, and data flow. Coordinating development across a large team also required clear communication, consistent coding standards, and careful version control to avoid merge conflicts. I also struggled with app reactivity since although I was able to make all the content shrink and grow based on the page size I had to add additional code for specific pieces to make sure it looked cohesive.", 
+    learnings: "By working mainly on the front end of this project, I strengthened my skills in building responsive and user-friendly interfaces using Astro and TailwindCSS. I gained experience translating product requirements into interactive UI components, implementing custom ordering workflows, and ensuring consistent styling across pages. This project also improved my understanding of how front-end applications integrate with backend APIs, as well as how to collaborate effectively within a large team while focusing on a defined role."
   },
   { id: "rescueRover", 
     title: "Rescue Rover", 
@@ -145,7 +153,7 @@ export const projects: Project[] = [
       "/Portfolio/images/projects/square.png",
       "/Portfolio/images/projects/square.png"
     ],
-    tags: ["Java", "JavaFX", "FXML", "CSS"],
+    tags: ["Client-Server", "Java Sockets", "Maven", "HTML", "CSS"],
     github: null,
     demo: "blah",
     report: null,
@@ -167,9 +175,44 @@ export const projects: Project[] = [
       "JUnit 5 - Unit testing for server/core game logic",
       "Maven - project management and build automation"
     ],
-    challenges: "A major challenge was building reliable client–server communication using Java Sockets while ensuring that all game logic ran only on the server. Supporting multiple clients at once required careful use of multithreading so that each game session remained independent. Another challenge was keeping the JavaFX interface responsive while handling network communication on background threads, especially when switching between different scenes during gameplay.",
-    learnings: "This project strengthened my understanding of client–server architecture, networking, and multithreading in Java. I learned how to separate game logic, networking, and user interface code to build a more maintainable application. Additionally, working with JavaFX, FXML, and unit tests improved my ability to design responsive, testable, and event-driven applications."
+    challenges: "A major challenge was building reliable client-server communication using Java Sockets while ensuring that all game logic ran only on the server. Supporting multiple clients at once required careful use of multithreading so that each game session remained independent. Another challenge was keeping the JavaFX interface responsive while handling network communication on background threads, especially when switching between different scenes during gameplay.",
+    learnings: "This project strengthened my understanding of client-server architecture, networking, and multithreading in Java. I learned how to separate game logic, networking, and user interface code to build a more maintainable application. Additionally, working with JavaFX, FXML, and unit tests improved my ability to design responsive, testable, and event-driven applications."
   }, 
+  {
+    id: "coffeeShop",
+    title: "Coffee Shop",
+    description: "A customizable coffee ordering system using the Decorator design pattern.",
+    fullDescription: "The Coffee Shop project is a JavaFX application that demonstrates the use of the Decorator design pattern to dynamically build coffee orders. Each order begins with a basic black coffee and allows users to add or remove various add-ons such as cream, sugar, extra shots, vanilla and cinnamon. The application uses FXML and CSS to separate UI layout and styling from application logic, and follows a clean MVC-style structure with controller classes handling user interaction. The final order displays a detailed cost breakdown for each add-on along with the total price, and users can reset and build multiple orders within a single session.",
+    date: "November 2025",
+    images: [
+      "/Portfolio/images/projects/coffeeShop/coffee1.png",
+      "/Portfolio/images/projects/coffeeShop/coffee2.png",
+      "/Portfolio/images/projects/coffeeShop/coffee3.png",
+      "/Portfolio/images/projects/coffeeShop/coffee4.png"
+    ],
+    tags: ["Decorator Design Pattern", "Object-Oriented Design", "JavaFX"],
+    github: null,
+    demo: "https://youtu.be/CF57x7YXX74",
+    report: null,
+    features: [
+      "Build coffee orders dynamically using the Decorator design pattern",
+      "JavaFX GUI with FXML layout and custom CSS styling",
+      "Ability to add and remove coffee add-ons and view a full price breakdown",
+      "Support for creating and resetting multiple orders in one session",
+      "Unit-tested core logic using Maven and JUnit"
+    ],
+    technologies: [
+      "IDE: VS Code",
+      "Java",
+      "JavaFX",
+      "FXML",
+      "CSS",
+      "Maven",
+      "JUnit"
+    ],
+    challenges: "One of the main challenges was managing the dynamic addition and removal of decorators while maintaining accurate pricing and order descriptions. Ensuring that the GUI stayed synchronized with the underlying decorated coffee object required careful controller logic. Integrating JavaFX with Maven and properly structuring FXML, CSS, and controller classes was also challenging, especially while keeping the design pattern implementation clean and testable.",
+    learnings: "This project strengthened my understanding of the Decorator design pattern and how it can be applied to real-world scenarios. I gained hands-on experience building JavaFX applications using FXML and CSS, reinforcing the importance of separating UI, logic, and styling. Additionally, working with Maven and unit tests improved my confidence in creating maintainable, well-tested object-oriented applications."
+  },
   {id: "keno", 
     title: "Lottery Game - Keno", 
     description: "A JavaFX-based simulation of the Keno lottery game featuring interactive gameplay, animations, and real-time statistics.", 
@@ -210,7 +253,7 @@ export const projects: Project[] = [
     images: [
       "/Portfolio/images/projects/square.png"
     ], 
-    tags: ["Java", "Maven", "JUnit 5"], 
+    tags: ["Iterator", "Java", "Maven", "JUnit 5"], 
     github: null, 
     demo: null, 
     report: null, 
@@ -327,25 +370,30 @@ export const projects: Project[] = [
   }, 
   { id: "ciphers", 
     title: "Ciphers", 
-    description: "Shift encryption and ceaser cypher", 
-    fullDescription: "", 
-    date: "--- 2025", 
+    description: "A C++ command-line application for encrypting and decrypting text using classical cryptographic ciphers", 
+    fullDescription: "Implements multiple classical encryption and decryption techniques, including Caesar and substitution ciphers. This project supports both encryption and decryption workflows, with Caesar cipher decryption implemented using brute-force techniques combined with dictionary-based validation. For substitution cipher decryption, a hill-climbing algorithm guided by quadgram frequency scoring is used to evaluate the 'English-likeness' of candidate decryptions. The program is structured using helper functions and careful function decomposition, and all functionality is validated through an extensive milestone-based test suite.", 
+    date: "February 2025", 
     images: [
       "/Portfolio/images/projects/square.png"
     ], 
-    tags: [""], 
+    tags: ["C++", "Algotithms", "Cryptography"], 
     github: null, 
     demo: null, 
     report: null, 
     features: [
-      "", 
-      ""
+      "Caesar cipher encryption and brute-force decryption",
+      "Substitution cipher encryption and decryption using hill climbing",
+      "Dictionary-based validation for Caesar decryption",
+      "Quadgram-based scoring to evaluate English text likelihood",
+      "File-based and console-based decryption support"
     ], technologies: [
       "IDE: VSCode", 
-      ""
+      "C++", 
+      "string, vector, streams",
+      "Makefile"
     ], 
-    challenges: "", 
-    learnings: ""
+    challenges: "The most challenging aspect of this project was designing efficient and correct decryption logic, especially for the substitution cipher. Implementing the hill-climbing algorithm required careful tuning to balance performance and accuracy. Another challenge was adhering to the project constraints, such as avoiding additional libraries and global variables, while still maintaining readable and modular code.", 
+    learnings: "This project strengthened my understanding of algorithmic problem-solving and cryptanalysis techniques. I gained experience working with brute-force approaches, probabilistic scoring using quadgrams, and performance-aware C++ programming. It also reinforced the importance of clean function decomposition and systematic testing when working with complex logic."
   },
   { id: "search", 
     title: "Search", 
@@ -371,25 +419,31 @@ export const projects: Project[] = [
   },
   { id: "lists", 
     title: "Lists", 
-    description: "cs 251 proj 3", 
-    fullDescription: "", 
-    date: "--- 2025", 
+    description: "A C++ data structures project implementing and rigorously testing a singly linked list and a circular vector", 
+    fullDescription: "The Lists project is a comprehensive C++ data structures assignment focused on implementing a templated singly linked list and a circular vector from scratch. In addition to implementing core functionality, the project emphasizes writing thorough GoogleTest test suites designed to catch buggy implementations. Both data structures support common operations such as insertion, deletion, indexing, copying, and string conversion, while ensuring memory safety through proper pointer management and AddressSanitizer validation. The project follows a milestone-based development process that integrates testing and implementation at every stage.", 
+    date: "March 2025", 
     images: [
       "/Portfolio/images/projects/square.png"
     ], 
-    tags: [""], 
+    tags: ["Data Structures", "C++", "Testing"], 
     github: null, 
     demo: null, 
     report: null, 
     features: [
-      "", 
-      ""
+      "Templated singly linked list implementation",
+      "Circular vector with O(1) push and pop at both ends",
+      "Comprehensive GoogleTest test suites for all operations",
+      "Copy constructor and assignment operator support",
+      "Memory-safe implementations validated with AddressSanitizer"
     ], technologies: [
       "IDE: VSCode", 
-      ""
+      "C++", 
+      "GoogleTest", 
+      "AdressSanitizer", 
+      "Makefile"
     ], 
-    challenges: "", 
-    learnings: ""
+    challenges: "One of the main challenges was debugging pointer-related issues while maintaining strict memory safety guarantees. Writing tests that reliably exposed buggy implementations required careful thought about edge cases and undefined behavior. Implementing the circular vector was particularly challenging due to index wrapping and resizing logic.", 
+    learnings: "This project significantly improved my understanding of low-level data structure implementation and memory management in C++. I gained hands-on experience writing high-quality tests that validate both correctness and robustness. The emphasis on AddressSanitizer reinforced best practices for avoiding memory leaks and undefined behavior."
   },
   { id: "bst", 
     title: "BST", 
@@ -606,28 +660,6 @@ export const projects: Project[] = [
       ""
     ], technologies: [
       "IDE: zyBooks", 
-      ""
-    ], 
-    challenges: "", 
-    learnings: ""
-  },
-  { id: "csa", 
-    title: "HIGHSCHOOL PROJECTS", 
-    description: "frogger, pizeria, monopoly", 
-    fullDescription: "", 
-    date: "--- 2022", 
-    images: [
-      "/Portfolio/images/projects/square.png"
-    ], 
-    tags: [""], 
-    github: null, 
-    demo: null, 
-    report: null, 
-    features: [
-      "", 
-      ""
-    ], technologies: [
-      "IDE: IntelliJ, PyCharm", 
       ""
     ], 
     challenges: "", 
