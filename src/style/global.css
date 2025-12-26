@@ -8,6 +8,7 @@ body {
                 #f8f4ff;
     background-size: cover;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 /* Theme 
 Bold indigo #2b59ff;

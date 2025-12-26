@@ -14,7 +14,7 @@ import style from "../style/global.css";
 		<div class = "Front" >
 			<div class = "left">
 				<p> ⟡ Hello, I'm </p>
-				<p1>Kahnishga Solaidurairaj </p1>
+				<p class = "name">Kahnishga Solaidurairaj </p1>
 				<p>A Computer Science Student passionate about learning new skills and creating ✨</p>
         <a href = "/Portfolio/projects" class = "link">
 				  <button class="primary-btn">View Projects →</button>
@@ -108,7 +108,7 @@ import style from "../style/global.css";
   padding: 4rem 0;
 }
 
-.left p1 {
+.left .name {
   font-size: 3.5rem;
   font-weight: 700;
   color: #2b59ff;
@@ -175,7 +175,6 @@ button:hover, .primary-btn:hover {
   color: inherit;
 }
 
-// background: rgba(255,255,255,0.9);
 .AboutMe {
   padding: 5rem 0;
 }
@@ -221,11 +220,6 @@ button:hover, .primary-btn:hover {
     flex-direction: column;
     text-align: center;
   }
-
-  .Front right {
-    width: auto;
-    height: auto;
-  }
 }
 
 .image {
@@ -252,9 +246,47 @@ button:hover, .primary-btn:hover {
 
 .carousel img {
   flex-shrink: 0;
-  width: 300px%;
+  width: 300px;
   border-radius: 12px;
   scroll-snap-align: center;
   object-fit: cover;
 }
+
+@media (max-width: 600px) {
+  .Front {
+    padding: 2.5rem 0;
+    gap: 2rem;
+  }
+
+  .left .name {
+    font-size: 2.4rem;
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+  }
+
+  .right img {
+    height: auto;
+    max-width: 90%;
+  }
+
+  .Card {
+    gam: 1.5rem;
+  }
+
+  .CardItem {
+    padding: 1.5rem;
+  }
+
+  .carousel {
+    gap: 1rem;
+  }
+
+  .carousel img {
+    width: 240px;
+  }
+}
+
 </style>
