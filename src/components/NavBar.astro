@@ -3,7 +3,9 @@
     Kahnishga Solaidurairaj
   </div>
 
-  <div class = "links">
+  <button class = "menu-btn" aria-label = "Toggle menu"> ☰ </button>
+
+  <div class = "links" id = "nav-links">
     <a href = "/Portfolio/">Home</a>
     <a href = "/Portfolio/blog">Blog</a>
     <a href = "/Portfolio/projects">Projects</a>
@@ -50,4 +52,47 @@
   color: #c4297eff;
 }
 
+.menu-btn {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #323e83ff;
+}
+
+@media (max-width: 800px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 1rem;
+    background: #a7a7ffff;
+    flex-direction: column;
+    width: 100px;
+
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .links.open {
+    display: flex;
+    background: white;
+    margin-left: auto;
+  }
+}
+
 </style>
+
+<script>
+  const btn = document.querySelector(".menu-btn");
+  const links = document.querySelector("#nav-links");
+  btn?.addEventListener("click", () => {links.classList.toggle("open");});
+  links?.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {links.classList.remove("open");}));
+</script>

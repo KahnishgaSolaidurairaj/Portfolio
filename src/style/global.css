@@ -53,3 +53,19 @@ h3 {
     font-weight: 300;
     color: #411eb4c9;
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-wrapper main {
+  flex: 1; /* pushes footer to bottom */
+}
+

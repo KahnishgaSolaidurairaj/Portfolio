@@ -31,12 +31,7 @@
     font-weight: 300;
     font-family: "Verdana";
     color: #323e83ff;
-
-    position: static;
     margin-top: 4rem;
-    bottom: 0px;
-    left: 0;
-    right: 0;
 }
 
 .btnLinks a{
@@ -47,5 +42,20 @@
     width: 32px;
     height: auto;
     padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    justify-content: center;
+  }
+
+  .credit {
+    display: none;
+  }
+
+  .btnLinks {
+    display: flex;
+    gap: 1.5rem;
+  }
 }
 </style>
