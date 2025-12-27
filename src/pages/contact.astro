@@ -65,7 +65,7 @@ import Footer from "../components/footer.astro";
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 .contact-card {
@@ -98,7 +98,9 @@ import Footer from "../components/footer.astro";
 }
 
 .icon img {
-  width: 60%;
+  width: 65%;
+  height: 65%;
+  object-fit: contain;
 }
 
 .icon.email {
@@ -130,6 +132,32 @@ import Footer from "../components/footer.astro";
 .info a {
   color: #5654d4ff;
   text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .first-contact-item, .contact-item {
+    gap: 1rem;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  .icon img {
+    width: 65%;
+    height: 65%;
+  }
+
+  .icon.github img, .icon.linkedin img {
+    width: 70%;
+    height: 70%;
+  }
+
+  .info a {
+    word-break: break-word;
+  }
 }
 
 </style>
