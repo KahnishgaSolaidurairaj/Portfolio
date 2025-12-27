@@ -16,44 +16,18 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-  { id: "csPortfolio", 
-    title: "CS Portfolio", 
-    description: "Personal portfolio website showcasing projects, experience, and skills.", 
-    fullDescription: "This project is a personal computer science portfolio website designed to showcase my projects, technical skills, and academic experience. Built with Astro, the site focuses on clean design, responsive layouts, and easy navigation. It serves as a central place to present my work, link to GitHub repositories, and highlight challenges and learnings from my projects preferably before I forget about them ;)", 
-    date: "December 2025", 
-    images: [
-      "/Portfolio/images/projects/square.png"
-    ], 
-    tags: ["Astro", "TypeScript", "HTML", "CSS", "JavaScript"], 
-    github: "https://github.com/KahnishgaSolaidurairaj/Portfolio", 
-    demo: null, 
-    report: null, 
-    features: [
-      "Responsive UI from desktop to mobile viewing", 
-      "Project cards with individual detail pages for each project",
-      "Dedicated sections for About Me, Projects, and Resume", 
-      "Resume page with structured formatting for readability",
-      "Links to GitHub repositories and live demos for projects"
-    ], technologies: [
-      "IDE: VSCode", 
-      "Astro",
-      "JavaScript, HTML, CSS"
-    ], 
-    challenges: "One of the main challenges was structuring the site using Astro components while keeping the layout responsive across different screen sizes. Managing styling consistency and learning how Astro handles routing and props also required some trial and error. Additionally, refining the UI to look polished without overcomplicating the design took multiple iterations.", 
-    learnings: "Through this project, I gained hands-on experience with Astro and component-based web development. I improved my understanding of responsive design, CSS layout techniques, and organizing a larger front-end project. This project also helped me better appreciate the importance of clean UI design, maintainable code, and clear project documentation."
-  },
   { id: "fitch2025", 
     title: "Driving Sustainability using AI", 
     description: "Developed machine learning models that estimate Scope 1 and Scope 2 greenhouse gas emissions for non-reporting companies using ESG-related financial and operational data provided by Sustainable Fitch", 
     fullDescription: "This project was developed as part of the Sustainable Fitch Codeathon to address ESG data gaps caused by incomplete emissions reporting. Our team built data-driven pipelines that clean, analyze, and model company-level features such as revenue, region, industry, and ESG indicators to predict Scope 1 and Scope 2 emissions. The project includes extensive exploratory data analysis, feature engineering, and regression modeling, supported by visualizations such as histograms, scatter plots, and correlation heatmaps. Full details and methodology are available on our Devpost submission: https://devpost.com/software/team-3-ku6tey. Lastly this project was created in colaboration with Harini Solaidurairaj, Shreya Patel, and Krisha Patel.", 
     date: "November 2025", 
     images: [
-      "/Portfolio/images/projects/fitch2025/sustainableFitch1.png", 
-      "/Portfolio/images/projects/fitch2025/sustainableFitch2.png", 
-      "/Portfolio/images/projects/fitch2025/sustainableFitch3.png", 
-      "/Portfolio/images/projects/fitch2025/sustainableFitch4.png", 
-      "/Portfolio/images/projects/fitch2025/sustainableFitch5.png", 
-      "/Portfolio/images/projects/fitch2025/sustainableFitch6.png"
+      "/Portfolio/images/projects/fitch2025/sustainableFitch1.avif", 
+      "/Portfolio/images/projects/fitch2025/sustainableFitch2.avif", 
+      "/Portfolio/images/projects/fitch2025/sustainableFitch3.avif", 
+      "/Portfolio/images/projects/fitch2025/sustainableFitch4.avif", 
+      "/Portfolio/images/projects/fitch2025/sustainableFitch5.avif", 
+      "/Portfolio/images/projects/fitch2025/sustainableFitch6.avif"
     ], 
     tags: ["Machine Learning", "Data Science", "Sustainability", "ESG", "Regression Models", "Codeathon"], 
     github: "https://github.com/HariniSolai/fitch-codeathon2025Team3", 
@@ -84,7 +58,16 @@ export const projects: Project[] = [
     fullDescription: "Sweet-T is a full-stack e-commerce platform developed for SweetT Bakery to streamline custom dessert ordering and order management. Customers can build personalized orders by selecting sizes, flavors, fillings, and decorations, while bakery staff can manage products and track orders through a secure admin portal. The project was developed collaboratively as part of a WiCS @ UIC Dev Project Fall 2025, emphasizing scalable architecture, clear API design, and real-world workflow simulation.", 
     date: "September - December 2025", 
     images: [
-      "/Portfolio/images/projects/square.png"
+      "/Portfolio/images/projects/sweetT/sweet1.avif",
+      "/Portfolio/images/projects/sweetT/sweet2.avif",
+      "/Portfolio/images/projects/sweetT/sweet3.avif",
+      "/Portfolio/images/projects/sweetT/sweet4.avif",
+      "/Portfolio/images/projects/sweetT/sweet5.avif",
+      "/Portfolio/images/projects/sweetT/sweet6.avif",
+      "/Portfolio/images/projects/sweetT/sweet7.avif",
+      "/Portfolio/images/projects/sweetT/sweet8.avif",
+      "/Portfolio/images/projects/sweetT/sweet9.avif",
+      "/Portfolio/images/projects/sweetT/finalGroupPic.avif"
     ], 
     tags: ["MongoDb", "Express", "Node.js", "Astro", "JavaScript", "HTML", "TailwindCSS", "Git Version Control"], 
     github: "https://github.com/wics-uic/Sweet-T", 
@@ -114,9 +97,9 @@ export const projects: Project[] = [
     fullDescription: "The Rescue Rover is an autonomous search-and-rescue simulation developed for my CS 362 (Computer Design) course at UIC. The rover patrols a predefined area, avoids obstacles, detects boundary limits, and identifies target objects using infrared, ultrasonic, and RGB sensors. When a goal object of a specified color is detected, the rover halts, activates visual and audio alerts, and resumes patrol once the object is removed. The system is powered by four Arduino Uno boards communicating via I2C, separating sensing, control logic, motion, and output responsibilities to improve reliability and modularity. Built alongside Alexa Jimenez-Munoz, Darshan Zaware, and Mihaela Harizanova.", 
     date: "October - December 2025", 
     images: [
-      "/Portfolio/images/projects/rescueRover/rover1.png",
-      "/Portfolio/images/projects/rescueRover/rover2.png",
-      "/Portfolio/images/projects/rescueRover/rover3.png"
+      "/Portfolio/images/projects/rescueRover/rover1.avif",
+      "/Portfolio/images/projects/rescueRover/rover2.avif",
+      "/Portfolio/images/projects/rescueRover/rover3.avif"
     ], 
     tags: ["Arduino", "Robotics", "Autonomous Systems", "I2C Communication", "Hardware-Software Integration", "Embedded Systems"], 
     github: "https://github.com/KahnishgaSolaidurairaj/Rescue-Rover", 
@@ -149,13 +132,18 @@ export const projects: Project[] = [
     fullDescription: "This project implements a fully networked version of the casino game 3-Card Poker using Java Sockets and JavaFX. I have split this project into two Maven projects: a multithreaded server and a graphical client. The server manages all game logic, card dealing, bet validation, and payout calculations, while each client connects independently to play their own game session against the dealer. Any number of clients can connect simultaneously, each running on its own thread and interacting with the server through serialized objects. The client provides an intuitive, multi-scene JavaFX interface that allows users to place bets, view cards, make play-or-fold decisions, and see detailed results after each hand. The server includes its own GUI to monitor connected clients, track bets, display game outcomes, and manage server state.",
     date: "Sept-Dec 2025", 
     images: [
-      "/Portfolio/images/projects/square.png",
-      "/Portfolio/images/projects/square.png",
-      "/Portfolio/images/projects/square.png"
+      "/Portfolio/images/projects/poker/poker1.avif",
+      "/Portfolio/images/projects/poker/poker2.avif",
+      "/Portfolio/images/projects/poker/poker3.avif", 
+      "/Portfolio/images/projects/poker/poker4.avif", 
+      "/Portfolio/images/projects/poker/poker5.avif",
+      "/Portfolio/images/projects/poker/poker6.avif", 
+      "/Portfolio/images/projects/poker/poker7.avif",
+      "/Portfolio/images/projects/poker/poker8.avif"
     ],
     tags: ["Client-Server", "Java Sockets", "Maven", "HTML", "CSS"],
     github: null,
-    demo: "blah",
+    demo: null,
     report: null,
     features: [
       "Client-server architecture using Java Sockets",
@@ -185,10 +173,10 @@ export const projects: Project[] = [
     fullDescription: "The Coffee Shop project is a JavaFX application that demonstrates the use of the Decorator design pattern to dynamically build coffee orders. Each order begins with a basic black coffee and allows users to add or remove various add-ons such as cream, sugar, extra shots, vanilla and cinnamon. The application uses FXML and CSS to separate UI layout and styling from application logic, and follows a clean MVC-style structure with controller classes handling user interaction. The final order displays a detailed cost breakdown for each add-on along with the total price, and users can reset and build multiple orders within a single session.",
     date: "November 2025",
     images: [
-      "/Portfolio/images/projects/coffeeShop/coffee1.png",
-      "/Portfolio/images/projects/coffeeShop/coffee2.png",
-      "/Portfolio/images/projects/coffeeShop/coffee3.png",
-      "/Portfolio/images/projects/coffeeShop/coffee4.png"
+      "/Portfolio/images/projects/coffeeShop/coffee1.avif",
+      "/Portfolio/images/projects/coffeeShop/coffee2.avif",
+      "/Portfolio/images/projects/coffeeShop/coffee3.avif",
+      "/Portfolio/images/projects/coffeeShop/coffee4.avif"
     ],
     tags: ["Decorator Design Pattern", "Object-Oriented Design", "JavaFX"],
     github: null,
@@ -215,26 +203,31 @@ export const projects: Project[] = [
   },
   {id: "keno", 
     title: "Lottery Game - Keno", 
-    description: "A JavaFX-based simulation of the Keno lottery game featuring interactive gameplay, animations, and real-time statistics.", 
+    description: "A JavaFX-based simulation of the Keno lottery game featuring interactive gameplay, animations, and results", 
     fullDescription: "This project simulates the casino and state lottery game Keno using Java and JavaFX. Players select how many numbers to play, choose their picks manually or automatically, and decide how many drawings to participate in. During each drawing, numbers are revealed one at a time with pauses to simulate real gameplay. The application uses multiple JavaFX scenes to guide the user from a welcome screen to gameplay while providing clear prompts and feedback throughout the experience. All game logic is separated from the UI and thoroughly tested using unit tests, ensuring correctness and maintainability.",
-    date: " -Sept 2025", 
+    date: "October 2025", 
     images: [
-      "/Portfolio/images/projects/square.png",
-      "/Portfolio/images/projects/square.png",
-      "/Portfolio/images/projects/square.png"
+      "/Portfolio/images/projects/keno/keno1.avif",
+      "/Portfolio/images/projects/keno/keno2.avif",
+      "/Portfolio/images/projects/keno/keno3.avif", 
+      "/Portfolio/images/projects/keno/keno4.avif",
+      "/Portfolio/images/projects/keno/keno5.avif",
+      "/Portfolio/images/projects/keno/keno6.avif",
+      "/Portfolio/images/projects/keno/keno7.avif"
     ],
     tags: ["JavaFX", "Java"], 
     github: null, 
-    demo: "blah", 
-    report: null, 
+    demo: "https://youtu.be/uWwUfOvOF9I", 
+    report: "https://drive.google.com/file/d/1UzveTSlzfD2PiqgR8-pEBYF03L8Kdb_e/view?usp=sharing", 
     features: [
       "Interactive number selection using a grid-based bet card", 
       "Multiple game modes (1, 4, 8, or 10 number spots)", 
       "Automatic number selection option", 
       "Animated number drawings with pause transitions", 
       "Multiple JavaFX scenes and menu options", 
-      "Multiple themes - ", 
-      "JUnit-tested game logic"
+      "Light/Dark blue theme options", 
+      "JUnit-tested game logic", 
+      "Logic/calculations based on North Carolina state lottery winning and odds --> https://nclottery.com/KenoHow"
     ], technologies: [
       "IDE: IntelliJ",
       "Java", 
@@ -309,12 +302,12 @@ export const projects: Project[] = [
     fullDescription: "Our mission for Sustain the Way is to prevent food waste and food insecurity. This project was inspired by the ongoing issue of food waste and hunger. Food hunger is a problem as almost 47 million Americans face hunger, 1 in 5 are children. People struggle to find meals throught the world and farmers often discard surplus food due to distribution challenges. By creating a platform that connects farmers with food pantries in need we can reduce the waste. Our aim is to create a sustainable and food-secure future for all. This projected was created alongside Harini Solaidurairaj, Zona Noman, Asha Makwana, and Nguyet Pham. Check out our devpost submission --> https://devpost.com/software/sustaintheway", 
     date: "February 2025", 
     images: [
-      "/Portfolio/images/projects/sustainTheWay/sustainTheWay1.png", 
-      "/Portfolio/images/projects/sustainTheWay/sustainTheWay2.png", 
-      "/Portfolio/images/projects/sustainTheWay/sustainTheWay3.png", 
-      "/Portfolio/images/projects/sustainTheWay/sustainTheWay4.png", 
-      "/Portfolio/images/projects/sustainTheWay/sustainTheWay5.png", 
-      "/Portfolio/images/projects/sustainTheWay/sustainTheWay6.png"
+      "/Portfolio/images/projects/sustainTheWay/sustainTheWay1.avif", 
+      "/Portfolio/images/projects/sustainTheWay/sustainTheWay2.avif", 
+      "/Portfolio/images/projects/sustainTheWay/sustainTheWay3.avif", 
+      "/Portfolio/images/projects/sustainTheWay/sustainTheWay4.avif", 
+      "/Portfolio/images/projects/sustainTheWay/sustainTheWay5.avif", 
+      "/Portfolio/images/projects/sustainTheWay/sustainTheWay6.avif"
     ], 
     tags: ["OpenAI", "CSS", "HTML", "JavaScript", "Node.js", "Git", "Python"], 
     github: "https://github.com/HariniSolai/SustainTheWay", 
@@ -341,13 +334,13 @@ export const projects: Project[] = [
     fullDescription: "We were inspired by Break Through Tech Chicago's message of innovation and pioneering in the tech field. Before the Codeathon, none of us knew how to use any of the tools or softwares, but we took it as a challenge to learn and deliver a useful product to UCAN. Our website allows UCAN staff to access Vehicle management forms in an easy-to-access and intuitive website. When a staff member submits a Vehicle Request Form, an automated flow sends notifications and approval requests to their manager for seamless communication. Managers can find links to the requests in the emails sent through automation and can easily approve or reject requests without having to write out a full email. Information about the request, like status or if a vehicle has been allocated is also updated as approvals are given in the original form. Thus, all the information is linked together and managers do not need to go digging into paperwork for more information on the details of a request. We used Microsoft Automate to create workflows and automate email responses and next steps. SharePoint was used to organize and save request form information, vehicle return form submissions and vehicle status information. This application was created for the Chicago Fitch 2024 codeathon alongside Harini Solaidurairaj, Ariel Wong, Asha Makwana, Carissa Lau, and Rida Siddiqui. Check out our devpost submission --> https://devpost.com/software/ucan-fleet-portal-group-3", 
     date: "Dec 2024", 
     images: [
-      "/Portfolio/images/projects/fitch2024/ucan1.png", 
-      "/Portfolio/images/projects/fitch2024/ucan2.png",
-      "/Portfolio/images/projects/fitch2024/ucan3.png", 
-      "/Portfolio/images/projects/fitch2024/ucan4.png", 
-      "/Portfolio/images/projects/fitch2024/ucan5.png", 
-      "/Portfolio/images/projects/fitch2024/ucan6.png", 
-      "/Portfolio/images/projects/fitch2024/ucan7.png"
+      "/Portfolio/images/projects/fitch2024/ucan1.avif", 
+      "/Portfolio/images/projects/fitch2024/ucan2.avif",
+      "/Portfolio/images/projects/fitch2024/ucan3.avif", 
+      "/Portfolio/images/projects/fitch2024/ucan4.avif", 
+      "/Portfolio/images/projects/fitch2024/ucan5.avif", 
+      "/Portfolio/images/projects/fitch2024/ucan6.avif", 
+      "/Portfolio/images/projects/fitch2024/ucan7.avif"
     ], 
     tags: ["SharePoint", "Microsoft Power Automate", "Workflow Automation", "Codeathon"], 
     github: null, 
@@ -622,7 +615,7 @@ export const projects: Project[] = [
     learnings: ""
   },
   { id: "pointerMaze", 
-    title: "GDB Maze", 
+    title: "Grid Pointer Maze", 
     description: "CS 211 proj 6", 
     fullDescription: "The goal is to pass through a maze of pointer using (N, W, S, E) using constructors and decunstructers in C++, the focus is also on GDB. We used the memory adress of the pointers to hand trace a map and to be able to take note of the walls and also on which positions are the Potion, wand and speelbook as those are the three items we are searching for. we have excaped the maze if the path we go in goes through collects all three items. And if we change the key which is currentely set as 'ksola6' the whole maze can be changed. Note if we reset the virtual environment the memory adress may change but the maze has the same shape. (I have copies of my GDB logs in google drive)", 
     date: "--- 2024", 
@@ -634,11 +627,16 @@ export const projects: Project[] = [
     demo: null, 
     report: null, 
     features: [
-      "", 
-      ""
+      "Created a digital maze game with C++, This project involves the user to debug the created maze utilizing GDB to find a path which collects the Wand, Spellbook and Potion",
+      "Created the mazes to be unique with a string the user can change, when tested in GDB the addresses are going to be different than the previous version allowing the user to trace through the maze again to find their path out of the maze",
+      "Developed a grid.h and maze.h which I utilized throughout the project as it was the backbone for my regular maze and twisty maze",
+      "Utilized if-else statements to make sure the user is inputting only valid moves based on the maze"
     ], technologies: [
       "IDE: zyBooks", 
-      ""
+      "C++",
+      "GDB",
+      "Pointers",
+      "Memory Adress"
     ], 
     challenges: "This was my first time using GDB so it took a while for me to figure out", 
     learnings: ""
@@ -671,12 +669,12 @@ export const projects: Project[] = [
     fullDescription: "This project was created in collaboration with Harini Solaidurairaj as part of the 2020 Developer Program Cohort Final Project Showcase (https://stemleague.github.io/login/final-showcase.html). We were inspired by our passion to help the world and prevent further environmental damage. Our goal was to spread awareness about the importance of protecting the Earth and encourage people to make more environmentally conscious choices for the sake of future generations.", 
     date: "Summer 2020", 
     images: [
-      "/Portfolio/images/projects/saveEnv/env1.png",
-      "/Portfolio/images/projects/saveEnv/env2.png",
-      "/Portfolio/images/projects/saveEnv/env3.png",
-      "/Portfolio/images/projects/saveEnv/env4.png",
-      "/Portfolio/images/projects/saveEnv/env5.png",
-      "/Portfolio/images/projects/saveEnv/env6.png"
+      "/Portfolio/images/projects/saveEnv/env1.avif",
+      "/Portfolio/images/projects/saveEnv/env2.avif",
+      "/Portfolio/images/projects/saveEnv/env3.avif",
+      "/Portfolio/images/projects/saveEnv/env4.avif",
+      "/Portfolio/images/projects/saveEnv/env5.avif",
+      "/Portfolio/images/projects/saveEnv/env6.avif"
     ], 
     tags: ["HTML", "CSS", "JavaScript", "Replit", "Web Development"], 
     github: "https://replit.com/@Harini05/final-project-for-real", 
