@@ -22,18 +22,25 @@ import ProjectCard from "../components/projectCard.astro";
 
 
 <style>
+.container h3 {
+  font-size: clamp(0.95rem, 2.5vw, 1.15rem);
+  line-height: 1.5;
+  margin-bottom: 0rem;
+}
+
 .projects-container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 3rem 1rem 1rem;
+  box-sizing: border-box;
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+  grid-template-columns: repeat(auto-fit, minmax(clamp(220px, 250px, 300px), clamp(320px, 350px, 400px)));
   gap: 2rem;
-  margin-top: 0rem;
+  margin: 0 auto;
   justify-content: center;
   justify-items: center;
 }
