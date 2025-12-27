@@ -343,7 +343,7 @@ li {
   justify-content: flex-end;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .resume-header {
     flex-direction: column;
     align-items: stretch;
@@ -352,6 +352,77 @@ li {
   .resume-header .right {
     justify-content: flex-start;
   }
+  
+  .left-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+
+  ul {
+	padding-left: 0;
+	margin-left: 0;
+	list-style-position: inside;
+	/* list-style: none; // use this only for no bullet points*/
+  }
+
+  li {
+	margin-left: 0;
+  }
+
+  .card {
+    border-radius: 16px;
+    padding: 1.4rem 1.2rem;
+  }
+
+  .card .employer, .tags p, .tags2 p, .tags3 p, .tags4 p {
+    border-radius: 12px;
+  }
+
+  .card .lightBox {
+    border-radius: 14px;
+    margin: 0.6rem 0;
+  }
+
+  .tags, .tags2, .tags3, .tags4 {
+    gap: 0.35rem;
+  }
+
+  .tags p, .tags2 p, .tags3 p, .tags4 p {
+    font-size: 0.8rem;
+    padding: 0.35rem 0.7rem;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .resume-header {
+    gap: 1rem;
+  }
+
+  .resume-header .right {
+    justify-content: flex-start;
+  }
+
+  .button {
+    width: fit-content;
+  }
+
+  .section-header {
+    gap: 0.75rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .section-header .icon {
+    width: 44px;
+    height: 44px;
+  }
 }
+
 
 </style>
