@@ -13,7 +13,8 @@ import Footer from "../components/footer.astro";
 				<h3> My professional experience and qualifications</h3>
 			</div>
 			<div class = "right">
-				<p class = "button"> <img src = "/Portfolio/images/icons/downloads.png" /> Download PDF </p>
+				<a href="https://drive.google.com/file/d/1iDEmHgWbcAa8iKEHteGnwABQtHJkbcrT/view?usp=sharing" class = "button"> 
+          <img src = "/Portfolio/images/icons/downloads.png" /> Download PDF </a>
 			</div>
 		</div>
 
@@ -73,7 +74,7 @@ import Footer from "../components/footer.astro";
     		<p class = "title"> Bachelor of Science in Computer Science and minor in Mathematics</p>
 			<p2> University of Illinois at Chicago | 2024 - 2027 </p2>
 			<div class = "tags"> 
-				<p> GPA: 4.0/4.0</p>
+				<p class = "extra"> GPA: 4.0/4.0</p>
 			</div>
 			<p class = "title"> Relevant Coursework: </p>
 			<div class = "tags2"> 
@@ -163,6 +164,7 @@ import Footer from "../components/footer.astro";
   font-size: 1rem;
   cursor: pointer;
   transition: 0.25s ease;
+  text-decoration: none;
 }
 
 .button:hover {
@@ -211,6 +213,11 @@ import Footer from "../components/footer.astro";
   flex-wrap: wrap;
   column-gap: 0.6rem;
   row-gap: 0.6rem;
+}
+
+.tags .extra{
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
 }
 
 .tags p, .tags2 p, .tags3 p, .tags4 p {
