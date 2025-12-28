@@ -24,6 +24,7 @@ const { project } = Astro.props;
   <div class="buttons">
     {project.github && (<a href={project.github} target="_blank" class="btn btn-code">Code</a>)}
     {project.demo && (<a href={project.demo} target="_blank" class="btn btn-demo">Demo</a>)}
+    {project.report && (<a href={project.report} target="_blank" class="btn btn-report">Report</a>)}
   </div>
 </article>
 
@@ -149,6 +150,18 @@ const { project } = Astro.props;
   background: rgba(200, 255, 225, 1);
   border-color: #4fdc87;
   color: #14793f;
+}
+
+.btn-report {
+  background: rgba(255, 230, 239, 0.8);
+  border-color: #e27abeff;
+  color: #8e1a79ff;
+}
+
+.btn-report:hover {
+  background: rgba(255, 200, 222, 1);
+  border-color: #dc4fa4ff;
+  color: #79142dff;
 }
 
 .card-link-overlay {
