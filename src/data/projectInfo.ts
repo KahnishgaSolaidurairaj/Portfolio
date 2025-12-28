@@ -130,7 +130,7 @@ export const projects: Project[] = [
     title: "3 Card Poker",
     description: "A multiplayer, networked 3-Card Poker game built with Java, featuring a client–server architecture, real-time gameplay, and a JavaFX-based graphical interface.",
     fullDescription: "This project implements a fully networked version of the casino game 3-Card Poker using Java Sockets and JavaFX. I have split this project into two Maven projects: a multithreaded server and a graphical client. The server manages all game logic, card dealing, bet validation, and payout calculations, while each client connects independently to play their own game session against the dealer. Any number of clients can connect simultaneously, each running on its own thread and interacting with the server through serialized objects. The client provides an intuitive, multi-scene JavaFX interface that allows users to place bets, view cards, make play-or-fold decisions, and see detailed results after each hand. The server includes its own GUI to monitor connected clients, track bets, display game outcomes, and manage server state.",
-    date: "Sept-Dec 2025", 
+    date: "November 2025", 
     images: [
       "/Portfolio/images/projects/poker/poker1.avif",
       "/Portfolio/images/projects/poker/poker2.avif",
@@ -238,13 +238,14 @@ export const projects: Project[] = [
     challenges: "A major challenge was designing an intuitive and responsive JavaFX interface without using FXML or CSS. Managing user input validation—such as preventing illegal number selections—required careful event-driven logic. Coordinating game flow across multiple drawings while maintaining clear feedback for the user also required thoughtful state management.", 
     learnings: "This project improved my skills in event-driven programming and JavaFX GUI development. I learned how to manage complex user interactions, control application flow, and provide real-time feedback to users. Additionally, writing extensive unit tests for the game logic reinforced best practices for separating UI from core functionality."
   }, 
-  { id: "dataStructureLib", 
+  { id: "dataStrucLib", 
     title: "Custom Data Structure Library", 
-    description: "A custom Java data structure library implementing a generic Queue and HashMap with full iterator support.", 
+    description: "A custom Java data structure library implementing a generic Queue and HashMap with full iterator support", 
     fullDescription: "This project involved building a reusable data structure library in Java by implementing a generic Queue and HashMap from scratch, without using Java’s built-in collection classes. The Queue was implemented as a singly linked list following FIFO behavior, while the HashMap used an array of queues to handle collisions through chaining. The library was designed to be generic, allowing it to store different data types, and implemented the iterator design pattern to support forward and reverse traversal. Extensive JUnit tests were written to validate correctness, edge cases, and iterator behavior, ensuring the library could be reliably used by other programs.", 
-    date: "--- 2025", 
+    date: "September 2025", 
     images: [
-      "/Portfolio/images/projects/square.png"
+      "/Portfolio/images/projects/dataStrucLib/lib1.avif",
+      "/Portfolio/images/projects/dataStrucLib/lib2.avif"
     ], 
     tags: ["Iterator", "Java", "Maven", "JUnit 5"], 
     github: null, 
@@ -266,131 +267,10 @@ export const projects: Project[] = [
     ], 
     challenges: "One challenge was implementing core data structures from scratch without relying on Java’s built-in collections. Designing a generic singly linked list that could support both a queue and a hash map required careful handling of nodes, pointers, and edge cases such as empty lists. Implementing multiple iterators, including reverse iteration, added complexity and required a strong understanding of traversal logic.", 
     learnings: "This project strengthened my understanding of how fundamental data structures work internally. I gained experience with generics, inheritance, and the iterator design pattern, as well as collision handling in hash maps using linked lists. Writing unit tests for each method reinforced the importance of correctness and defensive programming when building reusable libraries."
-  }, 
-  { id: "typingShowdown",
-    title: "Typing Showdown",
-    description: "An interactive typing speed test that tracks accuracy and speed in real time, featuring visual feedback, detailed statistics, and customizable themes.",
-    fullDescription: "This project is a fun typing speed test built using HTML, CSS, and JavaScript. It challenges users to type a given text within a timed session while measuring typing speed (WPM) and accuracy through real-time string comparison. The interface provides instant visual feedback by highlighting mistyped characters and displaying progress through a dynamic progress bar. After each attempt, curated statistics are generated to help users track performance and improvement over time. To enhance usability and personalization, the application includes multiple theme options (light, dark, and pastel) allowing users to customize the look and feel of the game.",
-    date: "May 2025",
-    images: [
-      "/Portfolio/images/projects/square.png",
-      "/Portfolio/images/projects/square.png",
-      "/Portfolio/images/projects/square.png"
-    ],
-    tags: ["JavaScript", "CSS", "HTML"],
-    github: "https://github.com/KahnishgaSolaidurairaj/Typing-Showdown",
-    demo: "blah",
-    report: null,
-    features: [
-      "Real-time typing speed (WPM) and accuracy calculation",
-      "Visual progress bar to indicate status",
-      "Highligting of incorrectly typed characters or words", 
-      "Statisics after each run", 
-      "Multiple UI themes --> light, dark, and pastel"
-    ],technologies: [
-      "IDE: VSCode",
-      "HTML - structure and layout",
-      "CSS - styling and themes", 
-      "JavaScript - timers, string comparison, user unput handling, and statistics logic"
-    ],
-    challenges: "A challenge I faced was synchronizing timers with user input events.",
-    learnings: "I learned about implementing timers and performance tracking in JavaScript and handling string comparison efficiently for real-time feedback."
-  }, 
-  { id: "sparkhacks2024", 
-    title: "Sustain the Way", 
-    description: "Our goal is to reduce food waste and support communities by connecting them with food pantries. Our platform bridges the gap between farmers and pantries ensuring better allocation of resources.", 
-    fullDescription: "Our mission for Sustain the Way is to prevent food waste and food insecurity. This project was inspired by the ongoing issue of food waste and hunger. Food hunger is a problem as almost 47 million Americans face hunger, 1 in 5 are children. People struggle to find meals throught the world and farmers often discard surplus food due to distribution challenges. By creating a platform that connects farmers with food pantries in need we can reduce the waste. Our aim is to create a sustainable and food-secure future for all. This projected was created alongside Harini Solaidurairaj, Zona Noman, Asha Makwana, and Nguyet Pham. Check out our devpost submission --> https://devpost.com/software/sustaintheway", 
-    date: "February 2025", 
-    images: [
-      "/Portfolio/images/projects/sustainTheWay/sustainTheWay1.avif", 
-      "/Portfolio/images/projects/sustainTheWay/sustainTheWay2.avif", 
-      "/Portfolio/images/projects/sustainTheWay/sustainTheWay3.avif", 
-      "/Portfolio/images/projects/sustainTheWay/sustainTheWay4.avif", 
-      "/Portfolio/images/projects/sustainTheWay/sustainTheWay5.avif", 
-      "/Portfolio/images/projects/sustainTheWay/sustainTheWay6.avif"
-    ], 
-    tags: ["OpenAI", "CSS", "HTML", "JavaScript", "Node.js", "Git", "Python"], 
-    github: "https://github.com/HariniSolai/SustainTheWay", 
-    demo: "https://youtu.be/YYrFuMtBCTU?si=qqj_Rj2B1r0Y0pCV", 
-    report: "https://drive.google.com/file/d/1F_0qHVYASFzxZsEKkzUvYjBtT7a6o7S_/view?usp=sharing", 
-    features: [
-      "Find Pantries - Connects users to local food pantires to prevent food waste and food insercurity", 
-      "Learn - Join the mission! Read about STW's goals for the future!", 
-      "AI Powered Search - Ask any question in our search function to get solutions to your problems and answers to your questions!"
-    ], technologies: [
-      "IDE: VSCode", 
-      "Git Version Control", 
-      "openai API", 
-      "JavaScript, HTML, CSS", 
-      "Node.js", 
-      "Python"
-    ], 
-    challenges: "Setting up the Python 3 environment was initially challenging, but after a few searches we figured out the correct terminal commands needed to configure it properly. Once that was resolved, we used VS Code’s Live Server to continue development, which worked really well for instantly seeing changes as we coded. The biggest challenge by far was using Git and GitHub for version control. With a five person team working on different computers, certain packages were being overwritten, causing issues on some machines but not others. This made the problem difficult to identify at first. Afterward, we became much more careful about which files we pushed to GitHub and how we managed changes.", 
-    learnings: "This project was created for SparkHacks 2024, a campus wide event run by WiCS at UIC. It was my first time collaborating with a five others under a strict 24-hour time constraint. Even though the experience was short, I learned a lot about troubleshooting, debugging, and working efficiently under pressure. I also gained experience using online resources for HTML page layouts and learning specific CSS lines to customize the site to match our theme."
-  }, 
-  {id: "fitch2024", 
-    title: "UCAN Fleet Management Portal", 
-    description: "A simple, intuitive way to submit and organize Vehicle Requests and Returns. Allows for seamless communication between Staff and Managers. Contributes to an organized space, and easy record keeping.", 
-    fullDescription: "We were inspired by Break Through Tech Chicago's message of innovation and pioneering in the tech field. Before the Codeathon, none of us knew how to use any of the tools or softwares, but we took it as a challenge to learn and deliver a useful product to UCAN. Our website allows UCAN staff to access Vehicle management forms in an easy-to-access and intuitive website. When a staff member submits a Vehicle Request Form, an automated flow sends notifications and approval requests to their manager for seamless communication. Managers can find links to the requests in the emails sent through automation and can easily approve or reject requests without having to write out a full email. Information about the request, like status or if a vehicle has been allocated is also updated as approvals are given in the original form. Thus, all the information is linked together and managers do not need to go digging into paperwork for more information on the details of a request. We used Microsoft Automate to create workflows and automate email responses and next steps. SharePoint was used to organize and save request form information, vehicle return form submissions and vehicle status information. This application was created for the Chicago Fitch 2024 codeathon alongside Harini Solaidurairaj, Ariel Wong, Asha Makwana, Carissa Lau, and Rida Siddiqui. Check out our devpost submission --> https://devpost.com/software/ucan-fleet-portal-group-3", 
-    date: "Dec 2024", 
-    images: [
-      "/Portfolio/images/projects/fitch2024/ucan1.avif", 
-      "/Portfolio/images/projects/fitch2024/ucan2.avif",
-      "/Portfolio/images/projects/fitch2024/ucan3.avif", 
-      "/Portfolio/images/projects/fitch2024/ucan4.avif", 
-      "/Portfolio/images/projects/fitch2024/ucan5.avif", 
-      "/Portfolio/images/projects/fitch2024/ucan6.avif", 
-      "/Portfolio/images/projects/fitch2024/ucan7.avif"
-    ], 
-    tags: ["SharePoint", "Microsoft Power Automate", "Workflow Automation", "Codeathon"], 
-    github: null, 
-    demo: "https://youtu.be/uaeWwkiH64c?si=VZ17FtztFrCyECy0", 
-    report: "https://drive.google.com/drive/folders/1kf_TxkOja62NWQ-zXNKy0nRTMBARU8Th?usp=share_link", 
-    features: [
-      "Digital vehicle request and return forms built with SharePoint",
-      "Automated multi-step approval workflows using Microsoft Power Automate",
-      "Email-based approval and rejection with comments for clear communication",
-      "Real-time request status and vehicle availability tracking",
-      "Linked calendar view to visualize vehicle usage schedules"
-    ], technologies: [
-      "SharePoint", 
-      "Microsoft Power Automate",
-      "Microsoft Forms", 
-      "Outlook Email Integration"
-    ], 
-    challenges: "A huge challenge for all of us was unfamiliarity with the softwares. Before this Codeathon, none of us had used SharePoint, created flows or even knew what a flow was. We had to overcome a huge learning curve in order to get anything working. If we had more time, we would have liked to polish the website's user interface. ", 
-    learnings: "This project taught us how to quickly learn and apply low-code tools to build real-world business solutions under tight time constraints. We gained hands-on experience designing automated workflows, managing structured data in SharePoint, and thinking critically about user roles, approval logic, and process efficiency. Most importantly, we learned how technology can be leveraged to streamline operations and create meaningful impact for UCAN Chicago a non-profit organization."
-  }, 
-  { id: "ciphers", 
-    title: "Ciphers", 
-    description: "A C++ command-line application for encrypting and decrypting text using classical cryptographic ciphers", 
-    fullDescription: "Implements multiple classical encryption and decryption techniques, including Caesar and substitution ciphers. This project supports both encryption and decryption workflows, with Caesar cipher decryption implemented using brute-force techniques combined with dictionary-based validation. For substitution cipher decryption, a hill-climbing algorithm guided by quadgram frequency scoring is used to evaluate the 'English-likeness' of candidate decryptions. The program is structured using helper functions and careful function decomposition, and all functionality is validated through an extensive milestone-based test suite.", 
-    date: "February 2025", 
-    images: [
-      "/Portfolio/images/projects/square.png"
-    ], 
-    tags: ["C++", "Algotithms", "Cryptography"], 
-    github: null, 
-    demo: null, 
-    report: null, 
-    features: [
-      "Caesar cipher encryption and brute-force decryption",
-      "Substitution cipher encryption and decryption using hill climbing",
-      "Dictionary-based validation for Caesar decryption",
-      "Quadgram-based scoring to evaluate English text likelihood",
-      "File-based and console-based decryption support"
-    ], technologies: [
-      "IDE: VSCode", 
-      "C++", 
-      "string, vector, streams",
-      "Makefile"
-    ], 
-    challenges: "The most challenging aspect of this project was designing efficient and correct decryption logic, especially for the substitution cipher. Implementing the hill-climbing algorithm required careful tuning to balance performance and accuracy. Another challenge was adhering to the project constraints, such as avoiding additional libraries and global variables, while still maintaining readable and modular code.", 
-    learnings: "This project strengthened my understanding of algorithmic problem-solving and cryptanalysis techniques. I gained experience working with brute-force approaches, probabilistic scoring using quadgrams, and performance-aware C++ programming. It also reinforced the importance of clean function decomposition and systematic testing when working with complex logic."
-  },
-  { id: "search", 
-    title: "Search", 
-    description: "Cs 251 proj 2", 
+  }, /*
+  { id: "gpip", 
+    title: "Detecting Emotions in LLM's - Ollama", 
+    description: "GPIP exeriance", 
     fullDescription: "", 
     date: "--- 2025", 
     images: [
@@ -409,38 +289,39 @@ export const projects: Project[] = [
     ], 
     challenges: "", 
     learnings: ""
-  },
-  { id: "lists", 
-    title: "Lists", 
-    description: "A C++ data structures project implementing and rigorously testing a singly linked list and a circular vector", 
-    fullDescription: "The Lists project is a comprehensive C++ data structures assignment focused on implementing a templated singly linked list and a circular vector from scratch. In addition to implementing core functionality, the project emphasizes writing thorough GoogleTest test suites designed to catch buggy implementations. Both data structures support common operations such as insertion, deletion, indexing, copying, and string conversion, while ensuring memory safety through proper pointer management and AddressSanitizer validation. The project follows a milestone-based development process that integrates testing and implementation at every stage.", 
-    date: "March 2025", 
+  }, */
+  { id: "typingShowdown",
+    title: "Typing Showdown",
+    description: "An interactive typing speed test that tracks accuracy and speed in real time, featuring visual feedback, detailed statistics, and customizable themes.",
+    fullDescription: "This project is a fun typing speed test built using HTML, CSS, and JavaScript. It challenges users to type a given text within a timed session while measuring typing speed (WPM) and accuracy through real-time string comparison. The interface provides instant visual feedback by highlighting mistyped characters and displaying progress through a dynamic progress bar. After each attempt, curated statistics are generated to help users track performance and improvement over time. To enhance usability and personalization, the application includes multiple theme options (light, dark, and pastel) allowing users to customize the look and feel of the game.",
+    date: "May 2025",
     images: [
-      "/Portfolio/images/projects/square.png"
-    ], 
-    tags: ["Data Structures", "C++", "Testing"], 
-    github: null, 
-    demo: null, 
-    report: null, 
+      "/Portfolio/images/projects/typingShowdown/typing1.avif",
+      "/Portfolio/images/projects/typingShowdown/typing2.avif",
+      "/Portfolio/images/projects/typingShowdown/typing3.avif"
+    ],
+    tags: ["JavaScript", "CSS", "HTML"],
+    github: "https://github.com/KahnishgaSolaidurairaj/Typing-Showdown",
+    demo: "https://youtu.be/IIoVs027G4E",
+    report: null,
     features: [
-      "Templated singly linked list implementation",
-      "Circular vector with O(1) push and pop at both ends",
-      "Comprehensive GoogleTest test suites for all operations",
-      "Copy constructor and assignment operator support",
-      "Memory-safe implementations validated with AddressSanitizer"
-    ], technologies: [
-      "IDE: VSCode", 
-      "C++", 
-      "GoogleTest", 
-      "AdressSanitizer", 
-      "Makefile"
-    ], 
-    challenges: "One of the main challenges was debugging pointer-related issues while maintaining strict memory safety guarantees. Writing tests that reliably exposed buggy implementations required careful thought about edge cases and undefined behavior. Implementing the circular vector was particularly challenging due to index wrapping and resizing logic.", 
-    learnings: "This project significantly improved my understanding of low-level data structure implementation and memory management in C++. I gained hands-on experience writing high-quality tests that validate both correctness and robustness. The emphasis on AddressSanitizer reinforced best practices for avoiding memory leaks and undefined behavior."
-  },
-  { id: "bst", 
-    title: "BST", 
-    description: "CS 251 Proj 4", 
+      "Real-time typing speed (WPM) and accuracy calculation",
+      "Visual progress bar to indicate status",
+      "Highligting of incorrectly typed characters or words", 
+      "Statisics after each run", 
+      "Multiple UI themes --> light, dark, and pastel"
+    ],technologies: [
+      "IDE: VSCode",
+      "HTML - structure and layout",
+      "CSS - styling and themes", 
+      "JavaScript - timers, string comparison, user unput handling, and statistics logic"
+    ],
+    challenges: "A challenge I faced was synchronizing timers with user input events.",
+    learnings: "I learned about implementing timers and performance tracking in JavaScript and handling string comparison efficiently for real-time feedback."
+  }, /*
+  { id: "openStMaps", 
+    title: "Open Street Maps", 
+    description: "Cs 251 proj 6", 
     fullDescription: "", 
     date: "--- 2025", 
     images: [
@@ -481,148 +362,193 @@ export const projects: Project[] = [
     ], 
     challenges: "", 
     learnings: ""
-  },
-  { id: "openStMaps", 
-    title: "Open Street Maps", 
-    description: "Cs 251 proj 6", 
-    fullDescription: "", 
-    date: "--- 2025", 
+  }, */
+  { id: "bst", 
+    title: "Binary Search Tree", 
+    description: "Implemented a generic binary search tree with full support for insertion, deletion, lookup, and traversal", 
+    fullDescription: "This project involved designing and implementing a binary search tree that maintains strict ordering properties while supporting efficient data operations. The implementation required careful handling of recursion, pointer-based memory management, and edge cases to ensure correctness and robustness across all operations.", 
+    date: "March 2025", 
     images: [
-      "/Portfolio/images/projects/square.png"
+      "/Portfolio/images/projects/bst/bst1.avif",
+      "/Portfolio/images/projects/bst/bst2.avif"
     ], 
-    tags: [""], 
+    tags: ["Data Structures", "C++", "Memory Safety"], 
     github: null, 
     demo: null, 
     report: null, 
     features: [
-      "", 
-      ""
+      "Implemented a generic binary search tree with key-value storage",
+      "Preserved BST ordering invariants across insertion, lookup, and deletion",
+      "Handled all deletion cases, including nodes with two children",
+      "Provided recursive traversal for efficient and sorted data access",
+      "Ensured memory safety through proper allocation, destruction, and testing"
     ], technologies: [
       "IDE: VSCode", 
-      ""
+      "C++"
     ], 
-    challenges: "", 
-    learnings: ""
+    challenges: "The most challenging part was implementing node deletion correctly, particularly handling nodes with two children while maintaining tree structure. Debugging pointer-related issues and ensuring proper memory cleanup required close attention to detail.",
+    learnings: "Through this project, I developed a strong understanding of tree-based data structures, recursion, and dynamic memory management. I learned how to design clean abstractions, manage complex edge cases, and write reliable low-level code—experience that directly translates to systems programming and backend development."
   },
-  { id: "cell", 
-    title: "Totalistic Cellular Automaton", 
-    description: "CS 211 proj 1", 
-    fullDescription: "", 
-    date: "--- 2024", 
+  { id: "lists", 
+    title: "Lists", 
+    description: "A C++ data structures project implementing and rigorously testing a singly linked list and a circular vector", 
+    fullDescription: "The Lists project is a comprehensive C++ data structures assignment focused on implementing a templated singly linked list and a circular vector from scratch. In addition to implementing core functionality, the project emphasizes writing thorough GoogleTest test suites designed to catch buggy implementations. Both data structures support common operations such as insertion, deletion, indexing, copying, and string conversion, while ensuring memory safety through proper pointer management and AddressSanitizer validation. The project follows a milestone-based development process that integrates testing and implementation at every stage.", 
+    date: "March 2025", 
     images: [
-      "/Portfolio/images/projects/square.png"
+      "/Portfolio/images/projects/lists/list1.avif",
+      "/Portfolio/images/projects/lists/list2.avif"
     ], 
-    tags: ["C"], 
+    tags: ["Data Structures", "C++", "Testing"], 
     github: null, 
     demo: null, 
     report: null, 
     features: [
-      "", 
-      ""
+      "Templated singly linked list implementation",
+      "Circular vector with O(1) push and pop at both ends",
+      "Comprehensive GoogleTest test suites for all operations",
+      "Copy constructor and assignment operator support",
+      "Memory-safe implementations validated with AddressSanitizer"
     ], technologies: [
-      "IDE: zyBooks", 
-      ""
+      "IDE: VSCode", 
+      "C++", 
+      "GoogleTest", 
+      "AdressSanitizer", 
+      "Makefile"
     ], 
-    challenges: "", 
-    learnings: ""
+    challenges: "One of the main challenges was debugging pointer-related issues while maintaining strict memory safety guarantees. Writing tests that reliably exposed buggy implementations required careful thought about edge cases and undefined behavior. Implementing the circular vector was particularly challenging due to index wrapping and resizing logic.", 
+    learnings: "This project significantly improved my understanding of low-level data structure implementation and memory management in C++. I gained hands-on experience writing high-quality tests that validate both correctness and robustness. The emphasis on AddressSanitizer reinforced best practices for avoiding memory leaks and undefined behavior."
   },
-  { id: "foodWeb", 
-    title: "Food Web Analysis with Dynamic Memory", 
-    description: "CS 211 proj 2", 
-    fullDescription: "", 
-    date: "--- 2024", 
+  { id: "sparkhacks2024", 
+    title: "Sustain the Way", 
+    description: "Our goal is to reduce food waste and support communities by connecting them with food pantries. Our platform bridges the gap between farmers and pantries ensuring better allocation of resources.", 
+    fullDescription: "Our mission for Sustain the Way is to prevent food waste and food insecurity. This project was inspired by the ongoing issue of food waste and hunger. Food hunger is a problem as almost 47 million Americans face hunger, 1 in 5 are children. People struggle to find meals throught the world and farmers often discard surplus food due to distribution challenges. By creating a platform that connects farmers with food pantries in need we can reduce the waste. Our aim is to create a sustainable and food-secure future for all. This projected was created alongside Harini Solaidurairaj, Zona Noman, Asha Makwana, and Nguyet Pham. Check out our devpost submission --> https://devpost.com/software/sustaintheway", 
+    date: "February 2025", 
     images: [
-      "/Portfolio/images/projects/square.png"
+      "/Portfolio/images/projects/sustainTheWay/sustainTheWay1.avif", 
+      "/Portfolio/images/projects/sustainTheWay/sustainTheWay2.avif", 
+      "/Portfolio/images/projects/sustainTheWay/sustainTheWay3.avif", 
+      "/Portfolio/images/projects/sustainTheWay/sustainTheWay4.avif", 
+      "/Portfolio/images/projects/sustainTheWay/sustainTheWay5.avif", 
+      "/Portfolio/images/projects/sustainTheWay/sustainTheWay6.avif"
     ], 
-    tags: ["C"], 
+    tags: ["OpenAI", "CSS", "HTML", "JavaScript", "Node.js", "Git", "Python"], 
+    github: "https://github.com/HariniSolai/SustainTheWay", 
+    demo: "https://youtu.be/YYrFuMtBCTU?si=qqj_Rj2B1r0Y0pCV", 
+    report: "https://drive.google.com/file/d/1F_0qHVYASFzxZsEKkzUvYjBtT7a6o7S_/view?usp=sharing", 
+    features: [
+      "Find Pantries - Connects users to local food pantires to prevent food waste and food insercurity", 
+      "Learn - Join the mission! Read about STW's goals for the future!", 
+      "AI Powered Search - Ask any question in our search function to get solutions to your problems and answers to your questions!"
+    ], technologies: [
+      "IDE: VSCode", 
+      "Git Version Control", 
+      "openai API", 
+      "JavaScript, HTML, CSS", 
+      "Node.js", 
+      "Python"
+    ], 
+    challenges: "Setting up the Python 3 environment was initially challenging, but after a few searches we figured out the correct terminal commands needed to configure it properly. Once that was resolved, we used VS Code’s Live Server to continue development, which worked really well for instantly seeing changes as we coded. The biggest challenge by far was using Git and GitHub for version control. With a five person team working on different computers, certain packages were being overwritten, causing issues on some machines but not others. This made the problem difficult to identify at first. Afterward, we became much more careful about which files we pushed to GitHub and how we managed changes.", 
+    learnings: "This project was created for SparkHacks 2024, a campus wide event run by WiCS at UIC. It was my first time collaborating with a five others under a strict 24-hour time constraint. Even though the experience was short, I learned a lot about troubleshooting, debugging, and working efficiently under pressure. I also gained experience using online resources for HTML page layouts and learning specific CSS lines to customize the site to match our theme."
+  }, 
+  { id: "search", 
+    title: "Search", 
+    description: "Exploration of search algorithms with an emphasis on efficiency, correctness, and real-world performance trade-offs", 
+    fullDescription: "This project focused on implementing and comparing different search strategies to locate data efficiently. The work involved analyzing algorithm behavior, handling edge cases, and validating results through structured testing. By experimenting with multiple approaches, the project emphasized understanding how algorithmic design choices affect performance and scalability.", 
+    date: "February 2025", 
+    images: [
+      "/Portfolio/images/projects/search/search1.avif",
+      "/Portfolio/images/projects/search/search2.avif"
+    ], 
+    tags: ["Algorithms", "Problem Solving", "Performance Analysis"], 
     github: null, 
     demo: null, 
     report: null, 
     features: [
-      "", 
-      ""
+      "Normalized and extracted unique tokens from text for accurate indexing",
+      "Built an inverted index mapping words to the pages in which they appear",
+      "Implemented Boolean-style search queries using union, intersection, and exclusion",
+      "Processed structured data files and handled missing query terms gracefully",
+      "Integrated and validated the system through an interactive search interface with extensive testing"
     ], technologies: [
-      "IDE: zyBooks", 
-      ""
+      "IDE: VSCode", 
+      "C++"
     ], 
-    challenges: "", 
-    learnings: ""
+    challenges: "A key challenge was debugging incorrect search results caused by subtle off-by-one and boundary errors. Ensuring correctness across all edge cases required systematic testing and careful reasoning about control flow.", 
+    learnings: "This project strengthened my understanding of algorithmic thinking and time complexity. I learned how to evaluate trade-offs between different approaches, write precise conditional logic, and validate correctness using structured tests—skills essential for building reliable and efficient software."
   },
-  { id: "wordLadder", 
-    title: "Word Ladder Builder", 
-    description: "CS 211 proj 3", 
-    fullDescription: "", 
-    date: "--- 2024", 
+  { id: "ciphers", 
+    title: "Ciphers", 
+    description: "A C++ command-line application for encrypting and decrypting text using classical cryptographic ciphers", 
+    fullDescription: "Implements multiple classical encryption and decryption techniques, including Caesar and substitution ciphers. This project supports both encryption and decryption workflows, with Caesar cipher decryption implemented using brute-force techniques combined with dictionary-based validation. For substitution cipher decryption, a hill-climbing algorithm guided by quadgram frequency scoring is used to evaluate the 'English-likeness' of candidate decryptions. The program is structured using helper functions and careful function decomposition, and all functionality is validated through an extensive milestone-based test suite.", 
+    date: "February 2025", 
     images: [
-      "/Portfolio/images/projects/square.png"
+      "/Portfolio/images/projects/ciphers/cip1.avif",
+      "/Portfolio/images/projects/ciphers/cip2.avif",
+      "/Portfolio/images/projects/ciphers/cip3.avif",
+      "/Portfolio/images/projects/ciphers/cip4.avif"
     ], 
-    tags: ["C"], 
+    tags: ["C++", "Algotithms", "Cryptography"], 
     github: null, 
     demo: null, 
     report: null, 
     features: [
-      "", 
-      ""
+      "Caesar cipher encryption and brute-force decryption",
+      "Substitution cipher encryption and decryption using hill climbing",
+      "Dictionary-based validation for Caesar decryption",
+      "Quadgram-based scoring to evaluate English text likelihood",
+      "File-based and console-based decryption support"
     ], technologies: [
-      "IDE: zyBooks", 
-      ""
+      "IDE: VSCode", 
+      "C++", 
+      "string, vector, streams",
+      "Makefile"
     ], 
-    challenges: "", 
-    learnings: ""
+    challenges: "The most challenging aspect of this project was designing efficient and correct decryption logic, especially for the substitution cipher. Implementing the hill-climbing algorithm required careful tuning to balance performance and accuracy. Another challenge was adhering to the project constraints, such as avoiding additional libraries and global variables, while still maintaining readable and modular code.", 
+    learnings: "This project strengthened my understanding of algorithmic problem-solving and cryptanalysis techniques. I gained experience working with brute-force approaches, probabilistic scoring using quadgrams, and performance-aware C++ programming. It also reinforced the importance of clean function decomposition and systematic testing when working with complex logic."
   },
-  { id: "voting", 
-    title: "Popular Vote Minimizer", 
-    description: "CS 211 proj 4", 
-    fullDescription: "", 
-    date: "--- 2024", 
+  {id: "fitch2024", 
+    title: "UCAN Fleet Management Portal", 
+    description: "A simple, intuitive way to submit and organize Vehicle Requests and Returns. Allows for seamless communication between Staff and Managers. Contributes to an organized space, and easy record keeping.", 
+    fullDescription: "We were inspired by Break Through Tech Chicago's message of innovation and pioneering in the tech field. Before the Codeathon, none of us knew how to use any of the tools or softwares, but we took it as a challenge to learn and deliver a useful product to UCAN. Our website allows UCAN staff to access Vehicle management forms in an easy-to-access and intuitive website. When a staff member submits a Vehicle Request Form, an automated flow sends notifications and approval requests to their manager for seamless communication. Managers can find links to the requests in the emails sent through automation and can easily approve or reject requests without having to write out a full email. Information about the request, like status or if a vehicle has been allocated is also updated as approvals are given in the original form. Thus, all the information is linked together and managers do not need to go digging into paperwork for more information on the details of a request. We used Microsoft Automate to create workflows and automate email responses and next steps. SharePoint was used to organize and save request form information, vehicle return form submissions and vehicle status information. This application was created for the Chicago Fitch 2024 codeathon alongside Harini Solaidurairaj, Ariel Wong, Asha Makwana, Carissa Lau, and Rida Siddiqui. Check out our devpost submission --> https://devpost.com/software/ucan-fleet-portal-group-3", 
+    date: "Dec 2024", 
     images: [
-      "/Portfolio/images/projects/square.png"
+      "/Portfolio/images/projects/fitch2024/ucan1.avif", 
+      "/Portfolio/images/projects/fitch2024/ucan2.avif",
+      "/Portfolio/images/projects/fitch2024/ucan3.avif", 
+      "/Portfolio/images/projects/fitch2024/ucan4.avif", 
+      "/Portfolio/images/projects/fitch2024/ucan5.avif", 
+      "/Portfolio/images/projects/fitch2024/ucan6.avif", 
+      "/Portfolio/images/projects/fitch2024/ucan7.avif"
     ], 
-    tags: ["C"], 
+    tags: ["SharePoint", "Microsoft Power Automate", "Workflow Automation", "Codeathon"], 
     github: null, 
-    demo: null, 
-    report: null, 
+    demo: "https://youtu.be/uaeWwkiH64c?si=VZ17FtztFrCyECy0", 
+    report: "https://drive.google.com/drive/folders/1kf_TxkOja62NWQ-zXNKy0nRTMBARU8Th?usp=share_link", 
     features: [
-      "", 
-      ""
+      "Digital vehicle request and return forms built with SharePoint",
+      "Automated multi-step approval workflows using Microsoft Power Automate",
+      "Email-based approval and rejection with comments for clear communication",
+      "Real-time request status and vehicle availability tracking",
+      "Linked calendar view to visualize vehicle usage schedules"
     ], technologies: [
-      "IDE: zyBooks", 
-      ""
+      "SharePoint", 
+      "Microsoft Power Automate",
+      "Microsoft Forms", 
+      "Outlook Email Integration"
     ], 
-    challenges: "", 
-    learnings: ""
-  },
-  { id: "shortestLadder", 
-    title: "Find Shortest Word Ladder", 
-    description: "CS 211 proj 5  In this project we utilize Linked lists instead of arrays and thus the use of pointers and dereferencing comes into play in this project. We also had to debug since the program had to find the shortest ladder based on the critera.", 
-    fullDescription: "", 
-    date: "--- 2024", 
-    images: [
-      "/Portfolio/images/projects/square.png"
-    ], 
-    tags: ["C"], 
-    github: null, 
-    demo: null, 
-    report: null, 
-    features: [
-      "", 
-      ""
-    ], technologies: [
-      "IDE: zyBooks", 
-      ""
-    ], 
-    challenges: "", 
-    learnings: ""
+    challenges: "A huge challenge for all of us was unfamiliarity with the softwares. Before this Codeathon, none of us had used SharePoint, created flows or even knew what a flow was. We had to overcome a huge learning curve in order to get anything working. If we had more time, we would have liked to polish the website's user interface. ", 
+    learnings: "This project taught us how to quickly learn and apply low-code tools to build real-world business solutions under tight time constraints. We gained hands-on experience designing automated workflows, managing structured data in SharePoint, and thinking critically about user roles, approval logic, and process efficiency. Most importantly, we learned how technology can be leveraged to streamline operations and create meaningful impact for UCAN Chicago a non-profit organization."
   },
   { id: "pointerMaze", 
     title: "Grid Pointer Maze", 
-    description: "CS 211 proj 6", 
-    fullDescription: "The goal is to pass through a maze of pointer using (N, W, S, E) using constructors and decunstructers in C++, the focus is also on GDB. We used the memory adress of the pointers to hand trace a map and to be able to take note of the walls and also on which positions are the Potion, wand and speelbook as those are the three items we are searching for. we have excaped the maze if the path we go in goes through collects all three items. And if we change the key which is currentely set as 'ksola6' the whole maze can be changed. Note if we reset the virtual environment the memory adress may change but the maze has the same shape. (I have copies of my GDB logs in google drive)", 
-    date: "--- 2024", 
+    description: "Explored pointer-based data structures and memory debugging by navigating a dynamically linked maze in C++", 
+    fullDescription: "This project focused on building and exploring a pointer-based maze implemented using dynamic memory allocation in C++. I first implemented a templated two-dimensional Grid abstraction backed by heap-allocated arrays and proper constructors and destructors. This grid abstraction was then used to represent a labyrinth of interconnected rooms, where each room was linked via directional pointers. Using GDB, I manually traced memory addresses to map out the maze, identify walls, and locate key items. The maze is considered solved only when a valid path collects the Spellbook, Potion, and Wand. Changing the maze key regenerates the pointer layout. Additionally if the virtual environment is reset the memory adress may change but the maze has the same shape.", 
+    date: "November 2024", 
     images: [
-      "/Portfolio/images/projects/square.png"
+      "/Portfolio/images/projects/pointerMaze/maze1.avif",
+      "/Portfolio/images/projects/pointerMaze/maze2.avif"
     ], 
-    tags: ["GDB", "C++"], 
+    tags: ["GDB", "C++", "Pointers", "Memory Management", "Debugging"], 
     github: null, 
     demo: null, 
     report: null, 
@@ -634,34 +560,12 @@ export const projects: Project[] = [
     ], technologies: [
       "IDE: zyBooks", 
       "C++",
-      "GDB",
-      "Pointers",
+      "Debugger: GDB",
+      "Pointers & Dynamic Memory",
       "Memory Adress"
     ], 
-    challenges: "This was my first time using GDB so it took a while for me to figure out", 
-    learnings: ""
-  },
-  { id: "game", 
-    title: "Outlast the Baddies and Avoid the abyss", 
-    description: "CS 211 proj 7", 
-    fullDescription: "One player game where the goal is to get the Hero to the exit while monsters and walls block the path. This is an interactive game where the user used keys on the computer board to move around. This project relied heavily on try catch statements to make sure no illegal moves were made and redirect the Hero and monsters from errors and collisions like going of the board. Its also what allowed the Hero to either win or lose.", 
-    date: "--- 2024", 
-    images: [
-      "/Portfolio/images/projects/square.png"
-    ], 
-    tags: ["C++"], 
-    github: null, 
-    demo: null, 
-    report: null, 
-    features: [
-      "", 
-      ""
-    ], technologies: [
-      "IDE: zyBooks", 
-      ""
-    ], 
-    challenges: "", 
-    learnings: ""
+    challenges: "This was my first experience working extensively with GDB and low-level pointer debugging. Tracing memory addresses, understanding segmentation faults, and mapping pointer relationships required patience and careful reasoning.",
+    learnings: "This project gave me a strong understanding of pointer-based data structures, dynamic memory management, and debugging at the memory level. I learned how constructors and destructors control object lifecycles, how pointer errors lead to segmentation faults, and how powerful debugging tools like GDB are for diagnosing complex systems-level issues."
   },
   { id: "greenEnv", 
     title: "Save the Environment", 
