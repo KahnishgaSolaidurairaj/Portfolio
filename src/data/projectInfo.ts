@@ -16,6 +16,35 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  { id: "winter25",
+    title: "Digital Journal",
+    description: "Digital Scrapbook of my experiances through winter break",
+    fullDescription: "Created a responsive, animated digital scrapbook showcasing food, movis, places and my thoughts through winter-break. Implemented scroll-based animations and interactive galleries using React and Framer Motion for the first time to create an immersive storytelling experiance",
+    date: "January 2026",
+    images: [
+      "/Portfolio/images/projects/winter25/journal2.avif",
+      "/Portfolio/images/projects/winter25/journal1.avif", 
+      "/Portfolio/images/projects/winter25/journal3.avif",
+      "/Portfolio/images/projects/winter25/journal4.avif"
+    ],
+    tags: ["React", "Framer Motion", "Vercel"],
+    github: "https://github.com/KahnishgaSolaidurairaj/Digital-Journal", 
+    demo: "https://winter25-journal.vercel.app", 
+    report: null,
+    features: [
+      "Scroll-based animations",
+      "Photo grids --> full-screen modal views",
+      "Light mode theme",
+      "Pictures and commentary"
+    ], technologies: [
+      "IDE: VSCode",
+      "React",
+      "Framer Motion",
+      "Deployed on Vercel"
+    ],
+    challenges: "I decided to use this project to learn new skills. I started with React and Framer Motion and it was my first time using inline CSS and that had a learning curve but I was able pick up the basics. I also intially created my repository in Github out of habit and since I decided to deploy it on VErcel I had to search up how to specifially deploy it witout creating a new repository.",
+    learnings: "I originally through that adding animations would be diffcult but Framer motion makes it easy to understand and very simple to get the basics down. I kept the design of this website minimalistic and that correlated with what this journal represents as a way of reflecting on my winter-break and experiances."
+  },
   { id: "fitch2025", 
     title: "Driving Sustainability using AI", 
     description: "Developed machine learning models that estimate Scope 1 and Scope 2 greenhouse gas emissions for non-reporting companies using ESG-related financial and operational data provided by Sustainable Fitch", 
