@@ -18,7 +18,7 @@ export interface Project {
 export const projects: Project[] = [
   { id: "winter25",
     title: "Digital Journal",
-    description: "Digital Scrapbook of my experiances through winter break",
+    description: "A Digital Scrapbook of my experiances through winter break highlighting the small sweet moments through the weeks",
     fullDescription: "Created a responsive, animated digital scrapbook showcasing food, movis, places and my thoughts through winter-break. Implemented scroll-based animations and interactive galleries using React and Framer Motion for the first time to create an immersive storytelling experiance",
     date: "January 2026",
     images: [
@@ -296,29 +296,36 @@ export const projects: Project[] = [
     ], 
     challenges: "One challenge was implementing core data structures from scratch without relying on Java’s built-in collections. Designing a generic singly linked list that could support both a queue and a hash map required careful handling of nodes, pointers, and edge cases such as empty lists. Implementing multiple iterators, including reverse iteration, added complexity and required a strong understanding of traversal logic.", 
     learnings: "This project strengthened my understanding of how fundamental data structures work internally. I gained experience with generics, inheritance, and the iterator design pattern, as well as collision handling in hash maps using linked lists. Writing unit tests for each method reinforced the importance of correctness and defensive programming when building reusable libraries."
-  }, /*
+  },
   { id: "gpip", 
     title: "Detecting Emotions in LLM's - Ollama", 
-    description: "GPIP exeriance", 
-    fullDescription: "", 
-    date: "--- 2025", 
+    description: "Research internship exploring emotional detection and hardware-level correlations in LLM behavior", 
+    fullDescription: "During this research internship, I conducted a structured research study to determine whether large language models specifically Ollama's Llama2 wxhibit measurable emotional patterns when exposed to anxiety-inducing and relaxation-based prompts. By replicating methodology from Ben-Zion's study on GPT-4, I implemented modified experiment scripts, collected STAI anxiety scores, and compared behavioral responses with prior published results. I also investigated whether emotional responses correlate with hardware-level spurious interrupts, experimenting with macOS tracing tools and custom interrupt logging pipelines. This project combined empirical testing, Pyhton-based ecperimentation, LLM prompting, and system-level monitoring. ", 
+    date: "June-August 2025", 
     images: [
-      "/Portfolio/images/projects/square.png"
+      "/Portfolio/images/projects/gpip/gpip1.avif",
+      "/Portfolio/images/projects/gpip/gpip2.avif"
     ], 
-    tags: [""], 
+    tags: ["LLMs", "Emotion Detection", "Research", "Python", "Ollama"], 
     github: null, 
     demo: null, 
-    report: null, 
+    report: "https://drive.google.com/file/d/1eImdrL86N3Pgf7zNizwJH6GrW2FIriN1/view?usp=sharing", 
     features: [
-      "", 
-      ""
+      "Replicated STAI emotion-scoring methodology using Ollama’s Llama2 model",
+      "Modified experiment code to handle anxiety-only, anxiety+relaxation, and baseline conditions",
+      "Collected and analyzed over 50 trials of STAI scores across different emotional prompts",
+      "Compared emotional response patterns to published GPT-4 results from Ben-Zion’s study",
+      "Attempted system-level interrupt correlation using fs_usage, logger scripts, and custom monitoring",
+      "Investigated feasibility of detecting spurious interrupts as potential signatures of emotional variance"
     ], technologies: [
       "IDE: VSCode", 
-      ""
+      "Ollama", 
+      "Python 3.11", 
+      "macOS Terminal + System Tools"
     ], 
-    challenges: "", 
-    learnings: ""
-  }, */
+    challenges: "The largest challenge was gathering and interpreting hardware-level interrupt data. macOS security restrictions prevented full DTrace access, forcing alternative methods such as filesystem-activity logging and a custom interrupt logger. Additionally, Llama2’s responses had higher baseline STAI scores than GPT-4, requiring careful trial balancing and repeated testing to obtain stable averages.",
+    learnings: "I gained experience with empirical research design, experiment replication, and LLM behavioral analysis. I strengthened my skills in Python scripting, prompt engineering, and using system-level tracing tools. The project taught me how to critically evaluate AI emotional outputs, validate findings against academic literature, and manage complex datasets. I also improved communication and teamwork by collaborating through Slack, email updates, and shared code repositories."
+  }, 
   { id: "typingShowdown",
     title: "Typing Showdown",
     description: "An interactive typing speed test that tracks accuracy and speed in real time, featuring visual feedback, detailed statistics, and customizable themes.",
@@ -347,51 +354,61 @@ export const projects: Project[] = [
     ],
     challenges: "A challenge I faced was synchronizing timers with user input events.",
     learnings: "I learned about implementing timers and performance tracking in JavaScript and handling string comparison efficiently for real-time feedback."
-  }, /*
+  },
   { id: "openStMaps", 
-    title: "Open Street Maps", 
-    description: "Cs 251 proj 6", 
-    fullDescription: "", 
-    date: "--- 2025", 
+    title: "OpenStreetMaps", 
+    description: "Built a directed, weighted graph from OpenStreetMaps JSON data using an adjacency list representation for routing and pathfinding", 
+    fullDescription: "This project focused on parsing real OpenStreetMaps JSON data and converting it into a fully functional graph structure used for routing computations. The implementation required extracting nodes and ways from structured geographic data, storing them as vertices and edges, calculating distances, and building an efficient adjacency list graph. This foundation supports shortest-path algorithms such as Dijkstra's for navigation applications.", 
+    date: "May 2025", 
     images: [
-      "/Portfolio/images/projects/square.png"
+      "/Portfolio/images/projects/openStreetMap/map1.avif",
+      "/Portfolio/images/projects/openStreetMap/map2.avif"
     ], 
-    tags: [""], 
+    tags: ["Graphs", "C++", "Parsing", "OpenStreetMaps"], 
     github: null, 
     demo: null, 
     report: null, 
-    features: [
-      "", 
-      ""
+    features: [ 
+      "Parsed OSM JSON data using nlohmann::json to extract locations and road segments",
+      "Built a directed, weighted graph using adjacency lists",
+      "Stored geospatial coordinates and computed edge weights using geographic distance formulas",
+      "Added support for vertex and edge creation, lookup, and direct neighbor traversal",
+      "Validated graph integrity and ensured correct one-way and two-way road handling",
+      "Set up a structure ready for shortest-path algorithms like Dijkstra’s"
     ], technologies: [
       "IDE: VSCode", 
-      ""
+      "C++",
+      "JSON Parsing"
     ], 
-    challenges: "", 
-    learnings: ""
+    challenges: "The most difficult aspect was converting OSM data into a clean graph representation. Handling one-way roads, assigning correct edge weights, and ensuring that all node references were mapped properly required a lot of debuggin. Additionally, dealing with real-world imperfect data introduced cases that needed error checking.", 
+    learnings: "This project strengthened my understanding of graph structures and adjacency lists. I learned how to parse real-world datasets, create reliabe graph abstractions, and prepare data structures for routing algorithms used in navagation systems. "
   },
   { id: "hash", 
-    title: "Hash", 
-    description: "CS 251 proj 5", 
-    fullDescription: "", 
-    date: "--- 2025", 
+    title: "HashMap", 
+    description: "Implemented a templated chaining-based hash table supporting dynamic resizing, insertion, lookup, deletion, and iteration", 
+    fullDescription: "This project involved building a fully functional hash map using separate chaining with a custom singly linked list structure. The design required managing dynamic memory, implementing a custom iterator, handling resizing and rehashing, and ensuring average-case constant-time performance for lookups and updates. The implementation focused on correctness, efficiency, and robust handling of hash collisions.", 
+    date: "April 2025", 
     images: [
-      "/Portfolio/images/projects/square.png"
+      "/Portfolio/images/projects/hash/hash1.avif"
     ], 
-    tags: [""], 
+    tags: ["Data Structures", "C++", "Hash Tables"], 
     github: null, 
     demo: null, 
     report: null, 
     features: [
-      "", 
-      ""
+      "Implemented a templated chaining hash map using singly linked lists",
+      "Supported insertion, deletion, lookup, updating, and iteration over key-value pairs",
+      "Designed a dynamic resizing mechanism with rehashing to maintain performance",
+      "Created a custom iterator supporting begin(), end(), and operator++",
+      "Ensured efficient handling of hash collisions using separate chaining",
+      "Implemented load factor monitoring and automatic table expansion"
     ], technologies: [
       "IDE: VSCode", 
-      ""
+      "C++"
     ], 
-    challenges: "", 
-    learnings: ""
-  }, */
+    challenges: "The most challenging part was implementing rehashing correctly while maintaining stable iteration behavior and avoiding memory leaks. Designing the iterator to traverse buckets and linked lists seamlessly required careful control of pointer movement and edge-case handling.",
+    learnings: "Through this project, I deepened my understanding of hashing, collision resolution, and average-case vs. worst-case performance. I gained practical experience with dynamic memory management, iterators, templating, and designing data structures that balance efficiency and correctness." 
+  }, 
   { id: "bst", 
     title: "Binary Search Tree", 
     description: "Implemented a generic binary search tree with full support for insertion, deletion, lookup, and traversal", 
