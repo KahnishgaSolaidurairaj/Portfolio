@@ -16,6 +16,37 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  { id: "toDoApp",
+    title: "ToDo App",
+    description: "A multi-tab task manager built to learn Flutter fundamentals, state management, and persistent local storage",
+    fullDescription: "I Built my first Flutter mobile application to understand cross-platform UI development and stateful widgets. This project includes a multi-tab ToDo system where users can create categorized task lists (General or Academic), mark items as complete, swipe to delete, and store everything locally using Hive. I also implemented a simple water-tracker tab as a hydration reminder increases the water icon opacity as progress increases. This project helped me learn Flutter’s widget tree, navigation patterns, and persistent data storage.",
+    date: "January 2026",
+    images: [
+      "/Portfolio/images/projects/toDoApp/app1.avif",
+      "/Portfolio/images/projects/toDoApp/app2.avif",
+      "/Portfolio/images/projects/toDoApp/app3.avif"
+    ],
+    tags: ["Flutter", "Dart", "Hive"],
+    github: "https://github.com/KahnishgaSolaidurairaj/ToDo-App",
+    demo: "https://youtube.com/shorts/t9Te6fLuvxo",
+    report: null,
+    features: [
+      "Add, edit, and delete tasks",
+      "Swipe-to-delete interaction",
+      "Task completion checkboxes",
+      "Organized task with category tabs (General, Academic, Water Tracker)",
+      "Local storage using Hive",
+      "Responsive layouts for iOS simulator"
+    ],
+    technologies: [
+      "IDE: VSCode",
+      "Flutter",
+      "Dart",
+      "Local storage via Hive"
+    ],
+    challenges: "This was my very first Flutter application, so understanding the widget tree and how state is passed between widgets took time. Setting up local storage with Hive required learning how adapters work and how to structure a persistent data model. I also had to debug iOS simulator build issues since since inbetween test I needed to reset local data. ",
+    learnings: "I learned how Flutter composes UIs using widgets, how to manage state, and how to persist user data on-device. I gained experience with ListView.builder and PageView for tabs. This project taught me the fundamentals needed for larger Flutter apps and gave me confidence working with cross-platform development."
+  },
   { id: "winter25",
     title: "Digital Journal",
     description: "A Digital Scrapbook of my experiances through winter break highlighting the small sweet moments through the weeks",
