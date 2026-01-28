@@ -131,7 +131,7 @@ export const projects: Project[] = [
     ], 
     tags: ["MongoDb", "Express", "Node.js", "Astro", "JavaScript", "HTML", "TailwindCSS", "Git Version Control"], 
     github: "https://github.com/wics-uic/Sweet-T", 
-    demo: null, 
+    demo: "https://wics-uic.github.io/Sweet-T/", 
     report: null, 
     features: [
       "Implemented a Node.js + Express REST API with MongoDB to manage products, customers, and orders, including a multi-stage order status pipeline", 
