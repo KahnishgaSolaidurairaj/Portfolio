@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+
+# Build artifacts
+dist/
+.astro/
+# For netlify/vercel
+.output/
+
+
+# Output of `astro build --target static`
+# default: dist/
+# custom: you can change this in astro.config.mjs
+# example: outDir: 'public' -> /public
+# /public
+
+
+# Temporary files
+.temp/
+.DS_Store
+Thumbs.db
+
+
+# Optional: Environment variables
+.env
+.env.development
+.env.production
+
+
+# Optional: Editor/IDE specific files
+.vscode/
+.idea/
+
+
+# Optional: Lockfiles (if you wish to ignore them)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
