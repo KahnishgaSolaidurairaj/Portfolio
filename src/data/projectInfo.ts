@@ -15,7 +15,97 @@ export interface Project {
   learnings?: string;
 }
 
+/*
+{ id: "",
+   title: "",
+   description: "",
+   fullDescription: "",
+   date: "",
+   images: [
+     "/Portfolio/images/projects/__/__.avif",
+     "/Portfolio/images/projects/__/__.avif"
+   ],
+   tags: ["", "", ""],
+   github: null,
+   demo: null,
+   report: null,
+   features: [
+     ""
+   ],
+   technologies: [
+     "IDE: VSCode"
+   ],
+   challenges: "",
+   learnings: ""
+ },
+*/
+
 export const projects: Project[] = [
+  { id: "Sparkhacks2026",
+   title: "Survive If You Can",
+   description: "Survive if you can is an interactive, narrative-driven horror game. The player navigates a haunted house, making choices that affect the story and determine the ending. ",
+   fullDescription: "The game follows a choose-your-own-adventure structure, where suspense, moral decisions, and atmosphere are central to the experience. Game Context: You and your friends enter a haunted house. They panic and run ahead, leaving you behind. Instead of escaping, you decide to search for them knowing every decision could lead you deeper into danger. Will you abandon your friend to survive . . . or risk everything to find them? This project was created during Sparkhacks 2026 alongside Harini Solaidurairaj, Aleena Mehmood, and Dana Fakhreddine.",
+   date: "February 2026",
+   images: [
+     "/Portfolio/images/projects/sparkhacks2026/horror1.avif",
+     "/Portfolio/images/projects/sparkhacks2026/horror2.avif",
+     "/Portfolio/images/projects/sparkhacks2026/horror3.avif",
+     "/Portfolio/images/projects/sparkhacks2026/horror4.avif",
+     "/Portfolio/images/projects/sparkhacks2026/horror5.avif",
+     "/Portfolio/images/projects/sparkhacks2026/horror6.avif",
+     "/Portfolio/images/projects/sparkhacks2026/horror7.avif",
+     "/Portfolio/images/projects/sparkhacks2026/horror8.avif",
+     "/Portfolio/images/projects/sparkhacks2026/horror9.avif",
+     "/Portfolio/images/projects/sparkhacks2026/horror10.avif",
+     "/Portfolio/images/projects/sparkhacks2026/horror11.avif",
+     "/Portfolio/images/projects/sparkhacks2026/groupPic.avif"
+   ],
+   tags: ["React", "Aedify.Ai", "Git"],
+   github: "https://github.com/KahnishgaSolaidurairaj/SurviveIfYouCan",
+   demo: "https://surviveifyoucan-b816ef68.aedify.ai/",
+   report: "https://devpost.com/software/survive-if-you-can",
+   features: [
+    "Choose-your-own-adventure gameplay where every decision impacts the storyline and ending",
+    "Multiple branching paths that create unique story outcomes",
+    "Immersive horror atmosphere with integrated background videos and suspenseful audio",
+    "Interactive dialogue and moral decision-making that shapes the player’s survival",
+    "Responsive React-based interface for smooth, real-time scene transitions",
+    "Deployed live for instant web access and seamless user experience"
+   ],
+   technologies: [
+     "IDE: VSCode",
+     "React & Vite",
+     "Github for team collaboration", 
+     "Aedify.Ai for deployment",
+     "Pixabay for video's and audio"
+   ],
+   challenges: "Our tight schedule, combined with our ambition to deliver a polished experience, pushed us to work efficiently under pressure. A major challenge was managing GitHub merge conflicts, but we worked through them as a team to keep everyone aligned and the codebase consistent. Another obstacle was integrating audio and video elements into the game. While these were essential for immersion, implementation proved more difficult than expected. After researching solutions, we discovered Pixabay, which provided high-quality videos and audio that helped elevate the atmosphere and overall experience.",
+   learnings: "Overall this experiance remined me the joy of coding as just creating the storyline and little details was filled with laughter. My team and I also couldn't stop scaring ourselves trying to find the perfect jumpscare and audios. All in all this project allowed me to try new things like incorporating videos as our background and deployment with a new technology."
+ },
+ /*{ id: "pastryPop",
+   title: "Pastry Pop",
+   description: "",
+   fullDescription: "",
+   date: "January 2026",
+   images: [
+     "/Portfolio/images/projects/__/__.avif",
+     "/Portfolio/images/projects/__/__.avif"
+   ],
+   tags: ["Unity", "3D", "Game"],
+   github: null,
+   demo: null,
+   report: null,
+   features: [
+     ""
+   ],
+   technologies: [
+     "Unity",
+     "VSCode",
+     ""
+   ],
+   challenges: "This was my first time using unity and adding assets and placing objects on the screen was a learning curve. But with the indivial items components I was able to pick that up quikly as I knew the type of attributes needed. ",
+   learnings: "I learned the full process and taking an idea and giving life to. This project was very fun as I added to the base game of the character shooting targets. I made the enviornment more personalize and added a glow effect to my target with spot lights. I also figured out that it is easier to edit with a mouse in unity. "
+ }, */
   { id: "toDoApp",
     title: "ToDo App",
     description: "A multi-tab task manager built to learn Flutter fundamentals, state management, and persistent local storage",
