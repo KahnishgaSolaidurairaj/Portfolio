@@ -38,7 +38,7 @@ h1 {
   display: flex;
 	justify-content: center;
   font-weight: 300;
-
+  font-family: "Twinkle Star", cursive;
   font-size: 2.6rem;
   background: linear-gradient(90deg, #2b00ffff, rgb(119, 29, 154), #ff002bff);
   -webkit-background-clip: text;
@@ -53,6 +53,11 @@ h3 {
   margin-left: 2rem;
   font-weight: 300;
   color: #411eb4c9;
+  font-family: 'Playpen Sans Variable', cursive;
+}
+
+ul, a, h4, p{
+  font-family: 'Playpen Sans Variable', cursive;
 }
 
 html, body {

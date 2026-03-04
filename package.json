@@ -9,6 +9,8 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource-variable/playpen-sans": "^5.2.9",
+    "@fontsource/twinkle-star": "^5.2.8",
     "astro": "^5.16.4"
   }
 }

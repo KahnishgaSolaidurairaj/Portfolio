@@ -20,9 +20,6 @@ import style from "../style/global.css";
 				  <button class="primary-btn">View Projects →</button>
         </a>
       </div>
-			<div class = "right">
-				<img src="/Portfolio/images/home/compCoding.avif"/>
-			</div>
 		</div>
 
 		<div class = "WhatIOffer">
@@ -103,30 +100,23 @@ import style from "../style/global.css";
 .Front {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
   gap: 3rem;
   padding: 4rem 0;
 }
 
-.left .name {
+.Front .name {
   font-size: 3.5rem;
   font-weight: 700;
   color: #2b59ff;
   margin-bottom: 0rem;
+  font-family: "Twinkle Star", cursive;
 }
 
-.left p {
+.Front p {
   font-size: 1.2rem;
   margin-top: 1rem;
   color: #6141ffff;
-}
-
-.right img {
-  display: flex;
-  width: auto;
-  height: 420px;
-  border-radius: 25px;
-  box-shadow: 0px 1px 45px rgba(31, 65, 255, 1);
 }
 
 button, .primary-btn {
@@ -260,19 +250,9 @@ button:hover, .primary-btn:hover {
   }
 
   .left .name {
-    font-size: 2.4rem;
+    font-size: 3.2rem;
   }
-
-  .right {
-    display: flex;
-    justify-content: center;
-  }
-
-  .right img {
-    height: auto;
-    max-width: 90%;
-  }
-
+  
   .Card {
     gam: 1.5rem;
   }
