@@ -41,6 +41,45 @@ export interface Project {
 */
 
 export const projects: Project[] = [
+  { id: "maze",
+    title: "Maze.exe: Inside the Computer",
+    description: "A multiplayer educational Unity game where players navigate a maze inside a computer while answering computer architecture questions to survive",
+    fullDescription: "Maze.exe: Inside the Computer is a cooperative multiplayer maze game built in Unity that teaches fundamental computer architecture concepts through gameplay. Players explore a dark maze representing the interior of a computer system and must answer questions about components such as input devices, memory, the ALU, CPU, and output devices in order to progress. Players begin with three hearts and must navigate through the maze without losing them all. Incorrect answers reduce a player's hearts, while collecting hidden hearts in the maze can restore their health. The game incorporates physics-based mechanics such as collision detection for collectible items and force-based movement using a jump platform that propels players upward to preview the maze layout. The environment design emphasizes immersion through night-mode lighting, spotlights, and ambient maze lights that guide the player toward the final objective. At the end of the maze, players encounter a final challenge billboard that tests their understanding of all previously introduced concepts, celebrating success with a confetti-themed finish. The game also demonstrates a networked gameplay mechanic where the client is responsible for answering questions while both the client and host can view the shared game environment, encouraging cooperative interaction.",
+    date: "March 2026",
+    images: [
+      "/Portfolio/images/projects/maze/maze1.avif",
+      "/Portfolio/images/projects/maze/maze2.avif",
+      "/Portfolio/images/projects/maze/maze3.avif",
+      "/Portfolio/images/projects/maze/maze4.avif",
+      "/Portfolio/images/projects/maze/maze5.avif",
+      "/Portfolio/images/projects/maze/maze6.avif",
+      "/Portfolio/images/projects/maze/maze7.avif",
+      "/Portfolio/images/projects/maze/maze8.avif",
+      "/Portfolio/images/projects/maze/maze9.avif"
+    ],
+    tags: ["Unity 3D", "Multiplayer", "Game Development", "Computer Architecture", "Education"],
+    github: "https://github.com/KahnishgaSolaidurairaj/Maze.exe",
+    demo: null,
+    report: null,
+    features: [
+      "Multiplayer cooperative gameplay with host and client interaction",
+      "Maze exploration environment representing the inside of a computer",
+      "Question-based billboards that teach computer architecture concepts",
+      "Physics-based mechanics including collision detection and force-based jump platforms",
+      "Heart-based health system with collectible item in maze",
+      "Sunset/dark maze environment with custom lighting and spotlights",
+      "Final challenge question with celebratory end-of-game visual effects"
+    ],
+    technologies: [
+      "Unity",
+      "C#",
+      "IDE: VSCode",
+      "Networking: Unity Multiplayer Framework",
+      "3D Assets: Unity Asset Store"
+    ],
+    challenges: "One of the main challenges was coordinating multiplayer interactions while maintaining a shared game state between the host and client. Implementing question billboards that were visible to both players while restricting answer input to only the client required careful control of UI logic and network synchronization. Additionally, designing the maze environment with effective lighting was important to maintain visibility without removing the night-mode atmosphere.",
+    learnings: "Through this project I gained experience designing interactive educational games in Unity, implementing physics-based mechanics using rigidbodies and forces, and experimenting with multiplayer interaction patterns. I also improved my understanding of environmental lighting in game design and learned how gameplay mechanics can reinforce educational objectives such as learning computer architecture concepts."
+  },
   { id: "Sparkhacks2026",
    title: "Survive If You Can",
    description: "Survive if you can is an interactive, narrative-driven horror game. The player navigates a haunted house, making choices that affect the story and determine the ending. ",
