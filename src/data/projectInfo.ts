@@ -57,7 +57,7 @@ export const projects: Project[] = [
       "/Portfolio/images/projects/maze/maze8.avif",
       "/Portfolio/images/projects/maze/maze9.avif"
     ],
-    tags: ["Unity 3D", "Multiplayer", "Game Development", "Computer Architecture", "Education"],
+    tags: ["Unity 3D", "Multiplayer", "Game Development", "Computer Architecture", "Educational"],
     github: "https://github.com/KahnishgaSolaidurairaj/Maze.exe",
     demo: null,
     report: null,
@@ -99,7 +99,7 @@ export const projects: Project[] = [
      "/Portfolio/images/projects/sparkhacks2026/horror11.avif",
      "/Portfolio/images/projects/sparkhacks2026/groupPic.avif"
    ],
-   tags: ["React", "Aedify.Ai", "Git"],
+   tags: ["React", "Aedify.Ai", "Git", "Horror"],
    github: "https://github.com/KahnishgaSolaidurairaj/SurviveIfYouCan",
    demo: "https://surviveifyoucan-b816ef68.aedify.ai/",
    report: "https://devpost.com/software/survive-if-you-can",
@@ -123,8 +123,8 @@ export const projects: Project[] = [
   },
   { id: "pastry-pop",
     title: "Pastry Pop",
-    description: "A fun Unity 3D arcade-style game where players throw projectiles to hit desserts and score points",
-    fullDescription: "Pastry Pop is a lighthearted 3D arcade game built in Unity where players explore a vibrant outdoor environment and throw purple frisbees to hit pastry targets. Using WASD movement controls, players navigate the scene and aim carefully to hit all desserts placed throughout the map.\n\nThe objective is simple yet engaging: locate and successfully hit all five pastries scattered across the environment to win the game. Each successful hit contributes to the player’s score, encouraging accuracy and exploration.\n\nAs my first Unity project, Pastry Pop focuses on core game development fundamentals. The game incorporates physics-based interactions using rigid bodies and colliders, allowing for realistic projectile motion and collision detection between frisbees and pastry objects.\n\nThe environment is designed using a variety of free Unity assets, including trees, plants, mountains, and stylized dessert models, creating a playful and colorful atmosphere. Lighting elements such as point lights enhance the visual experience and highlight key objects in the scene.\n\nThis project served as an introduction to Unity’s workflow, including scene setup, asset integration, scripting player controls, and debugging gameplay mechanics",
+    description: "A fun Unity 3D arcade-style game where players throw frisbee's to hit desserts and score points",
+    fullDescription: "Pastry Pop is a lighthearted 3D arcade game built in Unity where players explore a vibrant outdoor environment and throw purple frisbees to hit pastry targets. Using WASD movement controls, players navigate the scene and aim carefully to hit all desserts placed throughout the map.The objective is simple yet engaging: locate and successfully hit all five pastries scattered across the environment to win the game. Each successful hit contributes to the player’s score, encouraging accuracy and exploration.As my first Unity project, Pastry Pop focuses on core game development fundamentals. The game incorporates physics-based interactions using rigid bodies and colliders, allowing for realistic projectile motion and collision detection between frisbees and pastry objects.The environment is designed using a variety of free Unity assets, including trees, plants, mountains, and stylized dessert models, creating a playful and colorful atmosphere. Lighting elements such as point lights enhance the visual experience and highlight key objects in the scene.This project served as an introduction to Unity’s workflow, including scene setup, asset integration, scripting player controls, and debugging gameplay mechanics",
     date: "February 2026",
     images: [
       "/Portfolio/images/projects/pastryPop/pastry1.avif",
@@ -134,7 +134,7 @@ export const projects: Project[] = [
       "/Portfolio/images/projects/pastryPop/pastry5.avif",
       "/Portfolio/images/projects/pastryPop/pastry6.avif"
     ],
-    tags: ["Unity", "Game Development", "3D", "Physics", "Arcade"],
+    tags: ["Unity 3D", "Game Development", "Physics", "Arcade"],
     github: "https://github.com/KahnishgaSolaidurairaj/Pastry-Pop",
     demo: "https://play.unity.com/en/games/6b4740d3-95f5-481a-a4c2-9337ac43a141/pastry-pop",
     report: null,
