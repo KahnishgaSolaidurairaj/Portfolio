@@ -120,31 +120,42 @@ export const projects: Project[] = [
    ],
    challenges: "Our tight schedule, combined with our ambition to deliver a polished experience, pushed us to work efficiently under pressure. A major challenge was managing GitHub merge conflicts, but we worked through them as a team to keep everyone aligned and the codebase consistent. Another obstacle was integrating audio and video elements into the game. While these were essential for immersion, implementation proved more difficult than expected. After researching solutions, we discovered Pixabay, which provided high-quality videos and audio that helped elevate the atmosphere and overall experience.",
    learnings: "Overall this experiance remined me the joy of coding as just creating the storyline and little details was filled with laughter. My team and I also couldn't stop scaring ourselves trying to find the perfect jumpscare and audios. All in all this project allowed me to try new things like incorporating videos as our background and deployment with a new technology."
- },
- /*{ id: "pastryPop",
-   title: "Pastry Pop",
-   description: "",
-   fullDescription: "",
-   date: "January 2026",
-   images: [
-     "/Portfolio/images/projects/__/__.avif",
-     "/Portfolio/images/projects/__/__.avif"
-   ],
-   tags: ["Unity", "3D", "Game"],
-   github: null,
-   demo: null,
-   report: null,
-   features: [
-     ""
-   ],
-   technologies: [
-     "Unity",
-     "VSCode",
-     ""
-   ],
-   challenges: "This was my first time using unity and adding assets and placing objects on the screen was a learning curve. But with the indivial items components I was able to pick that up quikly as I knew the type of attributes needed. ",
-   learnings: "I learned the full process and taking an idea and giving life to. This project was very fun as I added to the base game of the character shooting targets. I made the enviornment more personalize and added a glow effect to my target with spot lights. I also figured out that it is easier to edit with a mouse in unity. "
- }, */
+  },
+  { id: "pastry-pop",
+    title: "Pastry Pop",
+    description: "A fun Unity 3D arcade-style game where players throw projectiles to hit desserts and score points",
+    fullDescription: "Pastry Pop is a lighthearted 3D arcade game built in Unity where players explore a vibrant outdoor environment and throw purple frisbees to hit pastry targets. Using WASD movement controls, players navigate the scene and aim carefully to hit all desserts placed throughout the map.\n\nThe objective is simple yet engaging: locate and successfully hit all five pastries scattered across the environment to win the game. Each successful hit contributes to the player’s score, encouraging accuracy and exploration.\n\nAs my first Unity project, Pastry Pop focuses on core game development fundamentals. The game incorporates physics-based interactions using rigid bodies and colliders, allowing for realistic projectile motion and collision detection between frisbees and pastry objects.\n\nThe environment is designed using a variety of free Unity assets, including trees, plants, mountains, and stylized dessert models, creating a playful and colorful atmosphere. Lighting elements such as point lights enhance the visual experience and highlight key objects in the scene.\n\nThis project served as an introduction to Unity’s workflow, including scene setup, asset integration, scripting player controls, and debugging gameplay mechanics",
+    date: "February 2026",
+    images: [
+      "/Portfolio/images/projects/pastryPop/pastry1.avif",
+      "/Portfolio/images/projects/pastryPop/pastry2.avif",
+      "/Portfolio/images/projects/pastryPop/pastry3.avif",
+      "/Portfolio/images/projects/pastryPop/pastry4.avif",
+      "/Portfolio/images/projects/pastryPop/pastry5.avif",
+      "/Portfolio/images/projects/pastryPop/pastry6.avif"
+    ],
+    tags: ["Unity", "Game Development", "3D", "Physics", "Arcade"],
+    github: "https://github.com/KahnishgaSolaidurairaj/Pastry-Pop",
+    demo: "https://play.unity.com/en/games/6b4740d3-95f5-481a-a4c2-9337ac43a141/pastry-pop",
+    report: null,
+    features: [
+      "Player-controlled movement using WASD controls",
+      "Projectile-based gameplay with throwable frisbees",
+      "Collision detection between projectiles and pastry targets",
+      "Score-based objective system (hit all 5 pastries to win)",
+      "Interactive 3D environment with decorative assets",
+      "Basic lighting using point lights to enhance visuals"
+    ],
+    technologies: [
+      "Unity 3D",
+      "C#",
+      "VSCode",
+      "Physics: Unity Rigidbody & Collider System",
+      "Assets: Unity Asset Store (Trees, Plants, Dessert Models, Mountains)"
+    ],
+    challenges: "As my first Unity project, one of the main challenges was understanding how different components such as rigidbodies, colliders, and scripts work together to create interactive gameplay. Implementing accurate projectile physics for the frisbee throws and ensuring reliable collision detection with pastry targets required experimentation and debugging. Additionally, learning how to properly import and organize external assets into the scene was a new experience",
+    learnings: "Through building this game, I developed a strong foundation in Unity and game development concepts. I learned how to implement player movement, work with physics systems like rigidbodies and colliders, and design simple gameplay loops. This project also helped me become more comfortable navigating the Unity editor, integrating assets, and troubleshooting issues laying the groundwork for more advanced projects"
+  },
   { id: "toDoApp",
     title: "ToDo App",
     description: "A multi-tab task manager built to learn Flutter fundamentals, state management, and persistent local storage",
