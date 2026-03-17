@@ -60,7 +60,7 @@ export const projects: Project[] = [
     tags: ["Unity 3D", "Multiplayer", "Game Development", "Computer Architecture", "Educational"],
     github: "https://github.com/KahnishgaSolaidurairaj/Maze.exe",
     demo: null,
-    report: "https://drive.google.com/file/d/1UzveTSlzfD2PiqgR8-pEBYF03L8Kdb_e/view?usp=sharing",
+    report: "https://drive.google.com/file/d/1qNl-Djtrz3hFJQFaidGrUGMNRqy4wyJ4/view?usp=sharing",
     features: [
       "Multiplayer cooperative gameplay with host and client interaction",
       "Maze exploration environment representing the inside of a computer",
