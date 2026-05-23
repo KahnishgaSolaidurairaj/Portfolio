@@ -41,6 +41,50 @@ export interface Project {
 */
 
 export const projects: Project[] = [
+  { id: "Villain",
+   title: "Villain in Disguise",
+   description: "A single-player 3D fantasy action-adventure game built in Unity where the player takes on the role of an exiled villain searching for a rare magical resource hidden inside a dragon’s lair. ",
+   fullDescription: "Game Idea: Villain in Disguise is a single-player 3D action-adventure game where the player takes on the role of an exiled villain searching for a rare magical resource hidden in a dragon’s lair. To achieve this, the player must secretly protect a town and gain the trust of its NPCs while hiding their true identity. The game focuses on exploration, decision making, and a unique trust system where NPCs judge the player based on actions rather than intentions. Players must balance helping others with avoiding forbidden actions like using dark magic in public, as these choices directly impact progression and access to the final objective. This project was developed alongside Harini Solaidurairaj and Omar Khan.",
+   date: "March - May 2026",
+   images: [
+     "/Portfolio/images/projects/villain/villain1.avif",
+     "/Portfolio/images/projects/villain/villain2.avif", 
+     "/Portfolio/images/projects/villain/villain3.avif",
+     "/Portfolio/images/projects/villain/villain4.avif", 
+     "/Portfolio/images/projects/villain/villain5.avif",
+     "/Portfolio/images/projects/villain/villain6.avif", 
+     "/Portfolio/images/projects/villain/villain7.avif"
+   ],
+   tags: ["Unity 3D", "Exploration", "Game Development", "Fantasy"],
+   github: "https://github.com/HariniSolai/Villain_In_Disguise",
+   demo: "https://youtu.be/6SjiqEVcNWI?si=mjjESlSRjk3rp4C7",
+   report: "https://docs.google.com/document/d/1UZyKfvCR8ChglB-dWXSN9jfr_Jb2PhL5B4sGZ5Qj9Ck/edit?usp=sharing",
+   features: [
+     "Trust-based gameplay system where NPC reactions and progression depend on player actions",
+     "Explorable fantasy environments including forests, villages, caves, and wilderness regions",
+     "Interactive NPC system using NavMesh pathfinding and Finite State Machine behaviors",
+     "Dragon boss fight with real-time combat, health systems, and player attack mechanics",
+     "Potion crafting and dark magic system tied directly to gameplay progression",
+     "Teleportation shortcuts between major map areas for improved navigation",
+     "Dynamic area-based sound system with environmental and interaction-based audio",
+     "Particle systems, shaders, lighting effects, and Mecanim animations for immersion",
+     "Win and lose conditions based on trust level and player progression",
+     "Interactive UI system including instruction screens, gameplay prompts, and restart screens"
+   ],
+   technologies: [
+     "Unity",
+      "C#",
+      "IDE: VSCode",
+      "AI: Finite State Machines (FSM) & Bayesian Network",
+      "Navigation: Unity NavMesh",
+      "Animation: Unity Mecanim",
+      "Shaders & Particle Systems",
+      "3D Assets: Unity Asset Store",
+      "Audio Assets: Unity Asset Store & Pixabay"
+   ],
+   challenges: "One of the biggest challenges was designing gameplay systems that felt interconnected and meaningful. Implementing the trust system required balancing NPC interactions, player actions, and progression logic so that choices had visible consequences throughout the game. Another major challenge was redesigning the dragon encounter after playtesters felt the original fight lacked interaction. We rebuilt the encounter into a health-based combat system with attack mechanics, animations, and UI health bars to create a more engaging climax. Managing a large open-world environment also introduced technical challenges such as preventing players from leaving the map, fixing collision issues, and improving navigation clarity. Additionally, integrating multiple systems including AI pathfinding, shaders, particle effects, animations, sound triggers, and UI interactions required extensive debugging and team coordination.",
+   learnings: "Through this project, I gained significant experience designing large-scale interactive systems in Unity and learned how gameplay mechanics, AI, sound, and visual effects work together to shape player experience. I strengthened my understanding of NavMesh pathfinding, Finite State Machines, Bayesian Networks, Mecanim animations, shaders, particle systems, and UI design. I also learned the importance of early playtesting and iterative design, as player feedback directly influenced many of our improvements including combat redesigns, clearer instructions, and interaction systems. Beyond technical skills, this project improved my teamwork, communication, and project management abilities while collaborating around busy university schedules to create a fully functional and immersive game."
+  },
   { id: "maze",
     title: "Maze.exe: Inside the Computer",
     description: "A multiplayer educational Unity game where players navigate a maze inside a computer while answering computer architecture questions to survive",
