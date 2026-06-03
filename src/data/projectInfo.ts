@@ -41,6 +41,41 @@ export interface Project {
 */
 
 export const projects: Project[] = [
+  { id: "caidf",
+    title: "From Notes to Knowledge: Unlocking Clinical Intelligence in the NICU",
+    description: "Developed an AI-powered clinical intelligence dashboard during the CAIDF 2026 Hackathon",
+    fullDescription: "Built a clinical intelligence platform focused on improving how multidisciplinary NICU data is summarized, explored, and visualized. The application combines semantic search, cohort analysis, patient timelines, NLP-powered note extraction, and predictive analytics into a unified dashboard. Clinicians and researchers can query large collections of structured and unstructured patient records, identify similar patient cohorts, visualize treatment trajectories, and uncover risk factors that may impact outcomes. By transforming fragmented clinical notes into actionable insights, the platform helps healthcare teams better understand patient progress and make more informed care decisions. For this project. My team included Hiba Awais, Vyshnavi Paka, Kamruz Zaman Rana, James McClay. ",
+    date: "May 29/30, 2026",
+    images: [
+      "/Portfolio/images/projects/caidf/caidf1.avif",
+      "/Portfolio/images/projects/caidf/caidf2.avif",
+      "/Portfolio/images/projects/caidf/caidf3.avif",
+      "/Portfolio/images/projects/caidf/caidf4.avif",
+      "/Portfolio/images/projects/caidf/caidf5.avif"
+    ],
+    tags: ["Python", "Streamlit", "Healthcare", "SQL", "DuckDB", "Plotloy", "NLP"],
+    github: null,
+    demo: "https://youtu.be/IS89JsbMm2E?si=12H14onQkACoyDLG",
+    report: "https://drive.google.com/file/d/1Lxb2IY_w7Ah2aYpFywbGoaOWwH_iYQb7/view?usp=sharing",
+    features: [
+      "Built a cohort explorer that summarizes NICU populations through diagnosis, treatment, and length-of-stay visualizations",
+      "Developed interactive patient timelines to visualize clinical events and weight trajectories over time",
+      "Implemented semantic search across clinical notes using hybrid FAISS vector search and BM25 retrieval",
+      "Created NLP-powered note analysis that extracts and highlights key clinical insights from unstructured documentation",
+      "Designed phenotype and cohort discovery tools to identify patients with similar characteristics and care patterns",
+      "Integrated risk prediction visualizations that explain factors contributing to prolonged NICU stays"
+    ],
+    technologies: [
+      "IDE: VSCode",
+      "Python Streamlit with interactive timeline and cohort explorer panels",
+      "Search: Retrieval pipeline with FAISS vector index + BM25 hybrid retrieval",
+      "Database: DuckDB with full-text fallback",
+      "Visulization: Streamlit and plotloy",
+      "Data privacy: all processing on-premise, de-identified NICU dataset, no PHI transmitted externally"
+    ],
+    challenges: "Clinical data existed across hundreds of unstructured NICU notes, making it difficult to extract meaningful insights and identify patient trends. We needed to design a system that could efficiently search, summarize, and visualize large volumes of multidisciplinary healthcare data while maintaining privacy and usability for clinical teams.",
+    learnings: "Through this hackathon, I gained experience applying AI and NLP techniques to healthcare datasets, building semantic search systems with vector databases, and designing data visualizations that communicate complex clinical information. I also learned how multidisciplinary healthcare teams interact with data and how thoughtful interfaces can transform raw documentation into actionable insights."
+  },
   { id: "Villain",
    title: "Villain in Disguise",
    description: "A single-player 3D fantasy action-adventure game built in Unity where the player takes on the role of an exiled villain searching for a rare magical resource hidden inside a dragon’s lair. ",
