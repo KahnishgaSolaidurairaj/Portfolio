@@ -41,6 +41,37 @@ export interface Project {
 */
 
 export const projects: Project[] = [
+  { id: "priority",
+    title: "Priority Check",
+    description: "What matters when life gets full",
+    fullDescription: "Priority Check is a web-based interactive decision-making game developed for the Health Access Lab at UIC. Created by Kahnishga alongside Amaani Ziauddin, Ian Aguilar, Sneha Sharma, Lavanya Vats, and team lead Kimberlee Wilkens, the project was originally designed as an in-person workshop experience and later adapted into a digital version. The game helps students explore how they prioritize decisions when navigating complex pathways to mental health and counseling services, including registration, information access, and appointment scheduling. The digital version allows users who could not attend the workshop to experience the activity online, while also generating a downloadable or shareable game summary ('receipt') at the end of gameplay.",
+    date: "May 2026 - June 2026",
+    images: [
+      "/Portfolio/images/projects/priority/priority1.avif",
+      "/Portfolio/images/projects/priority/priority2.avif",
+      "/Portfolio/images/projects/priority/priority3.avif",
+      "/Portfolio/images/projects/priority/priority4.avif"
+    ],
+    tags: ["React", "JavaScript", "Github Pages", "Health Access Lab"],
+    github: "https://github.com/KahnishgaSolaidurairaj/Priority-Check",
+    demo: "https://kahnishgasolaidurairaj.github.io/Priority-Check/",
+    report: "https://drive.google.com/file/d/1jphKjtetKQQYLTU8MkCNaqS0KFBIdijM/view?usp=sharing",
+    features: [
+      "Interactive priority-based decision-making gameplay simulating real student pathways",
+      "Scenario-driven cards that reflect steps in accessing counseling and mental health services",
+      "End-of-game downloadable or shareable summary receipt",
+      "Digital adaptation of an in-person workshop experience",
+      "Privacy-focused design with no user data stored or tracked",
+      "Responsive card-based UI built for web interaction"
+    ],
+    technologies: [ 
+      "VSCode (development environment)",
+      "Canva (game board and card design)",
+      "GitHub Pages (deployment)"
+    ],
+    challenges: "One of the main challenges was translating an in-person workshop experience into an interactive digital format while preserving its intent and emotional impact. Designing a system that meaningfully represented student decision-making pathways required careful structuring of card logic and state management. Another challenge was ensuring user privacy by building a system that does not store or transmit gameplay data while still allowing users to generate a meaningful end-of-game summary.",
+    learnings:  "This project strengthened skills in React-based state management, interactive UI design, and translating human-centered workshop experiences into digital products. It also reinforced the importance of accessibility, ethical design, and privacy-first development when working on tools related to mental health and student well-being. Additionally, the project deepened understanding of collaborative design processes and user experience research within an academic workshop setting."
+  },
   { id: "caidf",
     title: "From Notes to Knowledge: Unlocking Clinical Intelligence in the NICU",
     description: "Developed an AI-powered clinical intelligence dashboard during the CAIDF 2026 Hackathon",
