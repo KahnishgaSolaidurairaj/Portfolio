@@ -195,11 +195,12 @@ import Footer from "../components/footer.astro";
 			<h2> Certifications and Awards </h2>
 		</div>
 		<div class="card">
-      <div class = "lightBox"> <p> CITI Program: Research Security and Integrity (June 2026)</p> </div>
+      <div class = "lightBox2"> <p> UIC & Epic Games Game Jam 2026 2nd place for Gameplay </p> </div>
+      <div class = "lightBox"> <p> CITI Program Certification: Research Security and Integrity (June 2026)</p> </div>
 			<div class = "lightBox"> <p> Apple Certification: App Development with Swift – Associate (Dec 2025)</p> </div>
-			<div class = "lightBox"> <p> Academic Achievement: University of Illinois Chicago's College of Engineering Dean's List</p>
+			<div class = "lightBox2"> <p> Academic Achievement: University of Illinois Chicago's College of Engineering Dean's List</p>
 				<ul> <li> Fall 2024, Spring 2025, Fall 2025 </li></ul> </div>
-			<div class = "lightBox"> <p> Award: Fitch Group 2024 Codeathon Runner Up</p> </div>
+			<div class = "lightBox2"> <p> Fitch Group 2024 Codeathon Runner Up</p> </div>
   		</div>
 	</div>
 </Layout>
@@ -343,8 +344,15 @@ import Footer from "../components/footer.astro";
   margin: 1rem;
 }
 
-.card .lightBox:hover{
+.card .lightBox:hover, .card .lightBox2:hover{
 	transform: translateY(-3px);
+}
+
+.card .lightBox2 {
+  padding: 0.45rem 0.9rem 0.45rem;
+  border-radius: 999px;
+  background: #f9cea88e;
+  margin: 1rem;
 }
 
 ul {
