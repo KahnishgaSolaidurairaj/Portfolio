@@ -41,6 +41,38 @@ export interface Project {
 */
 
 export const projects: Project[] = [
+  { id: "uefnBridge",
+    title: "The Bridge",
+    description: "A narrative adventure game built in Unreal Editor for Fortnite during the UIC Unreal Fest Game Jam. Won 2nd Place for Gameplay",
+    fullDescription: "The Bridge, a single-player narrative adventure game inspired by one of my favorite series, Avatar: The Last Airbender. In this game, the Spirit and Human Realms have collided, and the player must restore balance between them. Along the way, we had a lot of fun adding easter eggs, including spirit vines and, of course... cabbages! 🥬 This project was awarded 2nd Place for Gameplay and later showcased at Unreal Fest 2026 during the Student Showcase. It was created in just 15 hours!",
+    date: "June 13-14, 2026",
+    images: [
+      "/Portfolio/images/projects/uefnBridge/bridge1.avif",
+      "/Portfolio/images/projects/uefnBridge/bridge2.avif",
+      "/Portfolio/images/projects/uefnBridge/bridge3.avif",
+      "/Portfolio/images/projects/uefnBridge/bridge4.avif",
+      "/Portfolio/images/projects/uefnBridge/bridge5.avif"
+    ],
+    tags: ["UEFN", "Epic Games", "Unreal", "Fortnite"],
+    github: null,
+    demo: "https://youtu.be/QP4zbWr7f10",
+    report: null,
+    features: [
+      "Designed a narrative-driven single-player adventure inspired by Avatar: The Last Airbender.",
+      "Created an immersive world featuring Spirit and Human Realm environments with interactive storytelling.",
+      "Built gameplay mechanics, quests, and environmental details using Unreal Editor for Fortnite (UEFN).",
+      "Included themed easter eggs, such as spirit vines and the iconic cabbage merchant references.",
+      "Awarded 2nd Place for Gameplay and showcased at Unreal Fest 2026."
+    ],
+    technologies: [
+      "UEFN: Unreal Editor for Fortnite", 
+      "Unreal Engine", 
+      "Fortnite Creative", 
+      "Epic Games Creator Tools"
+    ],
+    challenges: "I had no prior experience with Unreal Engine or UEFN before the Game Jam. Learning an entirely new game engine, understanding UEFN workflows, and building a polished game within a single weekend required rapid prototyping, continuous debugging, and quick decision-making under tight deadlines.",
+    learnings: "This project taught me how quickly new technologies can be learned through hands-on experience. I gained experience with Unreal Engine, UEFN, and Verse while improving my skills in game design, rapid prototyping, collaborative development, playtesting, and delivering a complete project within a 15-hour development sprint."
+  },
   { id: "priority",
     title: "Priority Check",
     description: "What matters when life gets full",
