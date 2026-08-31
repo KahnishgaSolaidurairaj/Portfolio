@@ -1,0 +1,193 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import NavBar from "@/components/NavBar.astro";
+import { certifications, getCertificationById } from "@/data/resumeInfo";
+
+/**
+ * Generates static paths for each certification detail page.
+ * - Returns: Route params for every certification entry.
+ */
+export function getStaticPaths() {
+  return certifications.map((certification) => ({
+    params: { id: certification.id },
+  }));
+}
+
+const { id } = Astro.params;
+const certification = getCertificationById(id ?? "");
+
+if (!certification) {
+  throw new Error(`Certification not found: ${id}`);
+}
+---
+
+<Layout title={certification.title}>
+  <NavBar />
+  <div class="container">
+    <a href="/Portfolio/resume" class="back-btn">← Back to Resume</a>
+
+    <div class="section-header">
+      <div class="icon special">
+        <img src="/Portfolio/images/icons/award-ribbon.png" alt="" />
+      </div>
+      <h1>{certification.title}</h1>
+    </div>
+
+    {certification.subItems && (
+      <ul class="sub-items">
+        {certification.subItems.map((subItem) => (
+          <li>{subItem}</li>
+        ))}
+      </ul>
+    )}
+
+    {certification.previewUrl ? (
+      <div class="pdf-viewer">
+        <iframe
+          src={certification.previewUrl}
+          title={certification.title}
+          loading="lazy"
+        />
+      </div>
+    ) : (
+      <div class="no-preview">
+        <p>No preview is available for this certification.</p>
+      </div>
+    )}
+
+    {certification.openUrl && (
+      <a
+        href={certification.openUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="open-pdf-btn"
+      >
+        Open in New Tab
+      </a>
+    )}
+  </div>
+</Layout>
+
+<style>
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 3rem 3rem;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  color: #6b6ee8;
+  border: 1.5px solid rgba(160, 165, 255, 0.5);
+  background: rgba(245, 240, 255, 0.7);
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.back-btn:hover {
+  background: rgba(235, 225, 255, 0.95);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.section-header h1 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 600;
+  font-family: "twinkle star", cursive;
+  margin: 0;
+}
+
+.section-header .icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, #fbbf24, #f9a8d4);
+}
+
+.section-header .icon img {
+  width: 75%;
+}
+
+.sub-items {
+  margin: 0 0 1.5rem 4.5rem;
+  padding-left: 1rem;
+}
+
+.pdf-viewer {
+  width: 100%;
+  height: min(80vh, 900px);
+  border-radius: 28px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.pdf-viewer iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.no-preview {
+  width: 100%;
+  padding: 2.5rem;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.no-preview p {
+  margin: 0;
+  color: #4f56a8;
+  font-family: "Playpen Sans Variable", cursive;
+}
+
+.open-pdf-btn {
+  display: inline-flex;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.8rem;
+  background: linear-gradient(135deg, #8330ffa8, #3374ffba, #55e3ffa4);
+  border-radius: 999px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.25s ease;
+}
+
+.open-pdf-btn:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .section-header .icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .sub-items {
+    margin-left: 0;
+  }
+
+  .pdf-viewer {
+    height: 70vh;
+    border-radius: 16px;
+  }
+}
+</style>

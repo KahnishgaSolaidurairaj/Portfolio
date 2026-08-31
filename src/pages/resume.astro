@@ -2,6 +2,13 @@
 import NavBar from "../components/NavBar.astro"
 import Layout from "@/layouts/Layout.astro";
 import Footer from "../components/footer.astro";
+import {
+  resumeHeader,
+  experiences,
+  education,
+  skillCategories,
+  certifications,
+} from "../data/resumeInfo";
 ---
 
 <Layout title = 'Resume'>
@@ -9,11 +16,11 @@ import Footer from "../components/footer.astro";
 	<div class= "container">
 		<div class = "resume-header">
 			<div class = "left" > 
-				<h1> ☆ Resume </h1>
-				<h3> My professional experience and qualifications</h3>
+				<h1> {resumeHeader.title} </h1>
+				<h3> {resumeHeader.subtitle} </h3>
 			</div>
 			<div class = "right">
-				<a href="https://drive.google.com/file/d/1wmJAdAx4VDeMcPCHt6tFy_NRkG8F-6cS/view?usp=sharing" class = "button"> 
+				<a href={resumeHeader.pdfDownloadUrl} class = "button"> 
           <img src = "/Portfolio/images/icons/downloads.png" /> Download PDF </a>
 			</div>
 		</div>
@@ -25,107 +32,29 @@ import Footer from "../components/footer.astro";
 			<h2> Experience </h2>
 		</div>
 
-    <div class = "card">
-      <p class = "title"> App Accelarator Developer: Startup Edition</p>
-      <div class = "left-right">
-        <p class = "employer"> Everyone Can Code Chicgo</p>
-        <p class = "date"> June 2026 - Present </p> 
+    {experiences.map((experience) => (
+      <div class = "card">
+        <div class="experience-top">
+          <div class="employer-icon">
+            <div class="employer-icon-inner">
+              <img src={experience.icon} alt={`${experience.employer} logo`} />
+            </div>
+          </div>
+          <div class="experience-headline">
+            <p class = "title"> {experience.title}</p>
+            <div class = "left-right">
+              <p class = "employer"> {experience.employer}</p>
+              <p class = "date"> {experience.date} </p> 
+            </div>
+          </div>
+        </div>
+        <ul class="experience-details">
+          {experience.responsibilities.map((responsibility) => (
+            <li> {responsibility} </li>
+          ))}
+        </ul>
       </div>
-      <ul>
-        <li> Collaborate on a cross-functional startup team to design, develop, and launch an iOS application using real-world product development workflows </li>
-        <li> Contribute to the end-to-end startup process by developing a companion website, applying design thinking principles, and validating product ideas </li>
-        <li> Create and deliver a professional investor-style pitch deck while gaining hands-on experience in entrepreneurship, product strategy, and collaborative problem-solving </li>
-      </ul>
-    </div>
-
-    <div class = "card">
-      <p class = "title"> CS/DS NSAR Ambassador</p>
-      <div class = "left-right">
-        <p class = "employer"> University of Illinois Chicago College of Engineering </p>
-        <p class = "date"> May 2026 - Aug 2026 </p> 
-      </div>
-      <ul>
-        <li> Guiding CS/DS Transfer and New students through course registration and hold removals </li>
-        <li> Discussing CS/DS coursework and audit credit alongside placement tests </li>
-        <li> Supporting students through their new student onboarding process </li>
-      </ul>
-    </div>
-
-    <div class = "card">
-      <p class = "title"> Health Access Lab Research Intern </p>
-      <div class = "left-right">
-        <p class = "employer"> Innovation Center </p>
-        <p class = "date"> Feb 2026 - Present </p> 
-      </div>
-      <ul>
-        <li> Researching and developing innovative healthcare solutions using Apple’s software ecosystem, with the focus of improving health access and usability </li>
-        <li> Working in an interdisciplinary team to analyze health access patterns, synthesize findings and define scope </li>
-      </ul>
-    </div>
-
-    <div class = "card">
-      <p class = "title"> Sandbox Labratory Assistant/Swift 101 tutor </p>
-      <div class = "left-right">
-        <p class = "employer"> Innovation Center </p>
-        <p class = "date"> Feb 2026 - Present </p> 
-      </div>
-      <ul>
-        <li> Supporting hands-on learning experiences focused on Swift programming and Apple developer tools as part of Apple’s Community Education Initiative </li>
-        <li> Collaborating with lab and teaching staff to facilitate immersive, community-focused technology events </li>
-        <li> Tutoring Swift 101 students helping them with coursework and prep for the certification exam alongside proctering </li>
-      </ul>
-    </div>
-    <div class = "card">
-      <p class = "title"> Teaching Assistant - Computer Design </p>
-      <div class = "left-right">
-        <p class = "employer"> University of Illinois at Chicago</p>
-        <p class = "date"> Jan 2026 - Present </p>
-      </div>
-      <ul>
-        <li> Assisted students in debugging C/C++ code and troubleshooting circuit designs to fix wiring issues and improve understanding </li>
-        <li> Co-Led hands on lab sessions and collaborated with teaching assistants to explain complex computer design concepts and prepare students for upcoming coursework </li>
-        <li> Provided technical guidance for semester-long group projects, helping teams overcome challenges and successfully complete their goals</li>
-      </ul>
-    </div>
-		<div class = "card">
-			<p class = "title"> Web Developer</p>
-			<div class = "left-right">
-				<p class = "employer"> Women in Computer Science @ UIC </p>
-				<p class = "date"> Sept 2025 - Dec 2025 </p>
-			</div>
-			<ul> 
-				<li> Built a full-stack e-commerce website for SweetT Bakery with customizable product ordering, checkout flow, and live order tracking for customers </li> 
-				<li> Implemented a Node.js + Express REST API with MongoDB to manage products, customers, and orders, including order status pipeline </li>
-				<li> Developed an admin portal with authentication/authorization, enabling staff to log in, view incoming orders, update order status, and manage products </li>
-				<li> Designed a custom order builder (size, flavors, fillings, decorations) using Astro + Tailwind </li>
-				<li> Collaborated with a team of 15 students using Git Version Control (branches, pull requests, code reviews) </li>
-			</ul>
-		</div> 
-		<div class = "card">
-			<p class = "title"> Research Assistant - Detecting Emotions in Large Language Models </p>
-			<div class = "left-right"> 
-				<p class = "employer"> University of Illinois at Chicago </p>
-				<p class = "date"> June 2025 - Aug 2025 </p>
-			</div>
-			<ul> 
-				<li> Read academic papers related to LLM exhibition of emotions, and interacted with existing LLM’s to determine whether they behave in a way that exhibits emotions </li> 
-				<li> Determined whether the emotions are correlated with some hardware or software signatures </li>
-				<li> Utilized Python and Ollama to recreate data from research papers to test its validity </li>
-			</ul>
-		</div> 
-		<div class="card">
-    		<p class = "title">Teaching Assistant - Mathematical Foundations of Computing</p>
-			<div class = "left-right">
-				<p class = "employer"> University of Illinois at Chicago </p>
-				<p class = "date"> Jan 2025 - May 2025 </p>
-			</div>
-			<ul> 
-				<li> Host weekly, in-person office hours to assist students understanding of logic, quantifiers, sets and proofs </li>
-				<li> Co-lead lab sessions of 25+ students, answering questions about discrete mathematics and propositional logic </li>
-				<li> Grade students labs and update grades on BlackBoard (university-wide learning management system) </li>
-				<li> Monitor Piazza discussion platform for questions about the course and its material </li>
-			</ul>
-  		</div>
+    ))}
 
 		<div class = "section-header">  
       		<div class="icon education">
@@ -134,22 +63,16 @@ import Footer from "../components/footer.astro";
 			<h2> Education </h2>
 		</div>
 		 <div class="card">
-    		<p class = "title"> Bachelor of Science in Computer Science and minor in Mathematics</p>
-			<p2> University of Illinois at Chicago | 2024 - 2027 </p2>
+    		<p class = "title"> {education.degree}</p>
+			<p2> {education.school} </p2>
 			<div class = "tags"> 
-				<p class = "extra"> GPA: 4.0/4.0</p>
+				<p class = "extra"> {education.gpa}</p>
 			</div>
 			<p class = "title"> Relevant Coursework: </p>
 			<div class = "tags2"> 
-				<p> Data Structures & Algorithms </p>
-				<p> Web Development</p>
-				<p> Machine Organization </p>
-				<p> Program Design</p>
-				<p> Languages and Automata </p>
-				<p> Software Design</p>
-				<p> Computer Design </p>
-        <p> Systems Programming </p>
-        <p> Game Development & Design </p>
+				{education.coursework.map((course) => (
+          <p> {course} </p>
+        ))}
 			</div>
   		</div>
 
@@ -160,48 +83,16 @@ import Footer from "../components/footer.astro";
 			<h2> Skills </h2>
 		</div>
 		<div class="card">
-    		<p> Programming languages </p>
-			<div class = "tags"> 
-				<p> C </p>
-				<p> C++ </p>
-				<p> C# </p>
-				<p> JavaScript </p>
-				<p> Python </p>
-				<p> Java </p>
-				<p> HTML </p>
-				<p> CSS </p>
-        <p> Dart </p>
-        <p> Swift </p>
-        <p> F# </p>
-        <p> SQL </p>
-			</div>
-		
-			<p> Frameworks & Libraries </p>
-			<div class = "tags2"> 
-				<p> Node.js </p>
-				<p> Astro </p>
-				<p> Express </p>
-				<p> React </p>
-        <p> Flutter </p>
-			</div>
-
-			<p> Tools & Technologies </p>
-			<div class = "tags3"> 
-				<p> Git </p>
-				<p> MongoDB </p>
-				<p> AWS </p>
-        <p> Figma </p>
-        <p> Unity 3D </p>
-        <p> UEFN - Unreal Editor for Fortnite </p>
-        <p> Unreal Engine </p>
-			</div>
-
-			<p> Concepts </p>
-			<div class = "tags4"> 
-				<p> API </p>
-				<p> Data Structures </p>
-				<p> Algorithms </p>
-			</div>
+      {skillCategories.map((category) => (
+        <>
+          <p> {category.name} </p>
+          <div class={category.tagClass}> 
+            {category.skills.map((skill) => (
+              <p> {skill} </p>
+            ))}
+          </div>
+        </>
+      ))}
   		</div>
 		
 		<div class = "section-header">
@@ -211,12 +102,36 @@ import Footer from "../components/footer.astro";
 			<h2> Certifications and Awards </h2>
 		</div>
 		<div class="card">
-      <div class = "lightBox2"> <p> Epic Games & UIC Game Jam 2026 2nd place for Gameplay </p> </div>
-      <div class = "lightBox"> <p> CITI Program Certification: Research Security and Integrity (June 2026)</p> </div>
-			<div class = "lightBox"> <p> Apple Certification: App Development with Swift – Associate (Dec 2025)</p> </div>
-			<div class = "lightBox2"> <p> Academic Achievement: University of Illinois Chicago's College of Engineering Dean's List</p>
-				<ul> <li> Fall 2024, Spring 2025, Fall 2025 </li></ul> </div>
-			<div class = "lightBox2"> <p> Fitch Group 2024 Codeathon Runner Up</p> </div>
+      {certifications.map((certification) => (
+        certification.previewUrl || certification.openUrl ? (
+          <a
+            href={`/Portfolio/resume/certifications/${certification.id}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class={`certification-link ${certification.variant}`}
+          >
+            <p> {certification.title} </p>
+            {certification.subItems && (
+              <ul>
+                {certification.subItems.map((subItem) => (
+                  <li> {subItem} </li>
+                ))}
+              </ul>
+            )}
+          </a>
+        ) : (
+          <div class={certification.variant}>
+            <p> {certification.title} </p>
+            {certification.subItems && (
+              <ul>
+                {certification.subItems.map((subItem) => (
+                  <li> {subItem} </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        )
+      ))}
   		</div>
 	</div>
 </Layout>
@@ -264,6 +179,55 @@ import Footer from "../components/footer.astro";
 	margin-top: 0rem;
 	margin-bottom: 0.4rem;
 	font-weight: bold;
+}
+
+.experience-top {
+  --employer-icon-size: 72px;
+  --employer-icon-gap: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--employer-icon-gap);
+}
+
+.experience-headline {
+  flex: 1;
+  min-width: 0;
+}
+
+.employer-icon {
+  width: var(--employer-icon-size);
+  height: var(--employer-icon-size);
+  padding: 4px;
+  border-radius: 14px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #e66465, #a78bfa);
+}
+
+.employer-icon-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.employer-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.experience-details {
+  margin-top: 0.75rem;
+  margin-left: calc(var(--employer-icon-size) + var(--employer-icon-gap));
+  padding-left: 1rem;
 }
 
 .card .employer {
@@ -360,6 +324,17 @@ import Footer from "../components/footer.astro";
   margin: 1rem;
 }
 
+.certification-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.certification-link:hover {
+	transform: translateY(-3px);
+}
+
 .card .lightBox:hover, .card .lightBox2:hover{
 	transform: translateY(-3px);
 }
@@ -422,11 +397,31 @@ li {
     gap: 0.4rem;
   }
 
+  .experience-top {
+    --employer-icon-size: 56px;
+    --employer-icon-gap: 0.75rem;
+    align-items: flex-start;
+  }
+
+  .employer-icon {
+    padding: 3px;
+    border-radius: 12px;
+  }
+
+  .employer-icon-inner,
+  .employer-icon img {
+    border-radius: 9px;
+  }
+
+  .experience-details {
+    padding-left: 0.75rem;
+  }
+
   ul {
 	padding-left: 0;
 	margin-left: 0;
 	list-style-position: inside;
-	/* list-style: none; // use this for no bullet points*/
+	/* list-style: none; use this for no bullet points */
   }
 
   li {
@@ -452,6 +447,11 @@ li {
     margin: 0.6rem 0;
   }
 
+  .card .lightBox2 {
+    border-radius: 14px;
+    margin: 0.6rem 0;
+  }
+  
   .tags, .tags2, .tags3, .tags4 {
     gap: 0.35rem;
   }
